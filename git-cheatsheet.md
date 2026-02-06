@@ -5,6 +5,8 @@ python3 -m venv .venv
 source .venv/bin/activate
 pip install -U pip 
 pip install pandas numpy matplotlib jupyter ipykernel
+pip list
+which python
 
 ## Git initiieren
 git init
