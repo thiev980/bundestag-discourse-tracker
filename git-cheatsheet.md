@@ -22,7 +22,7 @@ github zeigt danach remote-url: git@github.com:username/repo.git
 git remote add origin git@github.com:USERNAME/REPO.git (remote hinzufügen)
 git remote -v (prüfen)
 git branch -M main (branch korrekt setzen)
-git push -u origin master (erster push)
+git push -u origin main (erster push)
 
 ## Push rejected / divergent branches
 git pull --rebase origin master
