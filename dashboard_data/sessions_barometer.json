@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-07T13:43:59.690947",
+  "generated_at": "2026-02-07T21:25:36.513793",
   "total_sessions": 29,
   "wahlperioden": [
     19,
@@ -13,15 +13,15 @@
   "statistics": {
     "avg_sentiment": {
       "min": -0.38181818181818183,
-      "max": 0.01015625,
+      "max": 0.010156249999999999,
       "median": -0.11170212765957446,
-      "mean": -0.12083337359636312
+      "mean": -0.12120542441306004
     },
     "avg_emotionality": {
-      "min": 0.1469820895522388,
+      "min": 0.10343588360657895,
       "max": 0.32335909090909093,
-      "median": 0.2328044871794872,
-      "mean": 0.2316259151233423
+      "median": 0.2310575221238938,
+      "mean": 0.22460659895006643
     },
     "num_speeches": {
       "min": 22,
@@ -40,27 +40,27 @@
       "num_speeches": 76,
       "top_topics": [
         {
-          "label": "Wirtschaft und Unternehmenspolitik",
-          "count": 16
-        },
-        {
-          "label": "Klimapolitik und Energiewende-Debatte",
-          "count": 14
+          "label": "Wirtschaftspolitik und Unternehmensförderung",
+          "count": 24
         },
         {
           "label": "Mobilität im ländlichen Raum",
           "count": 14
+        },
+        {
+          "label": "Klimaschutz und Energiewende im Bundestag",
+          "count": 13
         }
       ],
       "metrics": {
         "sentiment": {
-          "value": -0.161,
-          "percentile": 27.6,
-          "spread": 0.476
+          "value": -0.171,
+          "percentile": 24.1,
+          "spread": 0.504
         },
         "emotionality": {
-          "value": 0.307,
-          "percentile": 93.1
+          "value": 0.1034,
+          "percentile": 0.0
         },
         "length": {
           "total_words": 44001,
@@ -68,7 +68,7 @@
           "percentile": 17.2
         }
       },
-      "summary": "Hohe emotionalität (top 7%)"
+      "summary": "Sehr sachlich (untere 0%)"
     },
     {
       "session_id": "21_56",
@@ -79,16 +79,16 @@
       "num_speeches": 162,
       "top_topics": [
         {
-          "label": "Ukraine-Krieg und Bundeswehr-Stärkung",
-          "count": 34
+          "label": "Ukraine-Krieg und europäische Sicherheit",
+          "count": 41
         },
         {
-          "label": "Innere Sicherheit und Extremismusbekämpfung",
-          "count": 33
+          "label": "Bürokratie, Unternehmen und Ausbildung",
+          "count": 17
         },
         {
-          "label": "Finanzskandale und Bankenregulierung",
-          "count": 19
+          "label": "Migrationspolitik und Sicherheit: AfD im Fokus",
+          "count": 17
         }
       ],
       "metrics": {
@@ -99,7 +99,7 @@
         },
         "emotionality": {
           "value": 0.2638,
-          "percentile": 65.5
+          "percentile": 69.0
         },
         "length": {
           "total_words": 98539,
@@ -118,16 +118,16 @@
       "num_speeches": 156,
       "top_topics": [
         {
-          "label": "Fragestunde zur Ukraine-Politik",
-          "count": 55
+          "label": "Außenpolitik und Internationale Beziehungen",
+          "count": 46
         },
         {
-          "label": "Landwirtschaft, Mercosur und Agrarpolitik",
-          "count": 32
+          "label": "Landwirtschaft und Lebensmittelpolitik",
+          "count": 28
         },
         {
-          "label": "Wirtschaft und Unternehmenspolitik",
-          "count": 19
+          "label": "Ukraine-Krieg und europäische Sicherheit",
+          "count": 15
         }
       ],
       "metrics": {
@@ -138,7 +138,7 @@
         },
         "emotionality": {
           "value": 0.2328,
-          "percentile": 48.3
+          "percentile": 51.7
         },
         "length": {
           "total_words": 38862,
@@ -157,16 +157,16 @@
       "num_speeches": 92,
       "top_topics": [
         {
-          "label": "Klimapolitik und Energiewende-Debatte",
+          "label": "Klimaschutz und Energiewende im Bundestag",
           "count": 20
         },
         {
-          "label": "Ukraine-Krieg und Bundeswehr-Stärkung",
+          "label": "Ukraine-Krieg und europäische Sicherheit",
           "count": 16
         },
         {
-          "label": "Wirtschaft und Unternehmenspolitik",
-          "count": 14
+          "label": "Digitale Souveränität und EU-Regulierung",
+          "count": 12
         }
       ],
       "metrics": {
@@ -177,7 +177,7 @@
         },
         "emotionality": {
           "value": 0.2475,
-          "percentile": 58.6
+          "percentile": 62.1
         },
         "length": {
           "total_words": 50270,
@@ -200,23 +200,23 @@
           "count": 31
         },
         {
-          "label": "Wirtschaft und Unternehmenspolitik",
-          "count": 20
+          "label": "Klimaschutz und Energiewende im Bundestag",
+          "count": 21
         },
         {
-          "label": "Innere Sicherheit und Extremismusbekämpfung",
-          "count": 18
+          "label": "Digitale Souveränität und EU-Regulierung",
+          "count": 19
         }
       ],
       "metrics": {
         "sentiment": {
           "value": -0.162,
-          "percentile": 24.1,
+          "percentile": 27.6,
           "spread": 0.494
         },
         "emotionality": {
           "value": 0.2732,
-          "percentile": 72.4
+          "percentile": 75.9
         },
         "length": {
           "total_words": 98954,
@@ -235,16 +235,16 @@
       "num_speeches": 163,
       "top_topics": [
         {
-          "label": "Fragestunde zur Ukraine-Politik",
-          "count": 72
+          "label": "Fragestunde und Kurzinterventionen",
+          "count": 43
         },
         {
-          "label": "Innere Sicherheit und Extremismusbekämpfung",
-          "count": 30
+          "label": "Außenpolitik und Internationale Beziehungen",
+          "count": 32
         },
         {
-          "label": "Landwirtschaft, Insektenschutz und Tierschutz",
-          "count": 15
+          "label": "Syrien, Israel und Entwicklungspolitik",
+          "count": 22
         }
       ],
       "metrics": {
@@ -255,7 +255,7 @@
         },
         "emotionality": {
           "value": 0.2165,
-          "percentile": 37.9
+          "percentile": 41.4
         },
         "length": {
           "total_words": 35521,
@@ -274,15 +274,15 @@
       "num_speeches": 94,
       "top_topics": [
         {
-          "label": "Digitale Politik und Meinungsfreiheit",
-          "count": 15
+          "label": "Wirtschaftspolitik und Unternehmensförderung",
+          "count": 25
         },
         {
-          "label": "Rente, Armut und Erbschaftsteuer",
-          "count": 11
+          "label": "Digitale Souveränität und EU-Regulierung",
+          "count": 19
         },
         {
-          "label": "Ukraine-Krieg und Bundeswehr-Stärkung",
+          "label": "Bundeswehreinsätze in Krisenregionen",
           "count": 11
         }
       ],
@@ -294,7 +294,7 @@
         },
         "emotionality": {
           "value": 0.2567,
-          "percentile": 62.1
+          "percentile": 65.5
         },
         "length": {
           "total_words": 51717,
@@ -313,16 +313,16 @@
       "num_speeches": 132,
       "top_topics": [
         {
-          "label": "Fragestunde zur Ukraine-Politik",
-          "count": 38
+          "label": "Fragestunde und Kurzinterventionen",
+          "count": 20
         },
         {
-          "label": "Rente, Armut und Erbschaftsteuer",
-          "count": 18
+          "label": "Landwirtschaft und Lebensmittelpolitik",
+          "count": 19
         },
         {
-          "label": "Ukraine-Krieg und Bundeswehr-Stärkung",
-          "count": 14
+          "label": "Ukraine-Krieg und europäische Sicherheit",
+          "count": 15
         }
       ],
       "metrics": {
@@ -333,7 +333,7 @@
         },
         "emotionality": {
           "value": 0.2019,
-          "percentile": 31.0
+          "percentile": 34.5
         },
         "length": {
           "total_words": 47584,
@@ -352,16 +352,16 @@
       "num_speeches": 113,
       "top_topics": [
         {
-          "label": "Ukraine-Krieg und Bundeswehr-Stärkung",
-          "count": 25
+          "label": "Rentenpolitik und Altersvorsorge",
+          "count": 38
         },
         {
-          "label": "Rente, Armut und Erbschaftsteuer",
-          "count": 21
+          "label": "Digitale Souveränität und EU-Regulierung",
+          "count": 15
         },
         {
-          "label": "Schuldenbremse, Investitionen und Generationengerechtigkeit",
-          "count": 20
+          "label": "Schuldenbremse, Bundeswehr und Investitionen",
+          "count": 15
         }
       ],
       "metrics": {
@@ -372,7 +372,7 @@
         },
         "emotionality": {
           "value": 0.2311,
-          "percentile": 44.8
+          "percentile": 48.3
         },
         "length": {
           "total_words": 57213,
@@ -391,16 +391,16 @@
       "num_speeches": 83,
       "top_topics": [
         {
-          "label": "Schuldenbremse, Investitionen und Generationengerechtigkeit",
-          "count": 48
+          "label": "Schuldenbremse, Bundeswehr und Investitionen",
+          "count": 70
         },
         {
-          "label": "Ukraine-Krieg und Bundeswehr-Stärkung",
-          "count": 21
+          "label": "Demokratie, Grundgesetz und AfD",
+          "count": 4
         },
         {
-          "label": "AfD, Demokratie und Grundgesetz",
-          "count": 11
+          "label": "Ukraine-Krieg und europäische Sicherheit",
+          "count": 3
         }
       ],
       "metrics": {
@@ -411,7 +411,7 @@
         },
         "emotionality": {
           "value": 0.1478,
-          "percentile": 3.4
+          "percentile": 6.9
         },
         "length": {
           "total_words": 53125,
@@ -419,7 +419,7 @@
           "percentile": 44.8
         }
       },
-      "summary": "Sehr sachlich (untere 3%)"
+      "summary": "Sehr sachlich (untere 7%)"
     },
     {
       "session_id": "20_213",
@@ -430,16 +430,16 @@
       "num_speeches": 38,
       "top_topics": [
         {
-          "label": "Schuldenbremse, Investitionen und Generationengerechtigkeit",
-          "count": 11
+          "label": "Schuldenbremse, Bundeswehr und Investitionen",
+          "count": 26
         },
         {
-          "label": "Ukraine-Krieg und Bundeswehr-Stärkung",
-          "count": 11
+          "label": "Ukraine-Krieg und europäische Sicherheit",
+          "count": 4
         },
         {
-          "label": "AfD, Demokratie und Grundgesetz",
-          "count": 7
+          "label": "Demokratie, Grundgesetz und AfD",
+          "count": 2
         }
       ],
       "metrics": {
@@ -450,7 +450,7 @@
         },
         "emotionality": {
           "value": 0.2847,
-          "percentile": 82.8
+          "percentile": 86.2
         },
         "length": {
           "total_words": 29702,
@@ -469,16 +469,16 @@
       "num_speeches": 22,
       "top_topics": [
         {
-          "label": "Wirtschaft und Unternehmenspolitik",
-          "count": 12
+          "label": "Wirtschaftspolitik und Unternehmensförderung",
+          "count": 9
         },
         {
-          "label": "AfD, Demokratie und Grundgesetz",
-          "count": 5
+          "label": "Migrationspolitik und Sicherheit: AfD im Fokus",
+          "count": 3
         },
         {
-          "label": "Ukraine-Krieg und Bundeswehr-Stärkung",
-          "count": 2
+          "label": "Ukraine-Krieg und europäische Sicherheit",
+          "count": 3
         }
       ],
       "metrics": {
@@ -508,16 +508,16 @@
       "num_speeches": 134,
       "top_topics": [
         {
-          "label": "Migrationspolitik und Grenzdebatte",
-          "count": 31
+          "label": "Migrationspolitik und Sicherheit: AfD im Fokus",
+          "count": 44
         },
         {
-          "label": "Familie, Frauen und Pflege",
-          "count": 24
+          "label": "Familie, Frauen und Arbeitsleben",
+          "count": 29
         },
         {
-          "label": "AfD, Demokratie und Grundgesetz",
-          "count": 20
+          "label": "Demokratie, Grundgesetz und AfD",
+          "count": 16
         }
       ],
       "metrics": {
@@ -528,7 +528,7 @@
         },
         "emotionality": {
           "value": 0.2931,
-          "percentile": 86.2
+          "percentile": 89.7
         },
         "length": {
           "total_words": 71683,
@@ -547,16 +547,16 @@
       "num_speeches": 225,
       "top_topics": [
         {
-          "label": "AfD, Demokratie und Grundgesetz",
-          "count": 37
+          "label": "Wirtschaftspolitik und Unternehmensförderung",
+          "count": 42
         },
         {
-          "label": "Familie, Frauen und Pflege",
-          "count": 22
+          "label": "Demokratie, Grundgesetz und AfD",
+          "count": 36
         },
         {
-          "label": "Rente, Armut und Erbschaftsteuer",
-          "count": 22
+          "label": "Familie, Frauen und Arbeitsleben",
+          "count": 35
         }
       ],
       "metrics": {
@@ -567,7 +567,7 @@
         },
         "emotionality": {
           "value": 0.2664,
-          "percentile": 69.0
+          "percentile": 72.4
         },
         "length": {
           "total_words": 136726,
@@ -586,16 +586,16 @@
       "num_speeches": 193,
       "top_topics": [
         {
-          "label": "Landwirtschaft, Mercosur und Agrarpolitik",
-          "count": 43
+          "label": "Landwirtschaft und Lebensmittelpolitik",
+          "count": 53
         },
         {
-          "label": "Fragestunde zur Ukraine-Politik",
-          "count": 33
+          "label": "Migrationspolitik und Sicherheit: AfD im Fokus",
+          "count": 45
         },
         {
-          "label": "Migrationspolitik und Grenzdebatte",
-          "count": 27
+          "label": "Syrien, Israel und Entwicklungspolitik",
+          "count": 17
         }
       ],
       "metrics": {
@@ -606,7 +606,7 @@
         },
         "emotionality": {
           "value": 0.2,
-          "percentile": 27.6
+          "percentile": 31.0
         },
         "length": {
           "total_words": 66333,
@@ -625,16 +625,16 @@
       "num_speeches": 89,
       "top_topics": [
         {
-          "label": "Migrationspolitik und Grenzdebatte",
-          "count": 21
+          "label": "Migrationspolitik und Sicherheit: AfD im Fokus",
+          "count": 22
         },
         {
-          "label": "AfD, Demokratie und Grundgesetz",
-          "count": 12
+          "label": "Bürokratie, Unternehmen und Ausbildung",
+          "count": 10
         },
         {
-          "label": "Wirtschaft und Unternehmenspolitik",
-          "count": 12
+          "label": "Demokratie, Grundgesetz und AfD",
+          "count": 10
         }
       ],
       "metrics": {
@@ -645,7 +645,7 @@
         },
         "emotionality": {
           "value": 0.28,
-          "percentile": 75.9
+          "percentile": 79.3
         },
         "length": {
           "total_words": 57631,
@@ -664,15 +664,15 @@
       "num_speeches": 194,
       "top_topics": [
         {
-          "label": "Wirtschaft und Unternehmenspolitik",
-          "count": 52
+          "label": "Wirtschaftspolitik und Unternehmensförderung",
+          "count": 68
         },
         {
-          "label": "AfD, Demokratie und Grundgesetz",
-          "count": 33
+          "label": "Demokratie, Grundgesetz und AfD",
+          "count": 31
         },
         {
-          "label": "Familie, Frauen und Pflege",
+          "label": "Klimaschutz und Energiewende im Bundestag",
           "count": 19
         }
       ],
@@ -684,7 +684,7 @@
         },
         "emotionality": {
           "value": 0.2819,
-          "percentile": 79.3
+          "percentile": 82.8
         },
         "length": {
           "total_words": 114588,
@@ -703,16 +703,16 @@
       "num_speeches": 183,
       "top_topics": [
         {
-          "label": "Wohnungsbau und Mietpolitik",
-          "count": 69
+          "label": "Wohnungsbau und Mietenpolitik",
+          "count": 67
         },
         {
-          "label": "Fragestunde zur Ukraine-Politik",
-          "count": 45
+          "label": "Fragestunde und Kurzinterventionen",
+          "count": 27
         },
         {
-          "label": "Nahostkonflikte und UNIFIL-Mission",
-          "count": 21
+          "label": "Wirtschaftspolitik und Unternehmensförderung",
+          "count": 18
         }
       ],
       "metrics": {
@@ -723,7 +723,7 @@
         },
         "emotionality": {
           "value": 0.2399,
-          "percentile": 51.7
+          "percentile": 55.2
         },
         "length": {
           "total_words": 48526,
@@ -742,15 +742,15 @@
       "num_speeches": 22,
       "top_topics": [
         {
-          "label": "Wirtschaft und Unternehmenspolitik",
-          "count": 10
+          "label": "Wirtschaftspolitik und Unternehmensförderung",
+          "count": 9
         },
         {
-          "label": "AfD, Demokratie und Grundgesetz",
-          "count": 6
+          "label": "Demokratie, Grundgesetz und AfD",
+          "count": 5
         },
         {
-          "label": "Ukraine-Krieg und Bundeswehr-Stärkung",
+          "label": "Ukraine-Krieg und europäische Sicherheit",
           "count": 5
         }
       ],
@@ -762,7 +762,7 @@
         },
         "emotionality": {
           "value": 0.2946,
-          "percentile": 89.7
+          "percentile": 93.1
         },
         "length": {
           "total_words": 21579,
@@ -770,7 +770,7 @@
           "percentile": 0.0
         }
       },
-      "summary": "Sehr negatives sentiment (untere 0%), kurze sitzung (untere 0%)"
+      "summary": "Sehr negatives sentiment (untere 0%), hohe emotionalität (top 7%), kurze sitzung (untere 0%)"
     },
     {
       "session_id": "19_239",
@@ -785,11 +785,11 @@
           "count": 32
         },
         {
-          "label": "Wirtschaft und Unternehmenspolitik",
+          "label": "Wirtschaftspolitik und Unternehmensförderung",
           "count": 11
         },
         {
-          "label": "Klimapolitik und Energiewende-Debatte",
+          "label": "Familie, Frauen und Arbeitsleben",
           "count": 7
         }
       ],
@@ -801,7 +801,7 @@
         },
         "emotionality": {
           "value": 0.147,
-          "percentile": 0.0
+          "percentile": 3.4
         },
         "length": {
           "total_words": 51007,
@@ -809,7 +809,7 @@
           "percentile": 34.5
         }
       },
-      "summary": "Sehr sachlich (untere 0%)"
+      "summary": "Sehr sachlich (untere 3%)"
     },
     {
       "session_id": "19_238",
@@ -828,8 +828,8 @@
           "count": 25
         },
         {
-          "label": "Klimapolitik und Energiewende-Debatte",
-          "count": 15
+          "label": "Klimaschutz und Energiewende im Bundestag",
+          "count": 16
         }
       ],
       "metrics": {
@@ -840,7 +840,7 @@
         },
         "emotionality": {
           "value": 0.1901,
-          "percentile": 20.7
+          "percentile": 24.1
         },
         "length": {
           "total_words": 54042,
@@ -859,16 +859,16 @@
       "num_speeches": 94,
       "top_topics": [
         {
-          "label": "Finanzskandale und Bankenregulierung",
-          "count": 20
+          "label": "Wirtschaftspolitik und Unternehmensförderung",
+          "count": 31
         },
         {
-          "label": "Digitalisierung, Bürokratie und Datenschutz",
+          "label": "Familie, Frauen und Arbeitsleben",
+          "count": 18
+        },
+        {
+          "label": "Digitale Souveränität und EU-Regulierung",
           "count": 16
-        },
-        {
-          "label": "Familie, Frauen und Pflege",
-          "count": 13
         }
       ],
       "metrics": {
@@ -879,7 +879,7 @@
         },
         "emotionality": {
           "value": 0.2231,
-          "percentile": 41.4
+          "percentile": 44.8
         },
         "length": {
           "total_words": 60864,
@@ -898,16 +898,16 @@
       "num_speeches": 274,
       "top_topics": [
         {
-          "label": "Klimapolitik und Energiewende-Debatte",
-          "count": 44
+          "label": "Klimaschutz und Energiewende im Bundestag",
+          "count": 45
         },
         {
-          "label": "Verbraucherschutz und Produktsicherheit",
-          "count": 38
+          "label": "Migrationspolitik und Sicherheit: AfD im Fokus",
+          "count": 33
         },
         {
           "label": "Landwirtschaft, Insektenschutz und Tierschutz",
-          "count": 26
+          "count": 30
         }
       ],
       "metrics": {
@@ -918,7 +918,7 @@
         },
         "emotionality": {
           "value": 0.1612,
-          "percentile": 10.3
+          "percentile": 13.8
         },
         "length": {
           "total_words": 156590,
@@ -938,14 +938,14 @@
       "top_topics": [
         {
           "label": "Afghanistan-Einsatz und Ortskräfte",
-          "count": 26
+          "count": 27
         },
         {
           "label": "Pandemiebekämpfung und Infektionsschutzmaßnahmen",
-          "count": 15
+          "count": 14
         },
         {
-          "label": "Fragestunde zur Ukraine-Politik",
+          "label": "Rentenpolitik und Altersvorsorge",
           "count": 14
         }
       ],
@@ -957,7 +957,7 @@
         },
         "emotionality": {
           "value": 0.1828,
-          "percentile": 17.2
+          "percentile": 20.7
         },
         "length": {
           "total_words": 47513,
@@ -976,16 +976,16 @@
       "num_speeches": 131,
       "top_topics": [
         {
-          "label": "Familie, Frauen und Pflege",
-          "count": 30
+          "label": "Familie, Frauen und Arbeitsleben",
+          "count": 31
         },
         {
           "label": "Pandemiebekämpfung und Infektionsschutzmaßnahmen",
           "count": 28
         },
         {
-          "label": "Wirtschaft und Unternehmenspolitik",
-          "count": 19
+          "label": "Demokratie, Grundgesetz und AfD",
+          "count": 17
         }
       ],
       "metrics": {
@@ -996,7 +996,7 @@
         },
         "emotionality": {
           "value": 0.202,
-          "percentile": 34.5
+          "percentile": 37.9
         },
         "length": {
           "total_words": 71738,
@@ -1016,15 +1016,15 @@
       "top_topics": [
         {
           "label": "Verbraucherschutz und Produktsicherheit",
-          "count": 60
+          "count": 37
         },
         {
-          "label": "Klimapolitik und Energiewende-Debatte",
+          "label": "Klimaschutz und Energiewende im Bundestag",
           "count": 33
         },
         {
-          "label": "Innere Sicherheit und Extremismusbekämpfung",
-          "count": 23
+          "label": "Bürokratie, Unternehmen und Ausbildung",
+          "count": 31
         }
       ],
       "metrics": {
@@ -1035,7 +1035,7 @@
         },
         "emotionality": {
           "value": 0.1566,
-          "percentile": 6.9
+          "percentile": 10.3
         },
         "length": {
           "total_words": 130901,
@@ -1043,7 +1043,7 @@
           "percentile": 89.7
         }
       },
-      "summary": "Sehr sachlich (untere 7%)"
+      "summary": "Durchschnittliche Sitzung"
     },
     {
       "session_id": "19_232",
@@ -1054,12 +1054,12 @@
       "num_speeches": 128,
       "top_topics": [
         {
-          "label": "Fragestunde zur Ukraine-Politik",
-          "count": 46
+          "label": "Außenpolitik und Internationale Beziehungen",
+          "count": 39
         },
         {
-          "label": "Ukraine-Krieg und Bundeswehr-Stärkung",
-          "count": 18
+          "label": "Familie, Frauen und Arbeitsleben",
+          "count": 15
         },
         {
           "label": "Pandemiebekämpfung und Infektionsschutzmaßnahmen",
@@ -1074,7 +1074,7 @@
         },
         "emotionality": {
           "value": 0.1705,
-          "percentile": 13.8
+          "percentile": 17.2
         },
         "length": {
           "total_words": 52823,
@@ -1093,16 +1093,16 @@
       "num_speeches": 120,
       "top_topics": [
         {
-          "label": "Klimapolitik und Energiewende-Debatte",
+          "label": "Demokratie, Grundgesetz und AfD",
+          "count": 24
+        },
+        {
+          "label": "Klimaschutz und Energiewende im Bundestag",
           "count": 23
         },
         {
-          "label": "AfD, Demokratie und Grundgesetz",
-          "count": 17
-        },
-        {
-          "label": "Rente, Armut und Erbschaftsteuer",
-          "count": 14
+          "label": "Bundeswehreinsätze in Krisenregionen",
+          "count": 16
         }
       ],
       "metrics": {
@@ -1113,7 +1113,7 @@
         },
         "emotionality": {
           "value": 0.2446,
-          "percentile": 55.2
+          "percentile": 58.6
         },
         "length": {
           "total_words": 73828,
@@ -1132,16 +1132,16 @@
       "num_speeches": 235,
       "top_topics": [
         {
+          "label": "Digitale Souveränität und EU-Regulierung",
+          "count": 31
+        },
+        {
           "label": "Pandemiebekämpfung und Infektionsschutzmaßnahmen",
-          "count": 32
+          "count": 29
         },
         {
           "label": "Mobilität im ländlichen Raum",
-          "count": 28
-        },
-        {
-          "label": "Klimapolitik und Energiewende-Debatte",
-          "count": 23
+          "count": 26
         }
       ],
       "metrics": {
@@ -1152,7 +1152,7 @@
         },
         "emotionality": {
           "value": 0.197,
-          "percentile": 24.1
+          "percentile": 27.6
         },
         "length": {
           "total_words": 130013,
