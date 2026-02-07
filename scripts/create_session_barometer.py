@@ -36,7 +36,8 @@ from typing import Dict, List
 
 PROJECT_ID = "bt-discourse-tracker"
 DATASET_ID = "bundestag_data"
-SOURCE_TABLE = "speeches_with_clusters"  # Jetzt mit Cluster-Zuordnung!
+SOURCE_TABLE = "speeches_with_metrics"  # Haupt-Tabelle (alle Reden)
+CLUSTERS_TABLE = "speeches_with_clusters"  # Für Topic-Aggregation (optional)
 TARGET_TABLE = "sessions_barometer"
 LOCATION = "EU"
 
@@ -136,9 +137,7 @@ def main():
         fraktion,
         sentiment_score,
         emotionality_score,
-        word_count,
-        cluster_id,
-        cluster_label
+        word_count
     FROM `{PROJECT_ID}.{DATASET_ID}.{SOURCE_TABLE}`
     WHERE datum IS NOT NULL
     ORDER BY datum, sitzungsnr
@@ -180,29 +179,47 @@ def main():
     
     print(f"  ✓ {len(sessions)} Sitzungen aggregiert")
     
-    # Themen pro Sitzung aggregieren
+    # Themen pro Sitzung aggregieren (falls Cluster-Daten vorhanden)
     print("  📊 Berechne Top-Themen pro Sitzung...")
     
-    topic_counts = df.groupby(['wahlperiode', 'sitzungsnr', 'cluster_label']).size().reset_index(name='count')
+    # Versuche Cluster-Daten zu laden
+    try:
+        cluster_query = f"""
+        SELECT wahlperiode, sitzungsnr, cluster_label
+        FROM `{PROJECT_ID}.{DATASET_ID}.{CLUSTERS_TABLE}`
+        WHERE cluster_label IS NOT NULL
+        """
+        cluster_df = client.query(cluster_query).to_dataframe()
+        has_cluster_data = len(cluster_df) > 0
+        print(f"  ✓ {len(cluster_df)} Reden mit Cluster-Zuordnung gefunden")
+    except Exception as e:
+        print(f"  ⚠️ Cluster-Daten nicht verfügbar: {e}")
+        cluster_df = pd.DataFrame()
+        has_cluster_data = False
     
-    def get_top_topics(wp, snr, n=3):
-        """Holt die Top-n Themen für eine Sitzung."""
-        session_topics = topic_counts[
-            (topic_counts['wahlperiode'] == wp) & 
-            (topic_counts['sitzungsnr'] == snr)
-        ].nlargest(n, 'count')
+    if has_cluster_data:
+        topic_counts = cluster_df.groupby(['wahlperiode', 'sitzungsnr', 'cluster_label']).size().reset_index(name='count')
         
-        return [
-            {"label": row['cluster_label'], "count": int(row['count'])}
-            for _, row in session_topics.iterrows()
-        ]
-    
-    sessions['top_topics'] = sessions.apply(
-        lambda row: get_top_topics(row['wahlperiode'], row['sitzungsnr']), 
-        axis=1
-    )
-    
-    print(f"  ✓ Themen pro Sitzung berechnet")
+        def get_top_topics(wp, snr, n=3):
+            """Holt die Top-n Themen für eine Sitzung."""
+            session_topics = topic_counts[
+                (topic_counts['wahlperiode'] == wp) & 
+                (topic_counts['sitzungsnr'] == snr)
+            ].nlargest(n, 'count')
+            
+            return [
+                {"label": row['cluster_label'], "count": int(row['count'])}
+                for _, row in session_topics.iterrows()
+            ]
+        
+        sessions['top_topics'] = sessions.apply(
+            lambda row: get_top_topics(row['wahlperiode'], row['sitzungsnr']), 
+            axis=1
+        )
+        print(f"  ✓ Themen pro Sitzung berechnet")
+    else:
+        sessions['top_topics'] = [[] for _ in range(len(sessions))]
+        print(f"  ⚠️ Keine Themen (Clustering nicht ausgeführt)")
     
     # Fraktions-Aktivität pro Sitzung
     print("  📊 Berechne Fraktions-Aktivität...")

@@ -1,997 +1,997 @@
 {
-  "generated_at": "2026-02-07T14:45:16.348702",
+  "generated_at": "2026-02-07T23:12:55.799469",
   "n_clusters": 22,
-  "total_speeches": 3824,
-  "silhouette_score": 0.030208959828724805,
+  "total_speeches": 5281,
+  "silhouette_score": 0.021678542503279958,
   "clusters": [
     {
-      "id": 14,
-      "label": "Wirtschaftspolitik und Unternehmensförderung",
-      "description": "Debatte über wirtschaftliche Rahmenbedingungen, Unternehmensbesteuerung und Investitionsförderung, oft unter Beteiligung der FDP.",
-      "num_speeches": 397,
-      "percentage": 10.4,
-      "keywords": {
-        "tfidf": [
-          "unternehmen",
-          "mal",
-          "wirtschaft",
-          "da",
-          "ja",
-          "ihnen",
-          "brauchen",
-          "fdp",
-          "sagen",
-          "viel"
-        ],
-        "discriminative": [
-          "unternehmen",
-          "wirtschaft",
-          "fdp",
-          "investitionen",
-          "scholz",
-          "steuern",
-          "mittelstand",
-          "wirecard",
-          "erbschaftsteuer",
-          "brauchen"
-        ]
-      },
-      "metrics": {
-        "avg_sentiment": -0.275,
-        "avg_emotionality": 0.2432,
-        "avg_word_count": 736.0
-      },
-      "top_factions": {
-        "CDU/CSU": 96,
-        "SPD": 79,
-        "AfD": 70,
-        "BÜNDNIS 90/DIE GRÜNEN": 47,
-        "FDP": 42
-      }
-    },
-    {
-      "id": 19,
-      "label": "Familie, Frauen und Arbeitsleben",
-      "description": "Debatten über die Vereinbarkeit von Familie, Berufstätigkeit von Frauen, Kinderbetreuung und damit verbundene soziale Themen.",
-      "num_speeches": 323,
-      "percentage": 8.4,
-      "keywords": {
-        "tfidf": [
-          "frauen",
-          "kinder",
-          "arbeit",
-          "mich",
-          "pflege",
-          "ihnen",
-          "gute",
-          "brauchen",
-          "familien",
-          "da"
-        ],
-        "discriminative": [
-          "frauen",
-          "kinder",
-          "pflege",
-          "eltern",
-          "mutterschutz",
-          "familien",
-          "arbeit",
-          "gute",
-          "rechtsanspruch",
-          "kind"
-        ]
-      },
-      "metrics": {
-        "avg_sentiment": 0.108,
-        "avg_emotionality": 0.2654,
-        "avg_word_count": 567.0
-      },
-      "top_factions": {
-        "CDU/CSU": 94,
-        "SPD": 73,
-        "BÜNDNIS 90/DIE GRÜNEN": 48,
-        "AfD": 31,
-        "FDP": 27
-      }
-    },
-    {
-      "id": 8,
-      "label": "Klimaschutz und Energiewende im Bundestag",
-      "description": "Debatten über Klimaschutzmaßnahmen, Energiewende und Nachhaltigkeit im deutschen Bundestag, oft kontrovers diskutiert zwischen den Grünen und der AfD.",
-      "num_speeches": 291,
-      "percentage": 7.6,
-      "keywords": {
-        "tfidf": [
-          "co2",
-          "klimaschutz",
-          "da",
-          "ihnen",
-          "ja",
-          "grünen",
-          "brauchen",
-          "energien",
-          "mal",
-          "sagen"
-        ],
-        "discriminative": [
-          "co2",
-          "klimaschutz",
-          "energien",
-          "erneuerbaren",
-          "nachhaltigkeit",
-          "klimawandel",
-          "klima",
-          "energiewende",
-          "strom",
-          "energie"
-        ]
-      },
-      "metrics": {
-        "avg_sentiment": -0.147,
-        "avg_emotionality": 0.2292,
-        "avg_word_count": 619.0
-      },
-      "top_factions": {
-        "CDU/CSU": 72,
-        "AfD": 54,
-        "SPD": 48,
-        "BÜNDNIS 90/DIE GRÜNEN": 41,
-        "FDP": 25
-      }
-    },
-    {
-      "id": 2,
-      "label": "Migrationspolitik und Sicherheit: AfD im Fokus",
-      "description": "Debatten über Migration, Sicherheitspolitik und die Rolle der AfD im Kontext von Antisemitismus und Rassismus.",
-      "num_speeches": 277,
-      "percentage": 7.2,
-      "keywords": {
-        "tfidf": [
-          "afd",
-          "ihnen",
-          "migration",
-          "sicherheit",
-          "union",
-          "cdu",
-          "migrationspolitik",
-          "ja",
-          "sagen",
-          "wer"
-        ],
-        "discriminative": [
-          "afd",
-          "migration",
-          "migrationspolitik",
-          "antisemitismus",
-          "aschaffenburg",
-          "opfer",
-          "anschlag",
-          "sicherheit",
-          "ihnen",
-          "asyl"
-        ]
-      },
-      "metrics": {
-        "avg_sentiment": -0.261,
-        "avg_emotionality": 0.2614,
-        "avg_word_count": 622.0
-      },
-      "top_factions": {
-        "CDU/CSU": 66,
-        "SPD": 51,
-        "AfD": 41,
-        "FDP": 38,
-        "BÜNDNIS 90/DIE GRÜNEN": 32
-      }
-    },
-    {
-      "id": 7,
-      "label": "Demokratie, Grundgesetz und AfD",
-      "description": "Debatten über die Demokratie, das Grundgesetz und die Rolle der AfD im politischen System.",
-      "num_speeches": 264,
-      "percentage": 6.9,
-      "keywords": {
-        "tfidf": [
-          "demokratie",
-          "afd",
-          "grundgesetz",
-          "sagen",
-          "bundesverfassungsgericht",
-          "ihnen",
-          "ja",
-          "da",
-          "geht",
-          "alle"
-        ],
-        "discriminative": [
-          "demokratie",
-          "afd",
-          "grundgesetz",
-          "bundesverfassungsgericht",
-          "verfassung",
-          "parteien",
-          "partei",
-          "sprache",
-          "verfassungsschutz",
-          "doping"
-        ]
-      },
-      "metrics": {
-        "avg_sentiment": -0.009,
-        "avg_emotionality": 0.2407,
-        "avg_word_count": 554.0
-      },
-      "top_factions": {
-        "SPD": 62,
-        "CDU/CSU": 61,
-        "AfD": 38,
-        "BÜNDNIS 90/DIE GRÜNEN": 35,
-        "FDP": 28
-      }
-    },
-    {
-      "id": 13,
-      "label": "Digitale Souveränität und EU-Regulierung",
-      "description": "Debatten über digitale Identität, Datenschutz, EU-Gesetzgebung (DSA, Data Act) und Bargeld, oft kontrovers diskutiert, insbesondere durch die AfD.",
-      "num_speeches": 202,
-      "percentage": 5.3,
-      "keywords": {
-        "tfidf": [
-          "daten",
-          "digitalen",
-          "digitale",
-          "eu",
-          "afd",
-          "geht",
-          "plattformen",
-          "data",
-          "bargeld",
-          "mal"
-        ],
-        "discriminative": [
-          "daten",
-          "digitalen",
-          "digitale",
-          "data",
-          "plattformen",
-          "bargeld",
-          "eu",
-          "act",
-          "datenschutz",
-          "dsa"
-        ]
-      },
-      "metrics": {
-        "avg_sentiment": -0.119,
-        "avg_emotionality": 0.2357,
-        "avg_word_count": 570.0
-      },
-      "top_factions": {
-        "CDU/CSU": 49,
-        "SPD": 39,
-        "AfD": 29,
-        "BÜNDNIS 90/DIE GRÜNEN": 27,
-        "FDP": 18
-      }
-    },
-    {
-      "id": 0,
-      "label": "Ukraine-Krieg und europäische Sicherheit",
-      "description": "Debatte über den russischen Angriffskrieg gegen die Ukraine, seine Auswirkungen auf Europa und die Rolle der USA und der NATO.",
-      "num_speeches": 190,
-      "percentage": 5.0,
-      "keywords": {
-        "tfidf": [
-          "ukraine",
-          "europa",
-          "russland",
-          "usa",
-          "russischen",
-          "putin",
-          "frieden",
-          "krieg",
-          "europäischen",
-          "europäische"
-        ],
-        "discriminative": [
-          "ukraine",
-          "europa",
-          "russland",
-          "russischen",
-          "usa",
-          "putin",
-          "frieden",
-          "russische",
-          "krieg",
-          "europäische"
-        ]
-      },
-      "metrics": {
-        "avg_sentiment": -0.164,
-        "avg_emotionality": 0.2339,
-        "avg_word_count": 656.0
-      },
-      "top_factions": {
-        "CDU/CSU": 48,
-        "SPD": 33,
-        "BÜNDNIS 90/DIE GRÜNEN": 32,
-        "AfD": 28,
-        "FDP": 10
-      }
-    },
-    {
-      "id": 1,
-      "label": "Schuldenbremse, Bundeswehr und Investitionen",
-      "description": "Debatte um die Finanzierung von Bundeswehr, Infrastruktur und europäischer Sicherheitspolitik unter Berücksichtigung der Schuldenbremse.",
-      "num_speeches": 190,
-      "percentage": 5.0,
-      "keywords": {
-        "tfidf": [
-          "schuldenbremse",
-          "bundeswehr",
-          "investitionen",
-          "infrastruktur",
-          "sondervermögen",
-          "sicherheit",
-          "esm",
-          "schulden",
-          "europa",
-          "verantwortung"
-        ],
-        "discriminative": [
-          "schuldenbremse",
-          "bundeswehr",
-          "sondervermögen",
-          "investitionen",
-          "infrastruktur",
-          "esm",
-          "schulden",
-          "sicherheit",
-          "verteidigungsfähigkeit",
-          "verteidigung"
-        ]
-      },
-      "metrics": {
-        "avg_sentiment": -0.052,
-        "avg_emotionality": 0.203,
-        "avg_word_count": 661.0
-      },
-      "top_factions": {
-        "CDU/CSU": 49,
-        "SPD": 36,
-        "BÜNDNIS 90/DIE GRÜNEN": 27,
-        "FDP": 23,
-        "AfD": 23
-      }
-    },
-    {
-      "id": 10,
-      "label": "Außenpolitik und Internationale Beziehungen",
-      "description": "Debatten über die Ukraine, transatlantische Beziehungen (USA), Handelsabkommen (Mercosur), Entwicklungszusammenarbeit und Anfragen an den Außenminister.",
-      "num_speeches": 166,
-      "percentage": 4.3,
-      "keywords": {
-        "tfidf": [
-          "ukraine",
-          "nachfrage",
-          "europäischen",
-          "minister",
-          "mercosur",
-          "usa",
-          "ja",
-          "außenminister",
-          "abkommen",
-          "mal"
-        ],
-        "discriminative": [
-          "ukraine",
-          "nachfrage",
-          "mercosur",
-          "minister",
-          "außenminister",
-          "usa",
-          "europäischen",
-          "abkommen",
-          "entwicklungszusammenarbeit",
-          "un"
-        ]
-      },
-      "metrics": {
-        "avg_sentiment": 0.053,
-        "avg_emotionality": 0.1975,
-        "avg_word_count": 105.0
-      },
-      "top_factions": {
-        "CDU/CSU": 27,
-        "BÜNDNIS 90/DIE GRÜNEN": 20,
-        "AfD": 20,
-        "SPD": 11,
-        "Die Linke": 8
-      }
-    },
-    {
-      "id": 12,
-      "label": "Bürokratie, Unternehmen und Ausbildung",
-      "description": "Diskussionen über Bürokratieabbau für Unternehmen, Ausbildung und Verwaltung, inklusive Barrierefreiheit und Mitbestimmung.",
-      "num_speeches": 166,
-      "percentage": 4.3,
-      "keywords": {
-        "tfidf": [
-          "unternehmen",
-          "bürokratie",
-          "ausbildung",
-          "register",
-          "bürokratieabbau",
-          "verwaltung",
-          "mal",
-          "mitbestimmung",
-          "alle",
-          "da"
-        ],
-        "discriminative": [
-          "unternehmen",
-          "bürokratie",
-          "ausbildung",
-          "register",
-          "bürokratieabbau",
-          "verwaltung",
-          "mitbestimmung",
-          "pakete",
-          "dihk",
-          "beschäftigten"
-        ]
-      },
-      "metrics": {
-        "avg_sentiment": 0.019,
-        "avg_emotionality": 0.203,
-        "avg_word_count": 501.0
-      },
-      "top_factions": {
-        "CDU/CSU": 52,
-        "SPD": 36,
-        "AfD": 20,
-        "BÜNDNIS 90/DIE GRÜNEN": 19,
-        "Die Linke": 12
-      }
-    },
-    {
-      "id": 4,
-      "label": "Pandemiebekämpfung und Infektionsschutzmaßnahmen",
-      "description": "Debatten über die Bewältigung der COVID-19-Pandemie, insbesondere Maßnahmen wie Maskenpflicht, Impfungen und Anpassungen des Infektionsschutzgesetzes.",
-      "num_speeches": 163,
-      "percentage": 4.3,
-      "keywords": {
-        "tfidf": [
-          "lage",
-          "pandemie",
-          "epidemischen",
-          "epidemischen lage",
-          "inzidenz",
-          "nationaler tragweite",
-          "lage nationaler",
-          "tragweite",
-          "masken",
-          "impfen"
-        ],
-        "discriminative": [
-          "lage",
-          "epidemischen",
-          "epidemischen lage",
-          "pandemie",
-          "inzidenz",
-          "nationaler tragweite",
-          "lage nationaler",
-          "masken",
-          "impfen",
-          "tragweite"
-        ]
-      },
-      "metrics": {
-        "avg_sentiment": -0.144,
-        "avg_emotionality": 0.1642,
-        "avg_word_count": 542.0
-      },
-      "top_factions": {
-        "CDU/CSU": 48,
-        "FDP": 28,
-        "SPD": 26,
-        "AfD": 23,
-        "DIE LINKE": 14
-      }
-    },
-    {
-      "id": 5,
-      "label": "Fragestunde und Kurzinterventionen",
-      "description": "Kurze Debattenbeiträge, oft in Form von Nachfragen an die Regierung, inklusive Erwiderungen und Bemerkungen zur Geschäftsordnung oder persönlichen Angelegenheiten der Abgeordneten.",
-      "num_speeches": 163,
-      "percentage": 4.3,
-      "keywords": {
-        "tfidf": [
-          "nachfrage",
-          "ja",
-          "abgeordneter",
-          "ihnen",
-          "wort",
-          "afd",
-          "mal",
-          "mir",
-          "deswegen",
-          "schön"
-        ],
-        "discriminative": [
-          "nachfrage",
-          "abgeordneter",
-          "reserve",
-          "geehrter abgeordneter",
-          "berlin",
-          "antworten",
-          "brandner",
-          "schön",
-          "anschlag",
-          "möchten"
-        ]
-      },
-      "metrics": {
-        "avg_sentiment": -0.153,
-        "avg_emotionality": 0.2124,
-        "avg_word_count": 107.0
-      },
-      "top_factions": {
-        "AfD": 28,
-        "CDU/CSU": 21,
-        "BÜNDNIS 90/DIE GRÜNEN": 16,
-        "SPD": 12,
-        "Die Linke": 6
-      }
-    },
-    {
-      "id": 21,
-      "label": "Landwirtschaft und Lebensmittelpolitik",
-      "description": "Debatte über die aktuelle Landwirtschaftspolitik, Lebensmittelpreise und die Rolle des Landwirtschaftsministers Özdemir, oft im Kontext der Europäischen Union.",
-      "num_speeches": 158,
-      "percentage": 4.1,
-      "keywords": {
-        "tfidf": [
-          "minister",
-          "nachfrage",
-          "mal",
-          "ja",
-          "landwirtschaft",
-          "da",
-          "özdemir",
-          "ihnen",
-          "schön",
-          "sagen"
-        ],
-        "discriminative": [
-          "minister",
-          "nachfrage",
-          "landwirtschaft",
-          "özdemir",
-          "schön",
-          "lebensmittel",
-          "landwirte",
-          "europäischen union",
-          "bundesminister",
-          "eingreifen"
-        ]
-      },
-      "metrics": {
-        "avg_sentiment": -0.046,
-        "avg_emotionality": 0.1846,
-        "avg_word_count": 118.0
-      },
-      "top_factions": {
-        "CDU/CSU": 27,
-        "BÜNDNIS 90/DIE GRÜNEN": 23,
-        "SPD": 14,
-        "AfD": 10,
-        "Die Linke": 8
-      }
-    },
-    {
-      "id": 3,
-      "label": "Rentenpolitik und Altersvorsorge",
-      "description": "Debatten über die Rentenversicherung, Altersvorsorge, Rentenniveau, Doppelbesteuerung und spezifische Herausforderungen wie die Rentenüberleitung in Ostdeutschland.",
-      "num_speeches": 156,
-      "percentage": 4.1,
-      "keywords": {
-        "tfidf": [
-          "rente",
-          "rentenversicherung",
-          "renten",
-          "altersvorsorge",
-          "mieter",
-          "rentenpaket",
-          "gesetzliche",
-          "ja",
-          "rentner",
-          "rentenniveau"
-        ],
-        "discriminative": [
-          "rente",
-          "rentenversicherung",
-          "renten",
-          "altersvorsorge",
-          "rentenpaket",
-          "mieter",
-          "gesetzliche",
-          "rentenniveau",
-          "rentner",
-          "doppelbesteuerung"
-        ]
-      },
-      "metrics": {
-        "avg_sentiment": -0.154,
-        "avg_emotionality": 0.2027,
-        "avg_word_count": 582.0
-      },
-      "top_factions": {
-        "CDU/CSU": 49,
-        "SPD": 29,
-        "AfD": 24,
-        "BÜNDNIS 90/DIE GRÜNEN": 15,
-        "Die Linke": 12
-      }
-    },
-    {
-      "id": 20,
-      "label": "Landwirtschaft, Insektenschutz und Tierschutz",
-      "description": "Debatten über die Zukunft der Landwirtschaft unter Berücksichtigung von Insektenschutz, Tierschutz und den Herausforderungen für Landwirte.",
-      "num_speeches": 141,
-      "percentage": 3.7,
-      "keywords": {
-        "tfidf": [
-          "landwirtschaft",
-          "landwirte",
-          "insektenschutz",
-          "bauern",
-          "betriebe",
-          "agrarpolitik",
-          "wolf",
-          "pflanzenschutz",
-          "ländlichen",
-          "erschwernisausgleich"
-        ],
-        "discriminative": [
-          "landwirtschaft",
-          "landwirte",
-          "insektenschutz",
-          "bauern",
-          "betriebe",
-          "agrarpolitik",
-          "wolf",
-          "pflanzenschutz",
-          "erschwernisausgleich",
-          "landwirtinnen"
-        ]
-      },
-      "metrics": {
-        "avg_sentiment": -0.077,
-        "avg_emotionality": 0.2136,
-        "avg_word_count": 587.0
-      },
-      "top_factions": {
-        "CDU/CSU": 53,
-        "SPD": 22,
-        "AfD": 18,
-        "BÜNDNIS 90/DIE GRÜNEN": 14,
-        "Die Linke": 8
-      }
-    },
-    {
-      "id": 6,
-      "label": "Bundeswehreinsätze in Krisenregionen",
-      "description": "Debatten über Mandate und Einsätze der Bundeswehr in Konfliktgebieten wie Syrien, Kosovo, Libanon und Irak.",
-      "num_speeches": 120,
-      "percentage": 3.1,
-      "keywords": {
-        "tfidf": [
-          "syrien",
-          "kosovo",
-          "libanon",
-          "soldaten",
-          "region",
-          "is",
-          "irak",
-          "mission",
-          "einsatz",
-          "mandat"
-        ],
-        "discriminative": [
-          "syrien",
-          "kosovo",
-          "libanon",
-          "region",
-          "is",
-          "soldaten",
-          "irak",
-          "mission",
-          "einsatz",
-          "mandat"
-        ]
-      },
-      "metrics": {
-        "avg_sentiment": -0.029,
-        "avg_emotionality": 0.2515,
-        "avg_word_count": 567.0
-      },
-      "top_factions": {
-        "CDU/CSU": 30,
-        "SPD": 19,
-        "AfD": 18,
-        "BÜNDNIS 90/DIE GRÜNEN": 16,
-        "FDP": 10
-      }
-    },
-    {
-      "id": 16,
-      "label": "Afghanistan-Einsatz und Ortskräfte",
-      "description": "Debatte über den Bundeswehreinsatz in Afghanistan, die Evakuierung von Ortskräften und die Lage nach der Machtübernahme der Taliban.",
-      "num_speeches": 109,
-      "percentage": 2.9,
-      "keywords": {
-        "tfidf": [
-          "afghanistan",
-          "taliban",
-          "ortskräfte",
-          "bundeswehr",
-          "soldaten",
-          "einsatz",
-          "soldatinnen",
-          "soldatinnen soldaten",
-          "afghanischen",
-          "20"
-        ],
-        "discriminative": [
-          "afghanistan",
-          "taliban",
-          "ortskräfte",
-          "bundeswehr",
-          "soldaten",
-          "einsatz",
-          "soldatinnen",
-          "soldatinnen soldaten",
-          "afghanischen",
-          "afghanische"
-        ]
-      },
-      "metrics": {
-        "avg_sentiment": -0.096,
-        "avg_emotionality": 0.1948,
-        "avg_word_count": 550.0
-      },
-      "top_factions": {
-        "CDU/CSU": 19,
-        "BÜNDNIS 90/DIE GRÜNEN": 18,
-        "SPD": 16,
-        "FDP": 12,
-        "AfD": 11
-      }
-    },
-    {
       "id": 11,
-      "label": "Mobilität im ländlichen Raum",
-      "description": "Diskussionen über die Verbesserung der Mobilität, insbesondere durch ÖPNV und das Deutschlandticket, in ländlichen Regionen unter Berücksichtigung von Autoalternativen und Elektromobilität.",
-      "num_speeches": 90,
-      "percentage": 2.4,
+      "label": "Fragestunde und Ministerbefragung",
+      "description": "Enthält Redebeiträge im Kontext von Nachfragen an Minister und Ministerinnen im Bundestag, oft mit Bezug zur Europäischen Union und dem Koalitionsvertrag.",
+      "num_speeches": 480,
+      "percentage": 9.1,
       "keywords": {
         "tfidf": [
-          "öpnv",
-          "mobilität",
-          "fahren",
-          "auto",
-          "ländlichen",
-          "deutschlandticket",
-          "ländlichen raum",
-          "raum",
-          "verkehr",
-          "im ländlichen"
-        ],
-        "discriminative": [
-          "öpnv",
-          "mobilität",
-          "fahren",
-          "deutschlandticket",
-          "auto",
-          "ländlichen",
-          "ländlichen raum",
-          "verkehr",
-          "raum",
-          "im ländlichen"
-        ]
-      },
-      "metrics": {
-        "avg_sentiment": -0.008,
-        "avg_emotionality": 0.1652,
-        "avg_word_count": 518.0
-      },
-      "top_factions": {
-        "CDU/CSU": 22,
-        "SPD": 19,
-        "AfD": 15,
-        "BÜNDNIS 90/DIE GRÜNEN": 11,
-        "FDP": 8
-      }
-    },
-    {
-      "id": 9,
-      "label": "Wohnungsbau und Mietenpolitik",
-      "description": "Debatte über Maßnahmen zur Förderung des Wohnungsbaus und zur Regulierung der Mietpreise, um der steigenden Nachfrage gerecht zu werden.",
-      "num_speeches": 86,
-      "percentage": 2.2,
-      "keywords": {
-        "tfidf": [
-          "ministerin",
-          "wohnungen",
           "nachfrage",
-          "bau",
-          "bauen",
+          "minister",
           "ja",
-          "000",
-          "wohnraum",
-          "wohnungsbau",
-          "geehrter abgeordneter"
-        ],
-        "discriminative": [
+          "mal",
+          "da",
           "ministerin",
-          "wohnungen",
-          "nachfrage",
-          "bau",
-          "bauen",
-          "wohnraum",
-          "wohnungsbau",
-          "geehrter abgeordneter",
-          "mietpreisbremse",
-          "mieten"
-        ]
-      },
-      "metrics": {
-        "avg_sentiment": -0.079,
-        "avg_emotionality": 0.1721,
-        "avg_word_count": 146.0
-      },
-      "top_factions": {
-        "CDU/CSU": 14,
-        "FDP": 10,
-        "BÜNDNIS 90/DIE GRÜNEN": 9,
-        "SPD": 7,
-        "AfD": 5
-      }
-    },
-    {
-      "id": 17,
-      "label": "Verbraucherschutz und Produktsicherheit",
-      "description": "Dieser Cluster befasst sich mit Themen rund um den Schutz von Verbrauchern, insbesondere in Bezug auf Produktsicherheit, Qualitätsstandards und Vertragsbedingungen.",
-      "num_speeches": 70,
-      "percentage": 1.8,
-      "keywords": {
-        "tfidf": [
-          "verbraucher",
-          "verbraucherinnen",
-          "verbraucherinnen verbraucher",
-          "unternehmen",
-          "produkte",
-          "verbrauchern",
-          "vertrag",
-          "verbraucherschutz",
-          "fonds",
-          "regelung"
+          "mir",
+          "geehrter",
+          "ihnen",
+          "wort"
         ],
         "discriminative": [
-          "verbraucher",
-          "verbraucherinnen",
-          "verbraucherinnen verbraucher",
-          "unternehmen",
-          "produkte",
-          "verbrauchern",
-          "vertrag",
-          "verbraucherschutz",
-          "fonds",
-          "produkt"
+          "nachfrage",
+          "minister",
+          "nachfragen",
+          "ministerin",
+          "geehrter minister",
+          "abgeordneter",
+          "koalitionsvertrag",
+          "im koalitionsvertrag",
+          "bundesminister",
+          "wann"
         ]
       },
       "metrics": {
-        "avg_sentiment": 0.12,
-        "avg_emotionality": 0.0841,
-        "avg_word_count": 442.0
+        "avg_sentiment": -0.023,
+        "avg_emotionality": 0.1447,
+        "avg_word_count": 97.0
       },
       "top_factions": {
-        "CDU/CSU": 18,
-        "SPD": 16,
-        "BÜNDNIS 90/DIE GRÜNEN": 10,
-        "FDP": 10,
-        "AfD": 8
+        "CDU/CSU": 74,
+        "": 72,
+        "BÜNDNIS 90/DIE GRÜNEN": 69,
+        "AfD": 47,
+        "SPD": 36
       }
     },
     {
       "id": 18,
-      "label": "Syrien, Israel und Entwicklungspolitik",
-      "description": "Debatten über die Syrien-Politik, die Rolle Israels und Schwerpunkte der Entwicklungszusammenarbeit, insbesondere im Kontext von Syrien und den Kurden.",
-      "num_speeches": 66,
-      "percentage": 1.7,
+      "label": "Wirtschaftspolitik und Investitionen",
+      "description": "Debatte über wirtschaftliche Rahmenbedingungen, Unternehmensförderung und staatliche Investitionen in Deutschland.",
+      "num_speeches": 438,
+      "percentage": 8.3,
       "keywords": {
         "tfidf": [
-          "syrien",
-          "nachfrage",
-          "ministerin",
-          "israel",
-          "situation",
-          "syrer",
-          "entwicklungszusammenarbeit",
-          "frauen",
-          "außenminister",
-          "ja"
+          "wirtschaft",
+          "unternehmen",
+          "da",
+          "ihnen",
+          "brauchen",
+          "mal",
+          "ja",
+          "sagen",
+          "investitionen",
+          "geht"
         ],
         "discriminative": [
-          "syrien",
-          "nachfrage",
-          "israel",
-          "ministerin",
-          "syrer",
-          "situation",
-          "entwicklungszusammenarbeit",
-          "außenminister",
-          "wiederaufbau",
-          "al"
+          "wirtschaft",
+          "unternehmen",
+          "investitionen",
+          "hightech",
+          "forschung",
+          "brauchen",
+          "industrie",
+          "investieren",
+          "mittelstand",
+          "haushalt"
         ]
       },
       "metrics": {
-        "avg_sentiment": -0.064,
-        "avg_emotionality": 0.1815,
-        "avg_word_count": 115.0
+        "avg_sentiment": -0.155,
+        "avg_emotionality": 0.1903,
+        "avg_word_count": 794.0
       },
       "top_factions": {
-        "AfD": 10,
-        "SPD": 8,
-        "BÜNDNIS 90/DIE GRÜNEN": 7,
-        "Die Linke": 6,
-        "CDU/CSU": 3
+        "CDU/CSU": 122,
+        "AfD": 80,
+        "SPD": 75,
+        "BÜNDNIS 90/DIE GRÜNEN": 58,
+        "FDP": 30
+      }
+    },
+    {
+      "id": 9,
+      "label": "Klimaschutz und Energiewende im Bundestag",
+      "description": "Debatten über Klimaschutzmaßnahmen, Energiewende und die Rolle verschiedener Parteien, insbesondere der AfD, im Kontext der deutschen Energie- und Klimapolitik.",
+      "num_speeches": 422,
+      "percentage": 8.0,
+      "keywords": {
+        "tfidf": [
+          "co2",
+          "klimaschutz",
+          "mal",
+          "afd",
+          "ja",
+          "da",
+          "energien",
+          "grünen",
+          "ihnen",
+          "klima"
+        ],
+        "discriminative": [
+          "co2",
+          "klimaschutz",
+          "energien",
+          "strom",
+          "klima",
+          "erneuerbaren",
+          "energiewende",
+          "klimawandel",
+          "energie",
+          "industrie"
+        ]
+      },
+      "metrics": {
+        "avg_sentiment": -0.195,
+        "avg_emotionality": 0.1748,
+        "avg_word_count": 557.0
+      },
+      "top_factions": {
+        "CDU/CSU": 98,
+        "AfD": 90,
+        "SPD": 73,
+        "BÜNDNIS 90/DIE GRÜNEN": 62,
+        "Die Linke": 33
+      }
+    },
+    {
+      "id": 19,
+      "label": "Wirtschafts- und Finanzpolitik",
+      "description": "Debatten über staatliche Finanzen, Unternehmensbesteuerung und europäische Wirtschaftspolitik, inklusive Sonderfällen.",
+      "num_speeches": 353,
+      "percentage": 6.7,
+      "keywords": {
+        "tfidf": [
+          "unternehmen",
+          "da",
+          "mal",
+          "ja",
+          "investitionen",
+          "schuldenbremse",
+          "am",
+          "steuern",
+          "ihnen",
+          "esm"
+        ],
+        "discriminative": [
+          "esm",
+          "schuldenbremse",
+          "wirecard",
+          "cum",
+          "steuern",
+          "banken",
+          "investitionen",
+          "erbschaftsteuer",
+          "unternehmen",
+          "schulden"
+        ]
+      },
+      "metrics": {
+        "avg_sentiment": -0.16,
+        "avg_emotionality": 0.1675,
+        "avg_word_count": 595.0
+      },
+      "top_factions": {
+        "CDU/CSU": 84,
+        "SPD": 69,
+        "AfD": 68,
+        "BÜNDNIS 90/DIE GRÜNEN": 52,
+        "FDP": 29
+      }
+    },
+    {
+      "id": 14,
+      "label": "Ukraine-Krieg und europäische Sicherheit",
+      "description": "Debatten über den Krieg in der Ukraine, seine Auswirkungen auf Europa und die Rolle der NATO sowie verwandte sicherheitspolitische Fragestellungen.",
+      "num_speeches": 285,
+      "percentage": 5.4,
+      "keywords": {
+        "tfidf": [
+          "ukraine",
+          "russland",
+          "europa",
+          "frieden",
+          "usa",
+          "krieg",
+          "putin",
+          "russischen",
+          "nato",
+          "eu"
+        ],
+        "discriminative": [
+          "ukraine",
+          "russland",
+          "europa",
+          "frieden",
+          "putin",
+          "russischen",
+          "krieg",
+          "usa",
+          "nato",
+          "russische"
+        ]
+      },
+      "metrics": {
+        "avg_sentiment": -0.161,
+        "avg_emotionality": 0.1867,
+        "avg_word_count": 617.0
+      },
+      "top_factions": {
+        "CDU/CSU": 67,
+        "SPD": 49,
+        "AfD": 47,
+        "BÜNDNIS 90/DIE GRÜNEN": 42,
+        "Die Linke": 16
+      }
+    },
+    {
+      "id": 12,
+      "label": "Demokratie, Petitionen und parlamentarische Praxis",
+      "description": "Der Cluster fokussiert auf die Funktionsweise der Demokratie im Bundestag, insbesondere Bürgerbeteiligung durch Petitionen, Bezugnahme auf das Grundgesetz und die Rolle der Parteien und parlamentarischen Geschäftsordnung.",
+      "num_speeches": 264,
+      "percentage": 5.0,
+      "keywords": {
+        "tfidf": [
+          "demokratie",
+          "mich",
+          "ihnen",
+          "da",
+          "sagen",
+          "mir",
+          "mal",
+          "alle",
+          "ja",
+          "grundgesetz"
+        ],
+        "discriminative": [
+          "demokratie",
+          "petitionen",
+          "grundgesetz",
+          "parteien",
+          "bundesverfassungsgericht",
+          "petitionsausschuss",
+          "parlament",
+          "einsprüche",
+          "geschäftsordnung",
+          "mich"
+        ]
+      },
+      "metrics": {
+        "avg_sentiment": 0.045,
+        "avg_emotionality": 0.2356,
+        "avg_word_count": 548.0
+      },
+      "top_factions": {
+        "CDU/CSU": 63,
+        "SPD": 56,
+        "AfD": 43,
+        "BÜNDNIS 90/DIE GRÜNEN": 31,
+        "FDP": 24
+      }
+    },
+    {
+      "id": 1,
+      "label": "AfD und Demokratiedebatte",
+      "description": "Auseinandersetzung mit der AfD, ihrer Politik und deren Auswirkungen auf die Demokratie.",
+      "num_speeches": 252,
+      "percentage": 4.8,
+      "keywords": {
+        "tfidf": [
+          "afd",
+          "demokratie",
+          "ihnen",
+          "partei",
+          "ja",
+          "mal",
+          "da",
+          "ihrer",
+          "weimer",
+          "sagen"
+        ],
+        "discriminative": [
+          "afd",
+          "demokratie",
+          "partei",
+          "weimer",
+          "ihnen",
+          "demokratische",
+          "verfassungsschutz",
+          "angst",
+          "rechtsextremismus",
+          "zivilgesellschaft"
+        ]
+      },
+      "metrics": {
+        "avg_sentiment": -0.417,
+        "avg_emotionality": 0.2051,
+        "avg_word_count": 493.0
+      },
+      "top_factions": {
+        "SPD": 64,
+        "AfD": 57,
+        "CDU/CSU": 47,
+        "BÜNDNIS 90/DIE GRÜNEN": 29,
+        "Die Linke": 21
+      }
+    },
+    {
+      "id": 8,
+      "label": "Familie, Bildung und Arbeitsmarkt",
+      "description": "Debatte über die Vereinbarkeit von Familie, Bildung und Beruf, insbesondere für Eltern und Frauen, unter Berücksichtigung von Kinderbetreuung und Ausbildung.",
+      "num_speeches": 245,
+      "percentage": 4.6,
+      "keywords": {
+        "tfidf": [
+          "kinder",
+          "arbeit",
+          "bildung",
+          "brauchen",
+          "da",
+          "familien",
+          "frauen",
+          "mal",
+          "ausbildung",
+          "arbeiten"
+        ],
+        "discriminative": [
+          "kinder",
+          "arbeit",
+          "bildung",
+          "ausbildung",
+          "familien",
+          "rechtsanspruch",
+          "eltern",
+          "selbstständige",
+          "frauen",
+          "arbeiten"
+        ]
+      },
+      "metrics": {
+        "avg_sentiment": -0.014,
+        "avg_emotionality": 0.2168,
+        "avg_word_count": 579.0
+      },
+      "top_factions": {
+        "CDU/CSU": 68,
+        "SPD": 56,
+        "AfD": 28,
+        "BÜNDNIS 90/DIE GRÜNEN": 24,
+        "FDP": 22
+      }
+    },
+    {
+      "id": 20,
+      "label": "Gedenken, Entschädigung und Frauenrechte",
+      "description": "Debatten zu NS-Verbrechen, Frauenrechten, Gewalt und Entschädigungszahlungen, einschließlich internationaler Bezüge wie Iran und Antisemitismus.",
+      "num_speeches": 231,
+      "percentage": 4.4,
+      "keywords": {
+        "tfidf": [
+          "frauen",
+          "opfer",
+          "gewalt",
+          "antisemitismus",
+          "iran",
+          "ihnen",
+          "leben",
+          "mich",
+          "geschichte",
+          "ns"
+        ],
+        "discriminative": [
+          "opfer",
+          "frauen",
+          "gewalt",
+          "antisemitismus",
+          "iran",
+          "ns",
+          "geschichte",
+          "verbrechen",
+          "unrecht",
+          "im iran"
+        ]
+      },
+      "metrics": {
+        "avg_sentiment": -0.151,
+        "avg_emotionality": 0.2269,
+        "avg_word_count": 560.0
+      },
+      "top_factions": {
+        "SPD": 55,
+        "CDU/CSU": 54,
+        "BÜNDNIS 90/DIE GRÜNEN": 41,
+        "AfD": 36,
+        "Die Linke": 16
+      }
+    },
+    {
+      "id": 10,
+      "label": "Landwirtschaft, Insektenschutz und Tierwohl",
+      "description": "Debatte über Agrarpolitik, Insektenschutzmaßnahmen, Tierwohlstandards und die Situation der Landwirte in Deutschland, inklusive internationaler Handelsabkommen wie Mercosur.",
+      "num_speeches": 224,
+      "percentage": 4.2,
+      "keywords": {
+        "tfidf": [
+          "landwirtschaft",
+          "landwirte",
+          "bauern",
+          "insektenschutz",
+          "betriebe",
+          "mercosur",
+          "da",
+          "tiere",
+          "landwirtschaftlichen",
+          "ja"
+        ],
+        "discriminative": [
+          "landwirtschaft",
+          "landwirte",
+          "bauern",
+          "insektenschutz",
+          "betriebe",
+          "mercosur",
+          "landwirtschaftlichen",
+          "tiere",
+          "landwirtinnen",
+          "wolf"
+        ]
+      },
+      "metrics": {
+        "avg_sentiment": -0.038,
+        "avg_emotionality": 0.1742,
+        "avg_word_count": 472.0
+      },
+      "top_factions": {
+        "CDU/CSU": 68,
+        "SPD": 34,
+        "AfD": 29,
+        "BÜNDNIS 90/DIE GRÜNEN": 26,
+        "Die Linke": 12
+      }
+    },
+    {
+      "id": 2,
+      "label": "Rentenpolitik und Altersvorsorge",
+      "description": "Debatten über die gesetzliche Rente, Altersvorsorge, Rentenniveau und spezifische Herausforderungen wie die Rentenüberleitung in Ostdeutschland.",
+      "num_speeches": 223,
+      "percentage": 4.2,
+      "keywords": {
+        "tfidf": [
+          "rente",
+          "rentenversicherung",
+          "altersvorsorge",
+          "gesetzliche",
+          "rentner",
+          "renten",
+          "alter",
+          "ja",
+          "rentenniveau",
+          "im alter"
+        ],
+        "discriminative": [
+          "rente",
+          "rentenversicherung",
+          "altersvorsorge",
+          "gesetzliche",
+          "rentner",
+          "renten",
+          "rentenniveau",
+          "alter",
+          "im alter",
+          "aktivrente"
+        ]
+      },
+      "metrics": {
+        "avg_sentiment": -0.153,
+        "avg_emotionality": 0.1479,
+        "avg_word_count": 574.0
+      },
+      "top_factions": {
+        "CDU/CSU": 64,
+        "AfD": 42,
+        "SPD": 36,
+        "Die Linke": 29,
+        "BÜNDNIS 90/DIE GRÜNEN": 22
       }
     },
     {
       "id": 15,
-      "label": "Iran: Menschenrechte und Regimekritik",
-      "description": "Debatten über Menschenrechtsverletzungen im Iran, Kritik am iranischen Regime und Unterstützung für die iranische Bevölkerung.",
-      "num_speeches": 36,
-      "percentage": 0.9,
+      "label": "Innere Sicherheit und Polizeiarbeit",
+      "description": "Diskussionen über die Stärkung der inneren Sicherheit durch Polizeiarbeit, Datenaustausch und Rechtsstaatsprinzipien, oft im Kontext von Kriminalität und Terrorismus.",
+      "num_speeches": 212,
+      "percentage": 4.0,
       "keywords": {
         "tfidf": [
-          "iran",
-          "im iran",
-          "regime",
-          "iranischen",
-          "revolutionsgarden",
-          "regimes",
-          "menschenrechte",
-          "freiheit",
-          "außenminister",
-          "straße"
+          "bundespolizei",
+          "sicherheit",
+          "polizei",
+          "straftaten",
+          "daten",
+          "rechtsstaat",
+          "täter",
+          "anschlag",
+          "geht",
+          "da"
         ],
         "discriminative": [
-          "iran",
-          "im iran",
-          "regime",
-          "iranischen",
-          "revolutionsgarden",
-          "regimes",
-          "menschenrechte",
-          "außenminister",
-          "freiheit",
-          "straße"
+          "bundespolizei",
+          "polizei",
+          "sicherheit",
+          "straftaten",
+          "täter",
+          "rechtsstaat",
+          "anschlag",
+          "daten",
+          "europol",
+          "sicherheitsbehörden"
         ]
       },
       "metrics": {
-        "avg_sentiment": -0.478,
-        "avg_emotionality": 0.1901,
-        "avg_word_count": 414.0
+        "avg_sentiment": -0.064,
+        "avg_emotionality": 0.1831,
+        "avg_word_count": 564.0
       },
       "top_factions": {
-        "CDU/CSU": 10,
-        "BÜNDNIS 90/DIE GRÜNEN": 7,
-        "AfD": 6,
-        "SPD": 4,
-        "Die Linke": 4
+        "CDU/CSU": 65,
+        "SPD": 39,
+        "AfD": 30,
+        "BÜNDNIS 90/DIE GRÜNEN": 25,
+        "FDP": 18
+      }
+    },
+    {
+      "id": 3,
+      "label": "Digitale Souveränität und Verwaltung",
+      "description": "Debatte über Digitalisierung der Verwaltung, Datensouveränität, digitale Identitäten und damit verbundene Herausforderungen wie Datensicherheit und Urheberrecht.",
+      "num_speeches": 191,
+      "percentage": 3.6,
+      "keywords": {
+        "tfidf": [
+          "daten",
+          "digitale",
+          "digitalen",
+          "digital",
+          "verwaltung",
+          "digitalisierung",
+          "data",
+          "souveränität",
+          "unternehmen",
+          "bargeld"
+        ],
+        "discriminative": [
+          "daten",
+          "digitale",
+          "digitalen",
+          "digital",
+          "verwaltung",
+          "digitalisierung",
+          "data",
+          "bargeld",
+          "souveränität",
+          "act"
+        ]
+      },
+      "metrics": {
+        "avg_sentiment": -0.028,
+        "avg_emotionality": 0.1942,
+        "avg_word_count": 568.0
+      },
+      "top_factions": {
+        "CDU/CSU": 50,
+        "SPD": 32,
+        "AfD": 30,
+        "BÜNDNIS 90/DIE GRÜNEN": 29,
+        "Die Linke": 14
+      }
+    },
+    {
+      "id": 21,
+      "label": "Nahost- und Afrika-Missionen/Humanitäre Hilfe",
+      "description": "Debatten über deutsche Beteiligung an Missionen und humanitärer Hilfe in Konfliktregionen des Nahen Ostens und Afrikas, insbesondere Syrien, Sudan, Irak und Libanon.",
+      "num_speeches": 190,
+      "percentage": 3.6,
+      "keywords": {
+        "tfidf": [
+          "syrien",
+          "sudan",
+          "irak",
+          "mission",
+          "is",
+          "humanitäre",
+          "region",
+          "al",
+          "libanon",
+          "im sudan"
+        ],
+        "discriminative": [
+          "syrien",
+          "sudan",
+          "irak",
+          "mission",
+          "is",
+          "al",
+          "libanon",
+          "humanitäre",
+          "im sudan",
+          "region"
+        ]
+      },
+      "metrics": {
+        "avg_sentiment": -0.143,
+        "avg_emotionality": 0.1898,
+        "avg_word_count": 430.0
+      },
+      "top_factions": {
+        "AfD": 37,
+        "CDU/CSU": 35,
+        "BÜNDNIS 90/DIE GRÜNEN": 30,
+        "SPD": 24,
+        "Die Linke": 18
+      }
+    },
+    {
+      "id": 17,
+      "label": "Verbraucherschutz und Lieferketten",
+      "description": "Diskussionen um Verbraucherschutz, Unternehmensverantwortung und die Umsetzung des Lieferkettengesetzes im Kontext der EU.",
+      "num_speeches": 188,
+      "percentage": 3.6,
+      "keywords": {
+        "tfidf": [
+          "unternehmen",
+          "verbraucher",
+          "produkte",
+          "verbraucherinnen",
+          "eu",
+          "verbraucherinnen verbraucher",
+          "lieferkettengesetz",
+          "pakete",
+          "da",
+          "ihnen"
+        ],
+        "discriminative": [
+          "verbraucher",
+          "unternehmen",
+          "produkte",
+          "verbraucherinnen",
+          "verbraucherinnen verbraucher",
+          "eu",
+          "lieferkettengesetz",
+          "pakete",
+          "verbraucherschutz",
+          "dihk"
+        ]
+      },
+      "metrics": {
+        "avg_sentiment": -0.011,
+        "avg_emotionality": 0.1378,
+        "avg_word_count": 462.0
+      },
+      "top_factions": {
+        "CDU/CSU": 54,
+        "SPD": 36,
+        "BÜNDNIS 90/DIE GRÜNEN": 26,
+        "AfD": 25,
+        "FDP": 14
+      }
+    },
+    {
+      "id": 4,
+      "label": "Bundeswehr, Verteidigung und Wehrdienst",
+      "description": "Debatten über die Bundeswehr, ihre Einsatzfähigkeit, die Rolle von Soldaten und Soldatinnen, sowie Fragen der Verteidigungspolitik und möglicher Formen des Wehrdienstes.",
+      "num_speeches": 164,
+      "percentage": 3.1,
+      "keywords": {
+        "tfidf": [
+          "bundeswehr",
+          "soldaten",
+          "soldatinnen",
+          "soldatinnen soldaten",
+          "reservisten",
+          "sicherheit",
+          "wehrdienst",
+          "ukraine",
+          "verteidigung",
+          "verantwortung"
+        ],
+        "discriminative": [
+          "bundeswehr",
+          "soldaten",
+          "soldatinnen",
+          "soldatinnen soldaten",
+          "reservisten",
+          "wehrdienst",
+          "verteidigung",
+          "wehrpflicht",
+          "verteidigungsfähigkeit",
+          "sicherheit"
+        ]
+      },
+      "metrics": {
+        "avg_sentiment": 0.048,
+        "avg_emotionality": 0.2061,
+        "avg_word_count": 516.0
+      },
+      "top_factions": {
+        "CDU/CSU": 46,
+        "AfD": 27,
+        "SPD": 23,
+        "BÜNDNIS 90/DIE GRÜNEN": 17,
+        "Die Linke": 11
+      }
+    },
+    {
+      "id": 0,
+      "label": "Pandemiebekämpfung und Infektionsschutzmaßnahmen",
+      "description": "Debatten über die rechtlichen Grundlagen und Maßnahmen zur Eindämmung der COVID-19 Pandemie, insbesondere Infektionsschutzgesetz und epidemische Lage von nationaler Tragweite.",
+      "num_speeches": 160,
+      "percentage": 3.0,
+      "keywords": {
+        "tfidf": [
+          "lage",
+          "pandemie",
+          "epidemischen",
+          "epidemischen lage",
+          "inzidenz",
+          "nationaler tragweite",
+          "impfen",
+          "lage nationaler",
+          "tragweite",
+          "masken"
+        ],
+        "discriminative": [
+          "lage",
+          "pandemie",
+          "epidemischen",
+          "epidemischen lage",
+          "inzidenz",
+          "nationaler tragweite",
+          "impfen",
+          "lage nationaler",
+          "tragweite",
+          "masken"
+        ]
+      },
+      "metrics": {
+        "avg_sentiment": -0.136,
+        "avg_emotionality": 0.1633,
+        "avg_word_count": 537.0
+      },
+      "top_factions": {
+        "CDU/CSU": 49,
+        "FDP": 28,
+        "SPD": 24,
+        "AfD": 22,
+        "DIE LINKE": 12
+      }
+    },
+    {
+      "id": 6,
+      "label": "Migrationspolitik und Ausländerzentralregister",
+      "description": "Debatten über Migrationspolitik, Asyl, Grenzkontrollen und das Ausländerzentralregister (AZR) im Bundestag, oft kontrovers diskutiert zwischen AfD, Union und anderen Parteien.",
+      "num_speeches": 158,
+      "percentage": 3.0,
+      "keywords": {
+        "tfidf": [
+          "migration",
+          "afd",
+          "migrationspolitik",
+          "union",
+          "ihnen",
+          "cdu",
+          "wer",
+          "spd",
+          "ja",
+          "asyl"
+        ],
+        "discriminative": [
+          "migration",
+          "migrationspolitik",
+          "afd",
+          "asyl",
+          "union",
+          "migrationswende",
+          "integration",
+          "einbürgerung",
+          "grenzen",
+          "grenzkontrollen"
+        ]
+      },
+      "metrics": {
+        "avg_sentiment": -0.281,
+        "avg_emotionality": 0.1945,
+        "avg_word_count": 504.0
+      },
+      "top_factions": {
+        "CDU/CSU": 33,
+        "AfD": 32,
+        "FDP": 27,
+        "SPD": 18,
+        "BÜNDNIS 90/DIE GRÜNEN": 13
+      }
+    },
+    {
+      "id": 13,
+      "label": "Pflege, Gesundheit und Familienpolitik",
+      "description": "Debatten über die Pflegeversorgung, Gesundheitsleistungen, Mutterschutz und Themen im Kontext von Familie und Kindern.",
+      "num_speeches": 158,
+      "percentage": 3.0,
+      "keywords": {
+        "tfidf": [
+          "pflege",
+          "versorgung",
+          "patienten",
+          "pflegeversicherung",
+          "krankenhäuser",
+          "mutterschutz",
+          "frauen",
+          "fehlgeburt",
+          "kinder",
+          "alle"
+        ],
+        "discriminative": [
+          "pflege",
+          "versorgung",
+          "patienten",
+          "pflegeversicherung",
+          "krankenhäuser",
+          "mutterschutz",
+          "fehlgeburt",
+          "patientinnen",
+          "frauen",
+          "patientinnen patienten"
+        ]
+      },
+      "metrics": {
+        "avg_sentiment": 0.054,
+        "avg_emotionality": 0.1826,
+        "avg_word_count": 519.0
+      },
+      "top_factions": {
+        "CDU/CSU": 42,
+        "SPD": 34,
+        "BÜNDNIS 90/DIE GRÜNEN": 26,
+        "AfD": 20,
+        "Die Linke": 14
+      }
+    },
+    {
+      "id": 16,
+      "label": "Mobilität, Deutschlandticket und Maut",
+      "description": "Debatten über ÖPNV, Deutschlandticket, Auto, LKW-Maut und Mobilität im ländlichen Raum.",
+      "num_speeches": 154,
+      "percentage": 2.9,
+      "keywords": {
+        "tfidf": [
+          "öpnv",
+          "deutschlandticket",
+          "bahn",
+          "mobilität",
+          "fahren",
+          "ticket",
+          "auto",
+          "ländlichen",
+          "maut",
+          "ländlichen raum"
+        ],
+        "discriminative": [
+          "öpnv",
+          "deutschlandticket",
+          "bahn",
+          "mobilität",
+          "fahren",
+          "ticket",
+          "auto",
+          "ländlichen",
+          "maut",
+          "ländlichen raum"
+        ]
+      },
+      "metrics": {
+        "avg_sentiment": -0.098,
+        "avg_emotionality": 0.1461,
+        "avg_word_count": 551.0
+      },
+      "top_factions": {
+        "CDU/CSU": 42,
+        "SPD": 31,
+        "AfD": 29,
+        "BÜNDNIS 90/DIE GRÜNEN": 20,
+        "Die Linke": 10
+      }
+    },
+    {
+      "id": 5,
+      "label": "Wohnungsbau und Mietenpolitik",
+      "description": "Die Debatte fokussiert sich auf Maßnahmen zur Steigerung des Wohnungsbaus, zur Bekämpfung hoher Mieten und zur Förderung von bezahlbarem Wohnraum in Deutschland.",
+      "num_speeches": 149,
+      "percentage": 2.8,
+      "keywords": {
+        "tfidf": [
+          "ministerin",
+          "nachfrage",
+          "wohnungen",
+          "bauen",
+          "ja",
+          "wohnungsbau",
+          "000",
+          "bau",
+          "kommunen",
+          "wohnraum"
+        ],
+        "discriminative": [
+          "ministerin",
+          "wohnungen",
+          "nachfrage",
+          "bauen",
+          "wohnungsbau",
+          "bau",
+          "wohnraum",
+          "mieten",
+          "geehrte ministerin",
+          "kommunen"
+        ]
+      },
+      "metrics": {
+        "avg_sentiment": -0.057,
+        "avg_emotionality": 0.1087,
+        "avg_word_count": 145.0
+      },
+      "top_factions": {
+        "": 26,
+        "BÜNDNIS 90/DIE GRÜNEN": 21,
+        "CDU/CSU": 21,
+        "AfD": 14,
+        "FDP": 10
+      }
+    },
+    {
+      "id": 7,
+      "label": "Afghanistan, Ortskräfte und Aufnahmen",
+      "description": "Debatte über die Evakuierung afghanischer Ortskräfte und die Aufnahme afghanischer Staatsbürger nach dem Abzug der Bundeswehr und der Machtübernahme der Taliban.",
+      "num_speeches": 140,
+      "percentage": 2.7,
+      "keywords": {
+        "tfidf": [
+          "afghanistan",
+          "ortskräfte",
+          "taliban",
+          "aufnahmezusage",
+          "soldaten",
+          "einsatz",
+          "bundeswehr",
+          "afghanischen",
+          "personen",
+          "afghanen"
+        ],
+        "discriminative": [
+          "afghanistan",
+          "ortskräfte",
+          "taliban",
+          "aufnahmezusage",
+          "einsatz",
+          "soldaten",
+          "afghanischen",
+          "bundeswehr",
+          "afghanen",
+          "personen"
+        ]
+      },
+      "metrics": {
+        "avg_sentiment": -0.117,
+        "avg_emotionality": 0.1656,
+        "avg_word_count": 529.0
+      },
+      "top_factions": {
+        "SPD": 31,
+        "BÜNDNIS 90/DIE GRÜNEN": 22,
+        "CDU/CSU": 22,
+        "AfD": 14,
+        "FDP": 11
       }
     }
   ]

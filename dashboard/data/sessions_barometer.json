@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-02-07T22:41:53.812974",
-  "total_sessions": 29,
+  "generated_at": "2026-02-07T23:13:18.872178",
+  "total_sessions": 40,
   "wahlperioden": [
     19,
     20,
     21
   ],
   "date_range": {
-    "from": "05.12.2025",
+    "from": "03.12.2025",
     "to": "31.01.2025"
   },
   "statistics": {
     "avg_sentiment": {
       "min": -0.38181818181818183,
-      "max": 0.010156249999999999,
-      "median": -0.11170212765957446,
-      "mean": -0.12120542441306004
+      "max": 0.010077519379844961,
+      "median": -0.11699096020284423,
+      "mean": -0.12848006865586573
     },
     "avg_emotionality": {
-      "min": 0.10343588360657895,
+      "min": 0.031774665757988166,
       "max": 0.32335909090909093,
-      "median": 0.2310575221238938,
-      "mean": 0.22460659895006643
+      "median": 0.19849139234924484,
+      "mean": 0.18449414575816178
     },
     "num_speeches": {
       "min": 22,
-      "max": 274,
-      "median": 128.0,
-      "mean": 131.86206896551724
+      "max": 275,
+      "median": 124.5,
+      "mean": 132.125
     }
   },
   "sessions": [
@@ -40,35 +40,35 @@
       "num_speeches": 76,
       "top_topics": [
         {
-          "label": "Wirtschaftspolitik und Unternehmensförderung",
-          "count": 24
-        },
-        {
-          "label": "Mobilität im ländlichen Raum",
-          "count": 14
+          "label": "Wirtschaftspolitik und Investitionen",
+          "count": 16
         },
         {
           "label": "Klimaschutz und Energiewende im Bundestag",
-          "count": 13
+          "count": 14
+        },
+        {
+          "label": "Mobilität, Deutschlandticket und Maut",
+          "count": 14
         }
       ],
       "metrics": {
         "sentiment": {
           "value": -0.171,
-          "percentile": 24.1,
+          "percentile": 25.0,
           "spread": 0.504
         },
         "emotionality": {
           "value": 0.1034,
-          "percentile": 0.0
+          "percentile": 25.0
         },
         "length": {
           "total_words": 44001,
           "avg_per_speech": 579.0,
-          "percentile": 17.2
+          "percentile": 17.5
         }
       },
-      "summary": "Sehr sachlich (untere 0%)"
+      "summary": "Durchschnittliche Sitzung"
     },
     {
       "session_id": "21_56",
@@ -80,31 +80,31 @@
       "top_topics": [
         {
           "label": "Ukraine-Krieg und europäische Sicherheit",
-          "count": 41
+          "count": 34
         },
         {
-          "label": "Bürokratie, Unternehmen und Ausbildung",
-          "count": 17
+          "label": "Innere Sicherheit und Polizeiarbeit",
+          "count": 30
         },
         {
-          "label": "Migrationspolitik und Sicherheit: AfD im Fokus",
-          "count": 17
+          "label": "Wirtschafts- und Finanzpolitik",
+          "count": 19
         }
       ],
       "metrics": {
         "sentiment": {
           "value": -0.194,
-          "percentile": 13.8,
+          "percentile": 17.5,
           "spread": 0.506
         },
         "emotionality": {
           "value": 0.2638,
-          "percentile": 69.0
+          "percentile": 77.5
         },
         "length": {
           "total_words": 98539,
           "avg_per_speech": 608.0,
-          "percentile": 75.9
+          "percentile": 80.0
         }
       },
       "summary": "Durchschnittliche Sitzung"
@@ -118,35 +118,35 @@
       "num_speeches": 156,
       "top_topics": [
         {
-          "label": "Außenpolitik und Internationale Beziehungen",
-          "count": 46
-        },
-        {
-          "label": "Landwirtschaft und Lebensmittelpolitik",
-          "count": 28
+          "label": "Fragestunde und Ministerbefragung",
+          "count": 49
         },
         {
           "label": "Ukraine-Krieg und europäische Sicherheit",
-          "count": 15
+          "count": 24
+        },
+        {
+          "label": "Landwirtschaft, Insektenschutz und Tierwohl",
+          "count": 21
         }
       ],
       "metrics": {
         "sentiment": {
           "value": -0.083,
-          "percentile": 62.1,
+          "percentile": 67.5,
           "spread": 0.436
         },
         "emotionality": {
           "value": 0.2328,
-          "percentile": 51.7
+          "percentile": 65.0
         },
         "length": {
           "total_words": 38862,
           "avg_per_speech": 249.0,
-          "percentile": 13.8
+          "percentile": 10.0
         }
       },
-      "summary": "Durchschnittliche Sitzung"
+      "summary": "Kurze sitzung (untere 10%)"
     },
     {
       "session_id": "21_54",
@@ -158,31 +158,31 @@
       "top_topics": [
         {
           "label": "Klimaschutz und Energiewende im Bundestag",
-          "count": 20
+          "count": 18
         },
         {
           "label": "Ukraine-Krieg und europäische Sicherheit",
-          "count": 16
+          "count": 14
         },
         {
-          "label": "Digitale Souveränität und EU-Regulierung",
-          "count": 12
+          "label": "Digitale Souveränität und Verwaltung",
+          "count": 13
         }
       ],
       "metrics": {
         "sentiment": {
           "value": -0.214,
-          "percentile": 10.3,
+          "percentile": 12.5,
           "spread": 0.505
         },
         "emotionality": {
           "value": 0.2475,
-          "percentile": 62.1
+          "percentile": 72.5
         },
         "length": {
           "total_words": 50270,
           "avg_per_speech": 546.0,
-          "percentile": 31.0
+          "percentile": 32.5
         }
       },
       "summary": "Durchschnittliche Sitzung"
@@ -196,32 +196,32 @@
       "num_speeches": 183,
       "top_topics": [
         {
-          "label": "Landwirtschaft, Insektenschutz und Tierschutz",
+          "label": "Landwirtschaft, Insektenschutz und Tierwohl",
           "count": 31
         },
         {
-          "label": "Klimaschutz und Energiewende im Bundestag",
+          "label": "Wirtschaftspolitik und Investitionen",
           "count": 21
         },
         {
-          "label": "Digitale Souveränität und EU-Regulierung",
-          "count": 19
+          "label": "Klimaschutz und Energiewende im Bundestag",
+          "count": 18
         }
       ],
       "metrics": {
         "sentiment": {
           "value": -0.162,
-          "percentile": 27.6,
+          "percentile": 27.5,
           "spread": 0.494
         },
         "emotionality": {
           "value": 0.2732,
-          "percentile": 75.9
+          "percentile": 82.5
         },
         "length": {
           "total_words": 98954,
           "avg_per_speech": 541.0,
-          "percentile": 79.3
+          "percentile": 82.5
         }
       },
       "summary": "Durchschnittliche Sitzung"
@@ -232,38 +232,38 @@
       "sitzungsnr": 52,
       "datum": "14.01.2026",
       "jahr": 2026,
-      "num_speeches": 163,
+      "num_speeches": 164,
       "top_topics": [
         {
-          "label": "Fragestunde und Kurzinterventionen",
-          "count": 43
+          "label": "Fragestunde und Ministerbefragung",
+          "count": 68
         },
         {
-          "label": "Außenpolitik und Internationale Beziehungen",
-          "count": 32
+          "label": "Nahost- und Afrika-Missionen/Humanitäre Hilfe",
+          "count": 18
         },
         {
-          "label": "Syrien, Israel und Entwicklungspolitik",
-          "count": 22
+          "label": "Landwirtschaft, Insektenschutz und Tierwohl",
+          "count": 15
         }
       ],
       "metrics": {
         "sentiment": {
-          "value": -0.098,
-          "percentile": 55.2,
-          "spread": 0.409
+          "value": -0.097,
+          "percentile": 60.0,
+          "spread": 0.408
         },
         "emotionality": {
-          "value": 0.2165,
-          "percentile": 41.4
+          "value": 0.2213,
+          "percentile": 57.5
         },
         "length": {
-          "total_words": 35521,
-          "avg_per_speech": 218.0,
-          "percentile": 10.3
+          "total_words": 35532,
+          "avg_per_speech": 217.0,
+          "percentile": 7.5
         }
       },
-      "summary": "Durchschnittliche Sitzung"
+      "summary": "Kurze sitzung (untere 8%)"
     },
     {
       "session_id": "21_51",
@@ -274,35 +274,74 @@
       "num_speeches": 94,
       "top_topics": [
         {
-          "label": "Wirtschaftspolitik und Unternehmensförderung",
-          "count": 25
+          "label": "Wirtschafts- und Finanzpolitik",
+          "count": 22
         },
         {
-          "label": "Digitale Souveränität und EU-Regulierung",
-          "count": 19
+          "label": "Digitale Souveränität und Verwaltung",
+          "count": 12
         },
         {
-          "label": "Bundeswehreinsätze in Krisenregionen",
-          "count": 11
+          "label": "Innere Sicherheit und Polizeiarbeit",
+          "count": 10
         }
       ],
       "metrics": {
         "sentiment": {
           "value": -0.112,
-          "percentile": 48.3,
+          "percentile": 50.0,
           "spread": 0.524
         },
         "emotionality": {
           "value": 0.2567,
-          "percentile": 65.5
+          "percentile": 75.0
         },
         "length": {
           "total_words": 51717,
           "avg_per_speech": 550.0,
-          "percentile": 37.9
+          "percentile": 40.0
         }
       },
-      "summary": "Kontroverse debatte"
+      "summary": "Durchschnittliche Sitzung"
+    },
+    {
+      "session_id": "21_50",
+      "wahlperiode": 21,
+      "sitzungsnr": 50,
+      "datum": "18.12.2025",
+      "jahr": 2025,
+      "num_speeches": 205,
+      "top_topics": [
+        {
+          "label": "Demokratie, Petitionen und parlamentarische Praxis",
+          "count": 33
+        },
+        {
+          "label": "Klimaschutz und Energiewende im Bundestag",
+          "count": 28
+        },
+        {
+          "label": "AfD und Demokratiedebatte",
+          "count": 25
+        }
+      ],
+      "metrics": {
+        "sentiment": {
+          "value": -0.107,
+          "percentile": 55.0,
+          "spread": 0.476
+        },
+        "emotionality": {
+          "value": 0.0838,
+          "percentile": 7.5
+        },
+        "length": {
+          "total_words": 106099,
+          "avg_per_speech": 518.0,
+          "percentile": 85.0
+        }
+      },
+      "summary": "Sehr sachlich (untere 8%)"
     },
     {
       "session_id": "21_49",
@@ -313,32 +352,32 @@
       "num_speeches": 132,
       "top_topics": [
         {
-          "label": "Fragestunde und Kurzinterventionen",
-          "count": 20
-        },
-        {
-          "label": "Landwirtschaft und Lebensmittelpolitik",
-          "count": 19
+          "label": "Fragestunde und Ministerbefragung",
+          "count": 33
         },
         {
           "label": "Ukraine-Krieg und europäische Sicherheit",
-          "count": 15
+          "count": 18
+        },
+        {
+          "label": "Familie, Bildung und Arbeitsmarkt",
+          "count": 11
         }
       ],
       "metrics": {
         "sentiment": {
           "value": -0.069,
-          "percentile": 65.5,
+          "percentile": 72.5,
           "spread": 0.446
         },
         "emotionality": {
           "value": 0.2019,
-          "percentile": 34.5
+          "percentile": 52.5
         },
         "length": {
           "total_words": 47584,
           "avg_per_speech": 360.0,
-          "percentile": 24.1
+          "percentile": 25.0
         }
       },
       "summary": "Durchschnittliche Sitzung"
@@ -353,34 +392,424 @@
       "top_topics": [
         {
           "label": "Rentenpolitik und Altersvorsorge",
-          "count": 38
+          "count": 40
         },
         {
-          "label": "Digitale Souveränität und EU-Regulierung",
-          "count": 15
+          "label": "Bundeswehr, Verteidigung und Wehrdienst",
+          "count": 18
         },
         {
-          "label": "Schuldenbremse, Bundeswehr und Investitionen",
-          "count": 15
+          "label": "Digitale Souveränität und Verwaltung",
+          "count": 14
         }
       ],
       "metrics": {
         "sentiment": {
           "value": -0.147,
-          "percentile": 34.5,
+          "percentile": 35.0,
           "spread": 0.464
         },
         "emotionality": {
           "value": 0.2311,
-          "percentile": 48.3
+          "percentile": 62.5
         },
         "length": {
           "total_words": 57213,
           "avg_per_speech": 506.0,
-          "percentile": 51.7
+          "percentile": 50.0
         }
       },
       "summary": "Durchschnittliche Sitzung"
+    },
+    {
+      "session_id": "21_47",
+      "wahlperiode": 21,
+      "sitzungsnr": 47,
+      "datum": "04.12.2025",
+      "jahr": 2025,
+      "num_speeches": 167,
+      "top_topics": [
+        {
+          "label": "Klimaschutz und Energiewende im Bundestag",
+          "count": 34
+        },
+        {
+          "label": "AfD und Demokratiedebatte",
+          "count": 19
+        },
+        {
+          "label": "Gedenken, Entschädigung und Frauenrechte",
+          "count": 16
+        }
+      ],
+      "metrics": {
+        "sentiment": {
+          "value": -0.235,
+          "percentile": 10.0,
+          "spread": 0.468
+        },
+        "emotionality": {
+          "value": 0.0852,
+          "percentile": 10.0
+        },
+        "length": {
+          "total_words": 87043,
+          "avg_per_speech": 521.0,
+          "percentile": 77.5
+        }
+      },
+      "summary": "Sehr negatives sentiment (untere 10%), sehr sachlich (untere 10%)"
+    },
+    {
+      "session_id": "21_46",
+      "wahlperiode": 21,
+      "sitzungsnr": 46,
+      "datum": "03.12.2025",
+      "jahr": 2025,
+      "num_speeches": 197,
+      "top_topics": [
+        {
+          "label": "Fragestunde und Ministerbefragung",
+          "count": 94
+        },
+        {
+          "label": "Afghanistan, Ortskräfte und Aufnahmen",
+          "count": 26
+        },
+        {
+          "label": "AfD und Demokratiedebatte",
+          "count": 25
+        }
+      ],
+      "metrics": {
+        "sentiment": {
+          "value": -0.081,
+          "percentile": 70.0,
+          "spread": 0.346
+        },
+        "emotionality": {
+          "value": 0.0388,
+          "percentile": 2.5
+        },
+        "length": {
+          "total_words": 49250,
+          "avg_per_speech": 250.0,
+          "percentile": 30.0
+        }
+      },
+      "summary": "Sehr sachlich (untere 2%)"
+    },
+    {
+      "session_id": "21_45",
+      "wahlperiode": 21,
+      "sitzungsnr": 45,
+      "datum": "28.11.2025",
+      "jahr": 2025,
+      "num_speeches": 66,
+      "top_topics": [
+        {
+          "label": "Wirtschaftspolitik und Investitionen",
+          "count": 26
+        },
+        {
+          "label": "Rentenpolitik und Altersvorsorge",
+          "count": 15
+        },
+        {
+          "label": "Wirtschafts- und Finanzpolitik",
+          "count": 10
+        }
+      ],
+      "metrics": {
+        "sentiment": {
+          "value": -0.09,
+          "percentile": 62.5,
+          "spread": 0.574
+        },
+        "emotionality": {
+          "value": 0.0895,
+          "percentile": 22.5
+        },
+        "length": {
+          "total_words": 39732,
+          "avg_per_speech": 602.0,
+          "percentile": 12.5
+        }
+      },
+      "summary": "Kontroverse debatte"
+    },
+    {
+      "session_id": "21_44",
+      "wahlperiode": 21,
+      "sitzungsnr": 44,
+      "datum": "27.11.2025",
+      "jahr": 2025,
+      "num_speeches": 117,
+      "top_topics": [
+        {
+          "label": "Mobilität, Deutschlandticket und Maut",
+          "count": 20
+        },
+        {
+          "label": "Landwirtschaft, Insektenschutz und Tierwohl",
+          "count": 19
+        },
+        {
+          "label": "Pflege, Gesundheit und Familienpolitik",
+          "count": 16
+        }
+      ],
+      "metrics": {
+        "sentiment": {
+          "value": -0.137,
+          "percentile": 40.0,
+          "spread": 0.526
+        },
+        "emotionality": {
+          "value": 0.0894,
+          "percentile": 20.0
+        },
+        "length": {
+          "total_words": 79194,
+          "avg_per_speech": 677.0,
+          "percentile": 72.5
+        }
+      },
+      "summary": "Kontroverse debatte"
+    },
+    {
+      "session_id": "21_43",
+      "wahlperiode": 21,
+      "sitzungsnr": 43,
+      "datum": "26.11.2025",
+      "jahr": 2025,
+      "num_speeches": 102,
+      "top_topics": [
+        {
+          "label": "Wirtschaftspolitik und Investitionen",
+          "count": 25
+        },
+        {
+          "label": "Bundeswehr, Verteidigung und Wehrdienst",
+          "count": 19
+        },
+        {
+          "label": "Ukraine-Krieg und europäische Sicherheit",
+          "count": 15
+        }
+      ],
+      "metrics": {
+        "sentiment": {
+          "value": -0.203,
+          "percentile": 15.0,
+          "spread": 0.477
+        },
+        "emotionality": {
+          "value": 0.0857,
+          "percentile": 12.5
+        },
+        "length": {
+          "total_words": 72721,
+          "avg_per_speech": 713.0,
+          "percentile": 67.5
+        }
+      },
+      "summary": "Durchschnittliche Sitzung"
+    },
+    {
+      "session_id": "21_42",
+      "wahlperiode": 21,
+      "sitzungsnr": 42,
+      "datum": "25.11.2025",
+      "jahr": 2025,
+      "num_speeches": 104,
+      "top_topics": [
+        {
+          "label": "Wirtschaftspolitik und Investitionen",
+          "count": 25
+        },
+        {
+          "label": "Klimaschutz und Energiewende im Bundestag",
+          "count": 23
+        },
+        {
+          "label": "Digitale Souveränität und Verwaltung",
+          "count": 18
+        }
+      ],
+      "metrics": {
+        "sentiment": {
+          "value": -0.135,
+          "percentile": 42.5,
+          "spread": 0.567
+        },
+        "emotionality": {
+          "value": 0.0872,
+          "percentile": 15.0
+        },
+        "length": {
+          "total_words": 63298,
+          "avg_per_speech": 609.0,
+          "percentile": 57.5
+        }
+      },
+      "summary": "Kontroverse debatte"
+    },
+    {
+      "session_id": "21_41",
+      "wahlperiode": 21,
+      "sitzungsnr": 41,
+      "datum": "14.11.2025",
+      "jahr": 2025,
+      "num_speeches": 90,
+      "top_topics": [
+        {
+          "label": "Rentenpolitik und Altersvorsorge",
+          "count": 33
+        },
+        {
+          "label": "Digitale Souveränität und Verwaltung",
+          "count": 15
+        },
+        {
+          "label": "Klimaschutz und Energiewende im Bundestag",
+          "count": 13
+        }
+      ],
+      "metrics": {
+        "sentiment": {
+          "value": -0.109,
+          "percentile": 52.5,
+          "spread": 0.498
+        },
+        "emotionality": {
+          "value": 0.0788,
+          "percentile": 5.0
+        },
+        "length": {
+          "total_words": 46969,
+          "avg_per_speech": 522.0,
+          "percentile": 20.0
+        }
+      },
+      "summary": "Sehr sachlich (untere 5%)"
+    },
+    {
+      "session_id": "21_40",
+      "wahlperiode": 21,
+      "sitzungsnr": 40,
+      "datum": "13.11.2025",
+      "jahr": 2025,
+      "num_speeches": 153,
+      "top_topics": [
+        {
+          "label": "Wirtschaftspolitik und Investitionen",
+          "count": 46
+        },
+        {
+          "label": "Klimaschutz und Energiewende im Bundestag",
+          "count": 32
+        },
+        {
+          "label": "Mobilität, Deutschlandticket und Maut",
+          "count": 16
+        }
+      ],
+      "metrics": {
+        "sentiment": {
+          "value": -0.158,
+          "percentile": 30.0,
+          "spread": 0.479
+        },
+        "emotionality": {
+          "value": 0.1054,
+          "percentile": 27.5
+        },
+        "length": {
+          "total_words": 84857,
+          "avg_per_speech": 555.0,
+          "percentile": 75.0
+        }
+      },
+      "summary": "Durchschnittliche Sitzung"
+    },
+    {
+      "session_id": "21_39",
+      "wahlperiode": 21,
+      "sitzungsnr": 39,
+      "datum": "12.11.2025",
+      "jahr": 2025,
+      "num_speeches": 169,
+      "top_topics": [
+        {
+          "label": "Wohnungsbau und Mietenpolitik",
+          "count": 52
+        },
+        {
+          "label": "Fragestunde und Ministerbefragung",
+          "count": 48
+        },
+        {
+          "label": "AfD und Demokratiedebatte",
+          "count": 22
+        }
+      ],
+      "metrics": {
+        "sentiment": {
+          "value": -0.068,
+          "percentile": 75.0,
+          "spread": 0.393
+        },
+        "emotionality": {
+          "value": 0.0318,
+          "percentile": 0.0
+        },
+        "length": {
+          "total_words": 39780,
+          "avg_per_speech": 235.0,
+          "percentile": 15.0
+        }
+      },
+      "summary": "Sehr sachlich (untere 0%)"
+    },
+    {
+      "session_id": "21_38",
+      "wahlperiode": 21,
+      "sitzungsnr": 38,
+      "datum": "07.11.2025",
+      "jahr": 2025,
+      "num_speeches": 88,
+      "top_topics": [
+        {
+          "label": "Klimaschutz und Energiewende im Bundestag",
+          "count": 16
+        },
+        {
+          "label": "Nahost- und Afrika-Missionen/Humanitäre Hilfe",
+          "count": 15
+        },
+        {
+          "label": "Wirtschaftspolitik und Investitionen",
+          "count": 13
+        }
+      ],
+      "metrics": {
+        "sentiment": {
+          "value": -0.302,
+          "percentile": 5.0,
+          "spread": 0.458
+        },
+        "emotionality": {
+          "value": 0.0875,
+          "percentile": 17.5
+        },
+        "length": {
+          "total_words": 50334,
+          "avg_per_speech": 572.0,
+          "percentile": 35.0
+        }
+      },
+      "summary": "Sehr negatives sentiment (untere 5%)"
     },
     {
       "session_id": "20_214",
@@ -391,35 +820,35 @@
       "num_speeches": 83,
       "top_topics": [
         {
-          "label": "Schuldenbremse, Bundeswehr und Investitionen",
-          "count": 70
+          "label": "Wirtschafts- und Finanzpolitik",
+          "count": 27
         },
         {
-          "label": "Demokratie, Grundgesetz und AfD",
-          "count": 4
+          "label": "Bundeswehr, Verteidigung und Wehrdienst",
+          "count": 19
         },
         {
-          "label": "Ukraine-Krieg und europäische Sicherheit",
-          "count": 3
+          "label": "Demokratie, Petitionen und parlamentarische Praxis",
+          "count": 13
         }
       ],
       "metrics": {
         "sentiment": {
           "value": -0.018,
-          "percentile": 79.3,
+          "percentile": 85.0,
           "spread": 0.47
         },
         "emotionality": {
           "value": 0.1478,
-          "percentile": 6.9
+          "percentile": 32.5
         },
         "length": {
           "total_words": 53125,
           "avg_per_speech": 640.0,
-          "percentile": 44.8
+          "percentile": 45.0
         }
       },
-      "summary": "Sehr sachlich (untere 7%)"
+      "summary": "Durchschnittliche Sitzung"
     },
     {
       "session_id": "20_213",
@@ -430,35 +859,35 @@
       "num_speeches": 38,
       "top_topics": [
         {
-          "label": "Schuldenbremse, Bundeswehr und Investitionen",
-          "count": 26
+          "label": "Wirtschaftspolitik und Investitionen",
+          "count": 9
         },
         {
-          "label": "Ukraine-Krieg und europäische Sicherheit",
-          "count": 4
+          "label": "Wirtschafts- und Finanzpolitik",
+          "count": 8
         },
         {
-          "label": "Demokratie, Grundgesetz und AfD",
-          "count": 2
+          "label": "Demokratie, Petitionen und parlamentarische Praxis",
+          "count": 7
         }
       ],
       "metrics": {
         "sentiment": {
           "value": -0.239,
-          "percentile": 6.9,
+          "percentile": 7.5,
           "spread": 0.435
         },
         "emotionality": {
           "value": 0.2847,
-          "percentile": 86.2
+          "percentile": 90.0
         },
         "length": {
           "total_words": 29702,
           "avg_per_speech": 782.0,
-          "percentile": 6.9
+          "percentile": 5.0
         }
       },
-      "summary": "Sehr negatives sentiment (untere 7%), kurze sitzung (untere 7%)"
+      "summary": "Sehr negatives sentiment (untere 8%), hohe emotionalität (top 10%), kurze sitzung (untere 5%)"
     },
     {
       "session_id": "20_212",
@@ -469,35 +898,35 @@
       "num_speeches": 22,
       "top_topics": [
         {
-          "label": "Wirtschaftspolitik und Unternehmensförderung",
-          "count": 9
+          "label": "Wirtschaftspolitik und Investitionen",
+          "count": 12
         },
         {
-          "label": "Migrationspolitik und Sicherheit: AfD im Fokus",
+          "label": "AfD und Demokratiedebatte",
           "count": 3
         },
         {
-          "label": "Ukraine-Krieg und europäische Sicherheit",
+          "label": "Demokratie, Petitionen und parlamentarische Praxis",
           "count": 3
         }
       ],
       "metrics": {
         "sentiment": {
           "value": -0.368,
-          "percentile": 3.4,
+          "percentile": 2.5,
           "spread": 0.449
         },
         "emotionality": {
           "value": 0.3234,
-          "percentile": 96.6
+          "percentile": 97.5
         },
         "length": {
           "total_words": 26565,
           "avg_per_speech": 1208.0,
-          "percentile": 3.4
+          "percentile": 2.5
         }
       },
-      "summary": "Sehr negatives sentiment (untere 3%), hohe emotionalität (top 3%), kurze sitzung (untere 3%)"
+      "summary": "Sehr negatives sentiment (untere 2%), hohe emotionalität (top 2%), kurze sitzung (untere 2%)"
     },
     {
       "session_id": "20_211",
@@ -508,35 +937,35 @@
       "num_speeches": 134,
       "top_topics": [
         {
-          "label": "Migrationspolitik und Sicherheit: AfD im Fokus",
-          "count": 44
+          "label": "Gedenken, Entschädigung und Frauenrechte",
+          "count": 27
         },
         {
-          "label": "Familie, Frauen und Arbeitsleben",
-          "count": 29
+          "label": "Migrationspolitik und Ausländerzentralregister",
+          "count": 24
         },
         {
-          "label": "Demokratie, Grundgesetz und AfD",
-          "count": 16
+          "label": "AfD und Demokratiedebatte",
+          "count": 17
         }
       ],
       "metrics": {
         "sentiment": {
           "value": -0.174,
-          "percentile": 20.7,
+          "percentile": 22.5,
           "spread": 0.492
         },
         "emotionality": {
           "value": 0.2931,
-          "percentile": 89.7
+          "percentile": 92.5
         },
         "length": {
           "total_words": 71683,
           "avg_per_speech": 535.0,
-          "percentile": 65.5
+          "percentile": 62.5
         }
       },
-      "summary": "Durchschnittliche Sitzung"
+      "summary": "Hohe emotionalität (top 8%)"
     },
     {
       "session_id": "20_210",
@@ -547,35 +976,35 @@
       "num_speeches": 225,
       "top_topics": [
         {
-          "label": "Wirtschaftspolitik und Unternehmensförderung",
-          "count": 42
-        },
-        {
-          "label": "Demokratie, Grundgesetz und AfD",
-          "count": 36
-        },
-        {
-          "label": "Familie, Frauen und Arbeitsleben",
+          "label": "AfD und Demokratiedebatte",
           "count": 35
+        },
+        {
+          "label": "Wirtschafts- und Finanzpolitik",
+          "count": 30
+        },
+        {
+          "label": "Pflege, Gesundheit und Familienpolitik",
+          "count": 26
         }
       ],
       "metrics": {
         "sentiment": {
           "value": -0.137,
-          "percentile": 37.9,
+          "percentile": 37.5,
           "spread": 0.527
         },
         "emotionality": {
           "value": 0.2664,
-          "percentile": 72.4
+          "percentile": 80.0
         },
         "length": {
           "total_words": 136726,
           "avg_per_speech": 608.0,
-          "percentile": 93.1
+          "percentile": 95.0
         }
       },
-      "summary": "Überdurchschnittlich lang (top 7%), kontroverse debatte"
+      "summary": "Überdurchschnittlich lang (top 5%), kontroverse debatte"
     },
     {
       "session_id": "20_209",
@@ -586,32 +1015,32 @@
       "num_speeches": 193,
       "top_topics": [
         {
-          "label": "Landwirtschaft und Lebensmittelpolitik",
-          "count": 53
+          "label": "Fragestunde und Ministerbefragung",
+          "count": 48
         },
         {
-          "label": "Migrationspolitik und Sicherheit: AfD im Fokus",
-          "count": 45
+          "label": "Landwirtschaft, Insektenschutz und Tierwohl",
+          "count": 34
         },
         {
-          "label": "Syrien, Israel und Entwicklungspolitik",
-          "count": 17
+          "label": "Gedenken, Entschädigung und Frauenrechte",
+          "count": 27
         }
       ],
       "metrics": {
         "sentiment": {
           "value": -0.122,
-          "percentile": 44.8,
+          "percentile": 47.5,
           "spread": 0.428
         },
         "emotionality": {
           "value": 0.2,
-          "percentile": 31.0
+          "percentile": 50.0
         },
         "length": {
           "total_words": 66333,
           "avg_per_speech": 344.0,
-          "percentile": 62.1
+          "percentile": 60.0
         }
       },
       "summary": "Durchschnittliche Sitzung"
@@ -625,32 +1054,32 @@
       "num_speeches": 89,
       "top_topics": [
         {
-          "label": "Migrationspolitik und Sicherheit: AfD im Fokus",
-          "count": 22
+          "label": "Migrationspolitik und Ausländerzentralregister",
+          "count": 20
         },
         {
-          "label": "Bürokratie, Unternehmen und Ausbildung",
-          "count": 10
+          "label": "Familie, Bildung und Arbeitsmarkt",
+          "count": 11
         },
         {
-          "label": "Demokratie, Grundgesetz und AfD",
+          "label": "AfD und Demokratiedebatte",
           "count": 10
         }
       ],
       "metrics": {
         "sentiment": {
           "value": -0.183,
-          "percentile": 17.2,
+          "percentile": 20.0,
           "spread": 0.507
         },
         "emotionality": {
           "value": 0.28,
-          "percentile": 79.3
+          "percentile": 85.0
         },
         "length": {
           "total_words": 57631,
           "avg_per_speech": 648.0,
-          "percentile": 55.2
+          "percentile": 52.5
         }
       },
       "summary": "Durchschnittliche Sitzung"
@@ -664,32 +1093,32 @@
       "num_speeches": 194,
       "top_topics": [
         {
-          "label": "Wirtschaftspolitik und Unternehmensförderung",
-          "count": 68
+          "label": "Wirtschaftspolitik und Investitionen",
+          "count": 46
         },
         {
-          "label": "Demokratie, Grundgesetz und AfD",
-          "count": 31
+          "label": "Demokratie, Petitionen und parlamentarische Praxis",
+          "count": 29
         },
         {
-          "label": "Klimaschutz und Energiewende im Bundestag",
-          "count": 19
+          "label": "Wirtschafts- und Finanzpolitik",
+          "count": 22
         }
       ],
       "metrics": {
         "sentiment": {
           "value": -0.151,
-          "percentile": 31.0,
+          "percentile": 32.5,
           "spread": 0.507
         },
         "emotionality": {
           "value": 0.2819,
-          "percentile": 82.8
+          "percentile": 87.5
         },
         "length": {
           "total_words": 114588,
           "avg_per_speech": 591.0,
-          "percentile": 82.8
+          "percentile": 87.5
         }
       },
       "summary": "Durchschnittliche Sitzung"
@@ -704,31 +1133,31 @@
       "top_topics": [
         {
           "label": "Wohnungsbau und Mietenpolitik",
-          "count": 67
+          "count": 69
         },
         {
-          "label": "Fragestunde und Kurzinterventionen",
-          "count": 27
+          "label": "Fragestunde und Ministerbefragung",
+          "count": 34
         },
         {
-          "label": "Wirtschaftspolitik und Unternehmensförderung",
-          "count": 18
+          "label": "Nahost- und Afrika-Missionen/Humanitäre Hilfe",
+          "count": 22
         }
       ],
       "metrics": {
         "sentiment": {
           "value": -0.101,
-          "percentile": 51.7,
+          "percentile": 57.5,
           "spread": 0.376
         },
         "emotionality": {
           "value": 0.2399,
-          "percentile": 55.2
+          "percentile": 67.5
         },
         "length": {
           "total_words": 48526,
           "avg_per_speech": 265.0,
-          "percentile": 27.6
+          "percentile": 27.5
         }
       },
       "summary": "Durchschnittliche Sitzung"
@@ -742,16 +1171,16 @@
       "num_speeches": 22,
       "top_topics": [
         {
-          "label": "Wirtschaftspolitik und Unternehmensförderung",
-          "count": 9
+          "label": "Wirtschaftspolitik und Investitionen",
+          "count": 10
         },
         {
-          "label": "Demokratie, Grundgesetz und AfD",
-          "count": 5
+          "label": "Demokratie, Petitionen und parlamentarische Praxis",
+          "count": 7
         },
         {
           "label": "Ukraine-Krieg und europäische Sicherheit",
-          "count": 5
+          "count": 4
         }
       ],
       "metrics": {
@@ -762,7 +1191,7 @@
         },
         "emotionality": {
           "value": 0.2946,
-          "percentile": 93.1
+          "percentile": 95.0
         },
         "length": {
           "total_words": 21579,
@@ -770,7 +1199,7 @@
           "percentile": 0.0
         }
       },
-      "summary": "Sehr negatives sentiment (untere 0%), hohe emotionalität (top 7%), kurze sitzung (untere 0%)"
+      "summary": "Sehr negatives sentiment (untere 0%), hohe emotionalität (top 5%), kurze sitzung (untere 0%)"
     },
     {
       "session_id": "19_239",
@@ -782,34 +1211,34 @@
       "top_topics": [
         {
           "label": "Pandemiebekämpfung und Infektionsschutzmaßnahmen",
-          "count": 32
+          "count": 31
         },
         {
-          "label": "Wirtschaftspolitik und Unternehmensförderung",
-          "count": 11
+          "label": "Wirtschaftspolitik und Investitionen",
+          "count": 12
         },
         {
-          "label": "Familie, Frauen und Arbeitsleben",
-          "count": 7
+          "label": "Familie, Bildung und Arbeitsmarkt",
+          "count": 8
         }
       ],
       "metrics": {
         "sentiment": {
           "value": -0.087,
-          "percentile": 58.6,
+          "percentile": 65.0,
           "spread": 0.488
         },
         "emotionality": {
           "value": 0.147,
-          "percentile": 3.4
+          "percentile": 30.0
         },
         "length": {
           "total_words": 51007,
           "avg_per_speech": 761.0,
-          "percentile": 34.5
+          "percentile": 37.5
         }
       },
-      "summary": "Sehr sachlich (untere 3%)"
+      "summary": "Durchschnittliche Sitzung"
     },
     {
       "session_id": "19_238",
@@ -820,7 +1249,7 @@
       "num_speeches": 71,
       "top_topics": [
         {
-          "label": "Afghanistan-Einsatz und Ortskräfte",
+          "label": "Afghanistan, Ortskräfte und Aufnahmen",
           "count": 26
         },
         {
@@ -828,24 +1257,24 @@
           "count": 25
         },
         {
-          "label": "Klimaschutz und Energiewende im Bundestag",
-          "count": 16
+          "label": "Wirtschaftspolitik und Investitionen",
+          "count": 11
         }
       ],
       "metrics": {
         "sentiment": {
           "value": -0.134,
-          "percentile": 41.4,
+          "percentile": 45.0,
           "spread": 0.473
         },
         "emotionality": {
           "value": 0.1901,
-          "percentile": 24.1
+          "percentile": 45.0
         },
         "length": {
           "total_words": 54042,
           "avg_per_speech": 761.0,
-          "percentile": 48.3
+          "percentile": 47.5
         }
       },
       "summary": "Durchschnittliche Sitzung"
@@ -859,32 +1288,32 @@
       "num_speeches": 94,
       "top_topics": [
         {
-          "label": "Wirtschaftspolitik und Unternehmensförderung",
-          "count": 31
+          "label": "Wirtschafts- und Finanzpolitik",
+          "count": 27
         },
         {
-          "label": "Familie, Frauen und Arbeitsleben",
-          "count": 18
+          "label": "Gedenken, Entschädigung und Frauenrechte",
+          "count": 15
         },
         {
-          "label": "Digitale Souveränität und EU-Regulierung",
-          "count": 16
+          "label": "Digitale Souveränität und Verwaltung",
+          "count": 12
         }
       ],
       "metrics": {
         "sentiment": {
           "value": -0.061,
-          "percentile": 72.4,
+          "percentile": 80.0,
           "spread": 0.51
         },
         "emotionality": {
           "value": 0.2231,
-          "percentile": 44.8
+          "percentile": 60.0
         },
         "length": {
           "total_words": 60864,
           "avg_per_speech": 647.0,
-          "percentile": 58.6
+          "percentile": 55.0
         }
       },
       "summary": "Durchschnittliche Sitzung"
@@ -895,38 +1324,38 @@
       "sitzungsnr": 236,
       "datum": "24.06.2021",
       "jahr": 2021,
-      "num_speeches": 274,
+      "num_speeches": 275,
       "top_topics": [
         {
           "label": "Klimaschutz und Energiewende im Bundestag",
-          "count": 45
+          "count": 40
         },
         {
-          "label": "Migrationspolitik und Sicherheit: AfD im Fokus",
-          "count": 33
+          "label": "Landwirtschaft, Insektenschutz und Tierwohl",
+          "count": 32
         },
         {
-          "label": "Landwirtschaft, Insektenschutz und Tierschutz",
-          "count": 30
+          "label": "Verbraucherschutz und Lieferketten",
+          "count": 26
         }
       ],
       "metrics": {
         "sentiment": {
           "value": -0.004,
-          "percentile": 86.2,
+          "percentile": 90.0,
           "spread": 0.468
         },
         "emotionality": {
-          "value": 0.1612,
-          "percentile": 13.8
+          "value": 0.1607,
+          "percentile": 37.5
         },
         "length": {
-          "total_words": 156590,
-          "avg_per_speech": 571.0,
-          "percentile": 96.6
+          "total_words": 156602,
+          "avg_per_speech": 569.0,
+          "percentile": 97.5
         }
       },
-      "summary": "Überdurchschnittlich lang (top 3%)"
+      "summary": "Sehr positives sentiment (top 10%), überdurchschnittlich lang (top 2%)"
     },
     {
       "session_id": "19_235",
@@ -937,32 +1366,32 @@
       "num_speeches": 114,
       "top_topics": [
         {
-          "label": "Afghanistan-Einsatz und Ortskräfte",
-          "count": 27
+          "label": "Afghanistan, Ortskräfte und Aufnahmen",
+          "count": 25
         },
         {
           "label": "Pandemiebekämpfung und Infektionsschutzmaßnahmen",
-          "count": 14
+          "count": 16
         },
         {
-          "label": "Rentenpolitik und Altersvorsorge",
+          "label": "Fragestunde und Ministerbefragung",
           "count": 14
         }
       ],
       "metrics": {
         "sentiment": {
           "value": -0.011,
-          "percentile": 82.8,
+          "percentile": 87.5,
           "spread": 0.365
         },
         "emotionality": {
           "value": 0.1828,
-          "percentile": 20.7
+          "percentile": 42.5
         },
         "length": {
           "total_words": 47513,
           "avg_per_speech": 417.0,
-          "percentile": 20.7
+          "percentile": 22.5
         }
       },
       "summary": "Durchschnittliche Sitzung"
@@ -976,35 +1405,35 @@
       "num_speeches": 131,
       "top_topics": [
         {
-          "label": "Familie, Frauen und Arbeitsleben",
-          "count": 31
-        },
-        {
           "label": "Pandemiebekämpfung und Infektionsschutzmaßnahmen",
           "count": 28
         },
         {
-          "label": "Demokratie, Grundgesetz und AfD",
-          "count": 17
+          "label": "Familie, Bildung und Arbeitsmarkt",
+          "count": 15
+        },
+        {
+          "label": "Wirtschaftspolitik und Investitionen",
+          "count": 15
         }
       ],
       "metrics": {
         "sentiment": {
           "value": -0.004,
-          "percentile": 89.7,
+          "percentile": 92.5,
           "spread": 0.491
         },
         "emotionality": {
           "value": 0.202,
-          "percentile": 37.9
+          "percentile": 55.0
         },
         "length": {
           "total_words": 71738,
           "avg_per_speech": 548.0,
-          "percentile": 69.0
+          "percentile": 65.0
         }
       },
-      "summary": "Durchschnittliche Sitzung"
+      "summary": "Sehr positives sentiment (top 8%)"
     },
     {
       "session_id": "19_233",
@@ -1015,35 +1444,35 @@
       "num_speeches": 236,
       "top_topics": [
         {
-          "label": "Verbraucherschutz und Produktsicherheit",
-          "count": 37
+          "label": "Verbraucherschutz und Lieferketten",
+          "count": 44
         },
         {
-          "label": "Klimaschutz und Energiewende im Bundestag",
+          "label": "Wirtschafts- und Finanzpolitik",
           "count": 33
         },
         {
-          "label": "Bürokratie, Unternehmen und Ausbildung",
-          "count": 31
+          "label": "Klimaschutz und Energiewende im Bundestag",
+          "count": 32
         }
       ],
       "metrics": {
         "sentiment": {
           "value": -0.064,
-          "percentile": 69.0,
+          "percentile": 77.5,
           "spread": 0.445
         },
         "emotionality": {
           "value": 0.1566,
-          "percentile": 10.3
+          "percentile": 35.0
         },
         "length": {
           "total_words": 130901,
           "avg_per_speech": 555.0,
-          "percentile": 89.7
+          "percentile": 92.5
         }
       },
-      "summary": "Durchschnittliche Sitzung"
+      "summary": "Überdurchschnittlich lang (top 8%)"
     },
     {
       "session_id": "19_232",
@@ -1051,38 +1480,38 @@
       "sitzungsnr": 232,
       "datum": "09.06.2021",
       "jahr": 2021,
-      "num_speeches": 128,
+      "num_speeches": 129,
       "top_topics": [
         {
-          "label": "Außenpolitik und Internationale Beziehungen",
-          "count": 39
+          "label": "Fragestunde und Ministerbefragung",
+          "count": 38
         },
         {
-          "label": "Familie, Frauen und Arbeitsleben",
-          "count": 15
+          "label": "Ukraine-Krieg und europäische Sicherheit",
+          "count": 17
         },
         {
-          "label": "Pandemiebekämpfung und Infektionsschutzmaßnahmen",
-          "count": 14
+          "label": "Demokratie, Petitionen und parlamentarische Praxis",
+          "count": 16
         }
       ],
       "metrics": {
         "sentiment": {
           "value": 0.01,
-          "percentile": 96.6,
-          "spread": 0.414
+          "percentile": 97.5,
+          "spread": 0.413
         },
         "emotionality": {
-          "value": 0.1705,
-          "percentile": 17.2
+          "value": 0.1694,
+          "percentile": 40.0
         },
         "length": {
-          "total_words": 52823,
-          "avg_per_speech": 413.0,
-          "percentile": 41.4
+          "total_words": 52834,
+          "avg_per_speech": 410.0,
+          "percentile": 42.5
         }
       },
-      "summary": "Sehr positives sentiment (top 3%)"
+      "summary": "Sehr positives sentiment (top 2%)"
     },
     {
       "session_id": "19_231",
@@ -1093,32 +1522,32 @@
       "num_speeches": 120,
       "top_topics": [
         {
-          "label": "Demokratie, Grundgesetz und AfD",
-          "count": 24
-        },
-        {
           "label": "Klimaschutz und Energiewende im Bundestag",
           "count": 23
         },
         {
-          "label": "Bundeswehreinsätze in Krisenregionen",
-          "count": 16
+          "label": "Demokratie, Petitionen und parlamentarische Praxis",
+          "count": 19
+        },
+        {
+          "label": "Rentenpolitik und Altersvorsorge",
+          "count": 14
         }
       ],
       "metrics": {
         "sentiment": {
           "value": -0.033,
-          "percentile": 75.9,
+          "percentile": 82.5,
           "spread": 0.51
         },
         "emotionality": {
           "value": 0.2446,
-          "percentile": 58.6
+          "percentile": 70.0
         },
         "length": {
           "total_words": 73828,
           "avg_per_speech": 615.0,
-          "percentile": 72.4
+          "percentile": 70.0
         }
       },
       "summary": "Durchschnittliche Sitzung"
@@ -1132,35 +1561,35 @@
       "num_speeches": 235,
       "top_topics": [
         {
-          "label": "Digitale Souveränität und EU-Regulierung",
-          "count": 31
-        },
-        {
           "label": "Pandemiebekämpfung und Infektionsschutzmaßnahmen",
-          "count": 29
+          "count": 28
         },
         {
-          "label": "Mobilität im ländlichen Raum",
+          "label": "Mobilität, Deutschlandticket und Maut",
           "count": 26
+        },
+        {
+          "label": "Klimaschutz und Energiewende im Bundestag",
+          "count": 25
         }
       ],
       "metrics": {
         "sentiment": {
           "value": -0.003,
-          "percentile": 93.1,
+          "percentile": 95.0,
           "spread": 0.506
         },
         "emotionality": {
           "value": 0.197,
-          "percentile": 27.6
+          "percentile": 47.5
         },
         "length": {
           "total_words": 130013,
           "avg_per_speech": 553.0,
-          "percentile": 86.2
+          "percentile": 90.0
         }
       },
-      "summary": "Sehr positives sentiment (top 7%)"
+      "summary": "Sehr positives sentiment (top 5%), überdurchschnittlich lang (top 10%)"
     }
   ]
 }
