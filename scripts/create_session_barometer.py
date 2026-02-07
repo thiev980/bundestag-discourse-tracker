@@ -36,7 +36,7 @@ from typing import Dict, List
 
 PROJECT_ID = "bt-discourse-tracker"
 DATASET_ID = "bundestag_data"
-SOURCE_TABLE = "speeches_with_metrics"
+SOURCE_TABLE = "speeches_with_clusters"  # Jetzt mit Cluster-Zuordnung!
 TARGET_TABLE = "sessions_barometer"
 LOCATION = "EU"
 
@@ -137,9 +137,8 @@ def main():
         sentiment_score,
         emotionality_score,
         word_count,
-        sentence_count,
-        exclamation_count,
-        question_count
+        cluster_id,
+        cluster_label
     FROM `{PROJECT_ID}.{DATASET_ID}.{SOURCE_TABLE}`
     WHERE datum IS NOT NULL
     ORDER BY datum, sitzungsnr
@@ -161,9 +160,6 @@ def main():
         'sentiment_score': ['mean', 'std', 'min', 'max'],
         'emotionality_score': ['mean', 'std', 'max'],
         'word_count': ['sum', 'mean'],
-        'sentence_count': 'sum',
-        'exclamation_count': 'sum',
-        'question_count': 'sum',
     }).reset_index()
     
     # Flatten MultiIndex columns
@@ -173,9 +169,6 @@ def main():
         'avg_sentiment', 'sentiment_spread', 'min_sentiment', 'max_sentiment',
         'avg_emotionality', 'emotionality_spread', 'max_emotionality',
         'total_words', 'avg_words_per_speech',
-        'total_sentences',
-        'total_exclamations',
-        'total_questions'
     ]
     
     # NaN in Spread-Spalten durch 0 ersetzen (wenn nur 1 Rede)
@@ -184,10 +177,32 @@ def main():
     
     # Zusätzliche Metriken
     sessions['sentiment_range'] = sessions['max_sentiment'] - sessions['min_sentiment']
-    sessions['exclamations_per_1000_words'] = (sessions['total_exclamations'] / sessions['total_words'] * 1000).round(2)
-    sessions['questions_per_1000_words'] = (sessions['total_questions'] / sessions['total_words'] * 1000).round(2)
     
     print(f"  ✓ {len(sessions)} Sitzungen aggregiert")
+    
+    # Themen pro Sitzung aggregieren
+    print("  📊 Berechne Top-Themen pro Sitzung...")
+    
+    topic_counts = df.groupby(['wahlperiode', 'sitzungsnr', 'cluster_label']).size().reset_index(name='count')
+    
+    def get_top_topics(wp, snr, n=3):
+        """Holt die Top-n Themen für eine Sitzung."""
+        session_topics = topic_counts[
+            (topic_counts['wahlperiode'] == wp) & 
+            (topic_counts['sitzungsnr'] == snr)
+        ].nlargest(n, 'count')
+        
+        return [
+            {"label": row['cluster_label'], "count": int(row['count'])}
+            for _, row in session_topics.iterrows()
+        ]
+    
+    sessions['top_topics'] = sessions.apply(
+        lambda row: get_top_topics(row['wahlperiode'], row['sitzungsnr']), 
+        axis=1
+    )
+    
+    print(f"  ✓ Themen pro Sitzung berechnet")
     
     # Fraktions-Aktivität pro Sitzung
     print("  📊 Berechne Fraktions-Aktivität...")
@@ -220,7 +235,6 @@ def main():
         ('num_speeches', 'num_speeches_percentile'),
         ('sentiment_spread', 'sentiment_spread_percentile'),
         ('avg_words_per_speech', 'avg_words_percentile'),
-        ('exclamations_per_1000_words', 'exclamations_percentile'),
     ]
     
     for metric, percentile_col in metrics_for_percentiles:
@@ -286,6 +300,7 @@ def main():
     # Datum-Spalte als String für BigQuery (vermeidet Probleme)
     sessions_for_bq = sessions.copy()
     sessions_for_bq['datum'] = pd.to_datetime(sessions_for_bq['datum']).dt.strftime('%Y-%m-%d')
+    sessions_for_bq['top_topics'] = sessions_for_bq['top_topics'].apply(json.dumps)
     
     table_id = f"{PROJECT_ID}.{DATASET_ID}.{TARGET_TABLE}"
     
@@ -354,6 +369,7 @@ def main():
             "datum": row['datum_str'],
             "jahr": int(row['jahr']),
             "num_speeches": int(row['num_speeches']),
+            "top_topics": row['top_topics'],
             "metrics": {
                 "sentiment": {
                     "value": round(float(row['avg_sentiment']), 3),
@@ -368,10 +384,6 @@ def main():
                     "total_words": int(row['total_words']),
                     "avg_per_speech": round(float(row['avg_words_per_speech']), 0),
                     "percentile": float(row['total_words_percentile'])
-                },
-                "engagement": {
-                    "exclamations_per_1000": float(row['exclamations_per_1000_words']),
-                    "questions_per_1000": float(row['questions_per_1000_words'])
                 }
             },
             "summary": row['summary']

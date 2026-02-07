@@ -92,6 +92,18 @@
         
         <!-- Overview Section -->
         <section id="section-overview" class="fade-in">
+            
+            <!-- Latest Session - Prominent Card -->
+            <div class="bg-gradient-to-r from-bt-blue to-blue-600 rounded-xl shadow-lg p-6 mb-8 text-white" id="latest-session-card">
+                <div class="flex items-center gap-2 mb-4">
+                    <span class="text-2xl">🆕</span>
+                    <h2 class="text-xl font-bold">Neueste Sitzung</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6" id="latest-session-content">
+                    <!-- Filled by JS -->
+                </div>
+            </div>
+            
             <!-- Hero Stats -->
             <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8">
                 <div class="bg-white rounded-xl shadow-sm p-6 card-hover">
@@ -279,6 +291,9 @@
             // Highlights
             createHighlights();
             
+            // Latest Session
+            createLatestSession();
+            
             // Sessions
             loadMoreSessions();
             
@@ -437,14 +452,71 @@
                 { session: longest, title: '📚 Längste Sitzung', metric: `${longest.metrics.length.total_words.toLocaleString('de-DE')} Wörter` }
             ];
             
-            container.innerHTML = highlights.map(h => `
-                <div class="bg-gray-50 rounded-lg p-4">
-                    <p class="font-medium mb-1">${h.title}</p>
-                    <p class="text-sm text-gray-600">WP ${h.session.wahlperiode}, Sitzung ${h.session.sitzungsnr}</p>
-                    <p class="text-sm text-gray-600">${h.session.datum}</p>
-                    <p class="text-sm font-medium text-bt-blue mt-2">${h.metric}</p>
+            container.innerHTML = highlights.map(h => {
+                const topicsHtml = h.session.top_topics ? 
+                    h.session.top_topics.slice(0, 2).map(t => t.label).join(', ') : '';
+                
+                return `
+                    <div class="bg-gray-50 rounded-lg p-4">
+                        <p class="font-medium mb-1">${h.title}</p>
+                        <p class="text-sm text-gray-600">WP ${h.session.wahlperiode}, Sitzung ${h.session.sitzungsnr}</p>
+                        <p class="text-sm text-gray-600">${h.session.datum}</p>
+                        <p class="text-sm font-medium text-bt-blue mt-2">${h.metric}</p>
+                        ${topicsHtml ? `<p class="text-xs text-gray-500 mt-1">Themen: ${topicsHtml}</p>` : ''}
+                    </div>
+                `;
+            }).join('');
+        }
+
+        // ============================================================
+        // LATEST SESSION
+        // ============================================================
+        function createLatestSession() {
+            const container = document.getElementById('latest-session-content');
+            const latest = barometerData.sessions[0]; // Already sorted newest first
+            
+            const topicsHtml = latest.top_topics ? 
+                latest.top_topics.map(t => 
+                    `<span class="bg-white/20 px-2 py-1 rounded text-sm">${t.label} (${t.count})</span>`
+                ).join(' ') : '';
+            
+            // Determine sentiment indicator
+            let sentimentEmoji = '😐';
+            let sentimentText = 'neutral';
+            if (latest.metrics.sentiment.percentile < 20) {
+                sentimentEmoji = '😠';
+                sentimentText = 'sehr negativ';
+            } else if (latest.metrics.sentiment.percentile < 40) {
+                sentimentEmoji = '😕';
+                sentimentText = 'eher negativ';
+            } else if (latest.metrics.sentiment.percentile > 80) {
+                sentimentEmoji = '😊';
+                sentimentText = 'sehr positiv';
+            } else if (latest.metrics.sentiment.percentile > 60) {
+                sentimentEmoji = '🙂';
+                sentimentText = 'eher positiv';
+            }
+            
+            container.innerHTML = `
+                <div>
+                    <p class="text-white/70 text-sm mb-1">Sitzung</p>
+                    <p class="text-2xl font-bold">WP ${latest.wahlperiode} / ${latest.sitzungsnr}</p>
+                    <p class="text-white/70">${latest.datum}</p>
+                    <p class="text-sm mt-2">${latest.num_speeches} Reden • ${latest.metrics.length.total_words.toLocaleString('de-DE')} Wörter</p>
                 </div>
-            `).join('');
+                <div>
+                    <p class="text-white/70 text-sm mb-1">Stimmung</p>
+                    <p class="text-3xl mb-1">${sentimentEmoji}</p>
+                    <p class="font-medium">${sentimentText}</p>
+                    <p class="text-sm text-white/70">Perzentil: ${latest.metrics.sentiment.percentile.toFixed(0)}%</p>
+                </div>
+                <div>
+                    <p class="text-white/70 text-sm mb-2">Top-Themen</p>
+                    <div class="flex flex-wrap gap-2">
+                        ${topicsHtml || '<span class="text-white/50 text-sm">Keine Themen verfügbar</span>'}
+                    </div>
+                </div>
+            `;
         }
 
         // ============================================================
@@ -473,18 +545,25 @@
             const sentimentColor = getPercentileColor(session.metrics.sentiment.percentile);
             const emotionalityColor = getPercentileColor(session.metrics.emotionality.percentile);
             
+            // Topics badges
+            const topicsHtml = session.top_topics ? 
+                session.top_topics.slice(0, 3).map(t => 
+                    `<span class="bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded">${t.label} (${t.count})</span>`
+                ).join(' ') : '';
+            
             div.innerHTML = `
-                <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-                    <div>
+                <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
+                    <div class="flex-1">
                         <div class="flex items-center gap-3 mb-2">
                             <span class="text-lg font-semibold">WP ${session.wahlperiode} / Sitzung ${session.sitzungsnr}</span>
                             <span class="text-sm text-gray-500">${session.datum}</span>
                         </div>
-                        <p class="text-sm text-gray-600">${session.num_speeches} Reden • ${session.metrics.length.total_words.toLocaleString('de-DE')} Wörter</p>
+                        <p class="text-sm text-gray-600 mb-2">${session.num_speeches} Reden • ${session.metrics.length.total_words.toLocaleString('de-DE')} Wörter</p>
+                        ${topicsHtml ? `<div class="flex flex-wrap gap-1 mb-2">${topicsHtml}</div>` : ''}
                         ${session.summary !== 'Durchschnittliche Sitzung' ? 
-                            `<p class="text-sm text-bt-blue mt-1">💡 ${session.summary}</p>` : ''}
+                            `<p class="text-sm text-bt-blue">💡 ${session.summary}</p>` : ''}
                     </div>
-                    <div class="flex gap-6">
+                    <div class="flex gap-6 flex-shrink-0">
                         <div class="text-center">
                             <p class="text-xs text-gray-500 mb-1">Sentiment</p>
                             <div class="flex items-center gap-2">

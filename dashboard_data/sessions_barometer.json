@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-06T22:24:00.072371",
+  "generated_at": "2026-02-07T13:43:59.690947",
   "total_sessions": 29,
   "wahlperioden": [
     19,
@@ -13,21 +13,21 @@
   "statistics": {
     "avg_sentiment": {
       "min": -0.38181818181818183,
-      "max": 0.010077519379844961,
+      "max": 0.01015625,
       "median": -0.11170212765957446,
-      "mean": -0.12081507495230331
+      "mean": -0.12083337359636312
     },
     "avg_emotionality": {
       "min": 0.1469820895522388,
       "max": 0.32335909090909093,
       "median": 0.2328044871794872,
-      "mean": 0.23173198085226687
+      "mean": 0.2316259151233423
     },
     "num_speeches": {
       "min": 22,
-      "max": 275,
-      "median": 129.0,
-      "mean": 131.9655172413793
+      "max": 274,
+      "median": 128.0,
+      "mean": 131.86206896551724
     }
   },
   "sessions": [
@@ -38,6 +38,20 @@
       "datum": "30.01.2026",
       "jahr": 2026,
       "num_speeches": 76,
+      "top_topics": [
+        {
+          "label": "Wirtschaft und Unternehmenspolitik",
+          "count": 16
+        },
+        {
+          "label": "Klimapolitik und Energiewende-Debatte",
+          "count": 14
+        },
+        {
+          "label": "Mobilität im ländlichen Raum",
+          "count": 14
+        }
+      ],
       "metrics": {
         "sentiment": {
           "value": -0.161,
@@ -52,10 +66,6 @@
           "total_words": 44001,
           "avg_per_speech": 579.0,
           "percentile": 17.2
-        },
-        "engagement": {
-          "exclamations_per_1000": 7.02,
-          "questions_per_1000": 2.66
         }
       },
       "summary": "Hohe emotionalität (top 7%)"
@@ -67,6 +77,20 @@
       "datum": "29.01.2026",
       "jahr": 2026,
       "num_speeches": 162,
+      "top_topics": [
+        {
+          "label": "Ukraine-Krieg und Bundeswehr-Stärkung",
+          "count": 34
+        },
+        {
+          "label": "Innere Sicherheit und Extremismusbekämpfung",
+          "count": 33
+        },
+        {
+          "label": "Finanzskandale und Bankenregulierung",
+          "count": 19
+        }
+      ],
       "metrics": {
         "sentiment": {
           "value": -0.194,
@@ -81,10 +105,6 @@
           "total_words": 98539,
           "avg_per_speech": 608.0,
           "percentile": 75.9
-        },
-        "engagement": {
-          "exclamations_per_1000": 5.67,
-          "questions_per_1000": 3.05
         }
       },
       "summary": "Durchschnittliche Sitzung"
@@ -96,6 +116,20 @@
       "datum": "28.01.2026",
       "jahr": 2026,
       "num_speeches": 156,
+      "top_topics": [
+        {
+          "label": "Fragestunde zur Ukraine-Politik",
+          "count": 55
+        },
+        {
+          "label": "Landwirtschaft, Mercosur und Agrarpolitik",
+          "count": 32
+        },
+        {
+          "label": "Wirtschaft und Unternehmenspolitik",
+          "count": 19
+        }
+      ],
       "metrics": {
         "sentiment": {
           "value": -0.083,
@@ -110,10 +144,6 @@
           "total_words": 38862,
           "avg_per_speech": 249.0,
           "percentile": 13.8
-        },
-        "engagement": {
-          "exclamations_per_1000": 4.97,
-          "questions_per_1000": 4.3
         }
       },
       "summary": "Durchschnittliche Sitzung"
@@ -125,6 +155,20 @@
       "datum": "16.01.2026",
       "jahr": 2026,
       "num_speeches": 92,
+      "top_topics": [
+        {
+          "label": "Klimapolitik und Energiewende-Debatte",
+          "count": 20
+        },
+        {
+          "label": "Ukraine-Krieg und Bundeswehr-Stärkung",
+          "count": 16
+        },
+        {
+          "label": "Wirtschaft und Unternehmenspolitik",
+          "count": 14
+        }
+      ],
       "metrics": {
         "sentiment": {
           "value": -0.214,
@@ -139,10 +183,6 @@
           "total_words": 50270,
           "avg_per_speech": 546.0,
           "percentile": 31.0
-        },
-        "engagement": {
-          "exclamations_per_1000": 5.65,
-          "questions_per_1000": 2.15
         }
       },
       "summary": "Durchschnittliche Sitzung"
@@ -154,6 +194,20 @@
       "datum": "15.01.2026",
       "jahr": 2026,
       "num_speeches": 183,
+      "top_topics": [
+        {
+          "label": "Landwirtschaft, Insektenschutz und Tierschutz",
+          "count": 31
+        },
+        {
+          "label": "Wirtschaft und Unternehmenspolitik",
+          "count": 20
+        },
+        {
+          "label": "Innere Sicherheit und Extremismusbekämpfung",
+          "count": 18
+        }
+      ],
       "metrics": {
         "sentiment": {
           "value": -0.162,
@@ -168,10 +222,6 @@
           "total_words": 98954,
           "avg_per_speech": 541.0,
           "percentile": 79.3
-        },
-        "engagement": {
-          "exclamations_per_1000": 5.91,
-          "questions_per_1000": 3.3
         }
       },
       "summary": "Durchschnittliche Sitzung"
@@ -182,25 +232,35 @@
       "sitzungsnr": 52,
       "datum": "14.01.2026",
       "jahr": 2026,
-      "num_speeches": 164,
+      "num_speeches": 163,
+      "top_topics": [
+        {
+          "label": "Fragestunde zur Ukraine-Politik",
+          "count": 72
+        },
+        {
+          "label": "Innere Sicherheit und Extremismusbekämpfung",
+          "count": 30
+        },
+        {
+          "label": "Landwirtschaft, Insektenschutz und Tierschutz",
+          "count": 15
+        }
+      ],
       "metrics": {
         "sentiment": {
-          "value": -0.097,
+          "value": -0.098,
           "percentile": 55.2,
-          "spread": 0.408
+          "spread": 0.409
         },
         "emotionality": {
-          "value": 0.2213,
+          "value": 0.2165,
           "percentile": 37.9
         },
         "length": {
-          "total_words": 35532,
-          "avg_per_speech": 217.0,
+          "total_words": 35521,
+          "avg_per_speech": 218.0,
           "percentile": 10.3
-        },
-        "engagement": {
-          "exclamations_per_1000": 4.42,
-          "questions_per_1000": 4.95
         }
       },
       "summary": "Durchschnittliche Sitzung"
@@ -212,6 +272,20 @@
       "datum": "19.12.2025",
       "jahr": 2025,
       "num_speeches": 94,
+      "top_topics": [
+        {
+          "label": "Digitale Politik und Meinungsfreiheit",
+          "count": 15
+        },
+        {
+          "label": "Rente, Armut und Erbschaftsteuer",
+          "count": 11
+        },
+        {
+          "label": "Ukraine-Krieg und Bundeswehr-Stärkung",
+          "count": 11
+        }
+      ],
       "metrics": {
         "sentiment": {
           "value": -0.112,
@@ -226,10 +300,6 @@
           "total_words": 51717,
           "avg_per_speech": 550.0,
           "percentile": 37.9
-        },
-        "engagement": {
-          "exclamations_per_1000": 5.82,
-          "questions_per_1000": 3.02
         }
       },
       "summary": "Kontroverse debatte"
@@ -241,6 +311,20 @@
       "datum": "17.12.2025",
       "jahr": 2025,
       "num_speeches": 132,
+      "top_topics": [
+        {
+          "label": "Fragestunde zur Ukraine-Politik",
+          "count": 38
+        },
+        {
+          "label": "Rente, Armut und Erbschaftsteuer",
+          "count": 18
+        },
+        {
+          "label": "Ukraine-Krieg und Bundeswehr-Stärkung",
+          "count": 14
+        }
+      ],
       "metrics": {
         "sentiment": {
           "value": -0.069,
@@ -255,10 +339,6 @@
           "total_words": 47584,
           "avg_per_speech": 360.0,
           "percentile": 24.1
-        },
-        "engagement": {
-          "exclamations_per_1000": 4.43,
-          "questions_per_1000": 3.28
         }
       },
       "summary": "Durchschnittliche Sitzung"
@@ -270,6 +350,20 @@
       "datum": "05.12.2025",
       "jahr": 2025,
       "num_speeches": 113,
+      "top_topics": [
+        {
+          "label": "Ukraine-Krieg und Bundeswehr-Stärkung",
+          "count": 25
+        },
+        {
+          "label": "Rente, Armut und Erbschaftsteuer",
+          "count": 21
+        },
+        {
+          "label": "Schuldenbremse, Investitionen und Generationengerechtigkeit",
+          "count": 20
+        }
+      ],
       "metrics": {
         "sentiment": {
           "value": -0.147,
@@ -284,10 +378,6 @@
           "total_words": 57213,
           "avg_per_speech": 506.0,
           "percentile": 51.7
-        },
-        "engagement": {
-          "exclamations_per_1000": 4.98,
-          "questions_per_1000": 2.66
         }
       },
       "summary": "Durchschnittliche Sitzung"
@@ -299,6 +389,20 @@
       "datum": "18.03.2025",
       "jahr": 2025,
       "num_speeches": 83,
+      "top_topics": [
+        {
+          "label": "Schuldenbremse, Investitionen und Generationengerechtigkeit",
+          "count": 48
+        },
+        {
+          "label": "Ukraine-Krieg und Bundeswehr-Stärkung",
+          "count": 21
+        },
+        {
+          "label": "AfD, Demokratie und Grundgesetz",
+          "count": 11
+        }
+      ],
       "metrics": {
         "sentiment": {
           "value": -0.018,
@@ -313,10 +417,6 @@
           "total_words": 53125,
           "avg_per_speech": 640.0,
           "percentile": 44.8
-        },
-        "engagement": {
-          "exclamations_per_1000": 2.9,
-          "questions_per_1000": 1.71
         }
       },
       "summary": "Sehr sachlich (untere 3%)"
@@ -328,6 +428,20 @@
       "datum": "13.03.2025",
       "jahr": 2025,
       "num_speeches": 38,
+      "top_topics": [
+        {
+          "label": "Schuldenbremse, Investitionen und Generationengerechtigkeit",
+          "count": 11
+        },
+        {
+          "label": "Ukraine-Krieg und Bundeswehr-Stärkung",
+          "count": 11
+        },
+        {
+          "label": "AfD, Demokratie und Grundgesetz",
+          "count": 7
+        }
+      ],
       "metrics": {
         "sentiment": {
           "value": -0.239,
@@ -342,10 +456,6 @@
           "total_words": 29702,
           "avg_per_speech": 782.0,
           "percentile": 6.9
-        },
-        "engagement": {
-          "exclamations_per_1000": 4.75,
-          "questions_per_1000": 3.23
         }
       },
       "summary": "Sehr negatives sentiment (untere 7%), kurze sitzung (untere 7%)"
@@ -357,6 +467,20 @@
       "datum": "11.02.2025",
       "jahr": 2025,
       "num_speeches": 22,
+      "top_topics": [
+        {
+          "label": "Wirtschaft und Unternehmenspolitik",
+          "count": 12
+        },
+        {
+          "label": "AfD, Demokratie und Grundgesetz",
+          "count": 5
+        },
+        {
+          "label": "Ukraine-Krieg und Bundeswehr-Stärkung",
+          "count": 2
+        }
+      ],
       "metrics": {
         "sentiment": {
           "value": -0.368,
@@ -371,10 +495,6 @@
           "total_words": 26565,
           "avg_per_speech": 1208.0,
           "percentile": 3.4
-        },
-        "engagement": {
-          "exclamations_per_1000": 4.37,
-          "questions_per_1000": 4.82
         }
       },
       "summary": "Sehr negatives sentiment (untere 3%), hohe emotionalität (top 3%), kurze sitzung (untere 3%)"
@@ -386,6 +506,20 @@
       "datum": "31.01.2025",
       "jahr": 2025,
       "num_speeches": 134,
+      "top_topics": [
+        {
+          "label": "Migrationspolitik und Grenzdebatte",
+          "count": 31
+        },
+        {
+          "label": "Familie, Frauen und Pflege",
+          "count": 24
+        },
+        {
+          "label": "AfD, Demokratie und Grundgesetz",
+          "count": 20
+        }
+      ],
       "metrics": {
         "sentiment": {
           "value": -0.174,
@@ -400,10 +534,6 @@
           "total_words": 71683,
           "avg_per_speech": 535.0,
           "percentile": 65.5
-        },
-        "engagement": {
-          "exclamations_per_1000": 6.03,
-          "questions_per_1000": 2.58
         }
       },
       "summary": "Durchschnittliche Sitzung"
@@ -415,6 +545,20 @@
       "datum": "30.01.2025",
       "jahr": 2025,
       "num_speeches": 225,
+      "top_topics": [
+        {
+          "label": "AfD, Demokratie und Grundgesetz",
+          "count": 37
+        },
+        {
+          "label": "Familie, Frauen und Pflege",
+          "count": 22
+        },
+        {
+          "label": "Rente, Armut und Erbschaftsteuer",
+          "count": 22
+        }
+      ],
       "metrics": {
         "sentiment": {
           "value": -0.137,
@@ -429,10 +573,6 @@
           "total_words": 136726,
           "avg_per_speech": 608.0,
           "percentile": 93.1
-        },
-        "engagement": {
-          "exclamations_per_1000": 5.76,
-          "questions_per_1000": 2.27
         }
       },
       "summary": "Überdurchschnittlich lang (top 7%), kontroverse debatte"
@@ -444,6 +584,20 @@
       "datum": "29.01.2025",
       "jahr": 2025,
       "num_speeches": 193,
+      "top_topics": [
+        {
+          "label": "Landwirtschaft, Mercosur und Agrarpolitik",
+          "count": 43
+        },
+        {
+          "label": "Fragestunde zur Ukraine-Politik",
+          "count": 33
+        },
+        {
+          "label": "Migrationspolitik und Grenzdebatte",
+          "count": 27
+        }
+      ],
       "metrics": {
         "sentiment": {
           "value": -0.122,
@@ -458,10 +612,6 @@
           "total_words": 66333,
           "avg_per_speech": 344.0,
           "percentile": 62.1
-        },
-        "engagement": {
-          "exclamations_per_1000": 4.07,
-          "questions_per_1000": 3.15
         }
       },
       "summary": "Durchschnittliche Sitzung"
@@ -473,6 +623,20 @@
       "datum": "20.12.2024",
       "jahr": 2024,
       "num_speeches": 89,
+      "top_topics": [
+        {
+          "label": "Migrationspolitik und Grenzdebatte",
+          "count": 21
+        },
+        {
+          "label": "AfD, Demokratie und Grundgesetz",
+          "count": 12
+        },
+        {
+          "label": "Wirtschaft und Unternehmenspolitik",
+          "count": 12
+        }
+      ],
       "metrics": {
         "sentiment": {
           "value": -0.183,
@@ -487,10 +651,6 @@
           "total_words": 57631,
           "avg_per_speech": 648.0,
           "percentile": 55.2
-        },
-        "engagement": {
-          "exclamations_per_1000": 5.81,
-          "questions_per_1000": 2.74
         }
       },
       "summary": "Durchschnittliche Sitzung"
@@ -502,6 +662,20 @@
       "datum": "19.12.2024",
       "jahr": 2024,
       "num_speeches": 194,
+      "top_topics": [
+        {
+          "label": "Wirtschaft und Unternehmenspolitik",
+          "count": 52
+        },
+        {
+          "label": "AfD, Demokratie und Grundgesetz",
+          "count": 33
+        },
+        {
+          "label": "Familie, Frauen und Pflege",
+          "count": 19
+        }
+      ],
       "metrics": {
         "sentiment": {
           "value": -0.151,
@@ -516,10 +690,6 @@
           "total_words": 114588,
           "avg_per_speech": 591.0,
           "percentile": 82.8
-        },
-        "engagement": {
-          "exclamations_per_1000": 5.86,
-          "questions_per_1000": 2.63
         }
       },
       "summary": "Durchschnittliche Sitzung"
@@ -531,6 +701,20 @@
       "datum": "18.12.2024",
       "jahr": 2024,
       "num_speeches": 183,
+      "top_topics": [
+        {
+          "label": "Wohnungsbau und Mietpolitik",
+          "count": 69
+        },
+        {
+          "label": "Fragestunde zur Ukraine-Politik",
+          "count": 45
+        },
+        {
+          "label": "Nahostkonflikte und UNIFIL-Mission",
+          "count": 21
+        }
+      ],
       "metrics": {
         "sentiment": {
           "value": -0.101,
@@ -545,10 +729,6 @@
           "total_words": 48526,
           "avg_per_speech": 265.0,
           "percentile": 27.6
-        },
-        "engagement": {
-          "exclamations_per_1000": 5.15,
-          "questions_per_1000": 3.5
         }
       },
       "summary": "Durchschnittliche Sitzung"
@@ -560,6 +740,20 @@
       "datum": "16.12.2024",
       "jahr": 2024,
       "num_speeches": 22,
+      "top_topics": [
+        {
+          "label": "Wirtschaft und Unternehmenspolitik",
+          "count": 10
+        },
+        {
+          "label": "AfD, Demokratie und Grundgesetz",
+          "count": 6
+        },
+        {
+          "label": "Ukraine-Krieg und Bundeswehr-Stärkung",
+          "count": 5
+        }
+      ],
       "metrics": {
         "sentiment": {
           "value": -0.382,
@@ -574,10 +768,6 @@
           "total_words": 21579,
           "avg_per_speech": 981.0,
           "percentile": 0.0
-        },
-        "engagement": {
-          "exclamations_per_1000": 4.91,
-          "questions_per_1000": 3.43
         }
       },
       "summary": "Sehr negatives sentiment (untere 0%), kurze sitzung (untere 0%)"
@@ -589,6 +779,20 @@
       "datum": "07.09.2021",
       "jahr": 2021,
       "num_speeches": 67,
+      "top_topics": [
+        {
+          "label": "Pandemiebekämpfung und Infektionsschutzmaßnahmen",
+          "count": 32
+        },
+        {
+          "label": "Wirtschaft und Unternehmenspolitik",
+          "count": 11
+        },
+        {
+          "label": "Klimapolitik und Energiewende-Debatte",
+          "count": 7
+        }
+      ],
       "metrics": {
         "sentiment": {
           "value": -0.087,
@@ -603,10 +807,6 @@
           "total_words": 51007,
           "avg_per_speech": 761.0,
           "percentile": 34.5
-        },
-        "engagement": {
-          "exclamations_per_1000": 3.18,
-          "questions_per_1000": 2.84
         }
       },
       "summary": "Sehr sachlich (untere 0%)"
@@ -618,6 +818,20 @@
       "datum": "25.08.2021",
       "jahr": 2021,
       "num_speeches": 71,
+      "top_topics": [
+        {
+          "label": "Afghanistan-Einsatz und Ortskräfte",
+          "count": 26
+        },
+        {
+          "label": "Pandemiebekämpfung und Infektionsschutzmaßnahmen",
+          "count": 25
+        },
+        {
+          "label": "Klimapolitik und Energiewende-Debatte",
+          "count": 15
+        }
+      ],
       "metrics": {
         "sentiment": {
           "value": -0.134,
@@ -632,10 +846,6 @@
           "total_words": 54042,
           "avg_per_speech": 761.0,
           "percentile": 48.3
-        },
-        "engagement": {
-          "exclamations_per_1000": 3.53,
-          "questions_per_1000": 3.16
         }
       },
       "summary": "Durchschnittliche Sitzung"
@@ -647,6 +857,20 @@
       "datum": "25.06.2021",
       "jahr": 2021,
       "num_speeches": 94,
+      "top_topics": [
+        {
+          "label": "Finanzskandale und Bankenregulierung",
+          "count": 20
+        },
+        {
+          "label": "Digitalisierung, Bürokratie und Datenschutz",
+          "count": 16
+        },
+        {
+          "label": "Familie, Frauen und Pflege",
+          "count": 13
+        }
+      ],
       "metrics": {
         "sentiment": {
           "value": -0.061,
@@ -661,10 +885,6 @@
           "total_words": 60864,
           "avg_per_speech": 647.0,
           "percentile": 58.6
-        },
-        "engagement": {
-          "exclamations_per_1000": 5.04,
-          "questions_per_1000": 1.68
         }
       },
       "summary": "Durchschnittliche Sitzung"
@@ -675,7 +895,21 @@
       "sitzungsnr": 236,
       "datum": "24.06.2021",
       "jahr": 2021,
-      "num_speeches": 275,
+      "num_speeches": 274,
+      "top_topics": [
+        {
+          "label": "Klimapolitik und Energiewende-Debatte",
+          "count": 44
+        },
+        {
+          "label": "Verbraucherschutz und Produktsicherheit",
+          "count": 38
+        },
+        {
+          "label": "Landwirtschaft, Insektenschutz und Tierschutz",
+          "count": 26
+        }
+      ],
       "metrics": {
         "sentiment": {
           "value": -0.004,
@@ -683,17 +917,13 @@
           "spread": 0.468
         },
         "emotionality": {
-          "value": 0.1607,
+          "value": 0.1612,
           "percentile": 10.3
         },
         "length": {
-          "total_words": 156602,
-          "avg_per_speech": 569.0,
+          "total_words": 156590,
+          "avg_per_speech": 571.0,
           "percentile": 96.6
-        },
-        "engagement": {
-          "exclamations_per_1000": 3.82,
-          "questions_per_1000": 1.47
         }
       },
       "summary": "Überdurchschnittlich lang (top 3%)"
@@ -705,6 +935,20 @@
       "datum": "23.06.2021",
       "jahr": 2021,
       "num_speeches": 114,
+      "top_topics": [
+        {
+          "label": "Afghanistan-Einsatz und Ortskräfte",
+          "count": 26
+        },
+        {
+          "label": "Pandemiebekämpfung und Infektionsschutzmaßnahmen",
+          "count": 15
+        },
+        {
+          "label": "Fragestunde zur Ukraine-Politik",
+          "count": 14
+        }
+      ],
       "metrics": {
         "sentiment": {
           "value": -0.011,
@@ -719,10 +963,6 @@
           "total_words": 47513,
           "avg_per_speech": 417.0,
           "percentile": 20.7
-        },
-        "engagement": {
-          "exclamations_per_1000": 4.1,
-          "questions_per_1000": 2.78
         }
       },
       "summary": "Durchschnittliche Sitzung"
@@ -734,6 +974,20 @@
       "datum": "11.06.2021",
       "jahr": 2021,
       "num_speeches": 131,
+      "top_topics": [
+        {
+          "label": "Familie, Frauen und Pflege",
+          "count": 30
+        },
+        {
+          "label": "Pandemiebekämpfung und Infektionsschutzmaßnahmen",
+          "count": 28
+        },
+        {
+          "label": "Wirtschaft und Unternehmenspolitik",
+          "count": 19
+        }
+      ],
       "metrics": {
         "sentiment": {
           "value": -0.004,
@@ -748,10 +1002,6 @@
           "total_words": 71738,
           "avg_per_speech": 548.0,
           "percentile": 69.0
-        },
-        "engagement": {
-          "exclamations_per_1000": 4.68,
-          "questions_per_1000": 2.05
         }
       },
       "summary": "Durchschnittliche Sitzung"
@@ -763,6 +1013,20 @@
       "datum": "10.06.2021",
       "jahr": 2021,
       "num_speeches": 236,
+      "top_topics": [
+        {
+          "label": "Verbraucherschutz und Produktsicherheit",
+          "count": 60
+        },
+        {
+          "label": "Klimapolitik und Energiewende-Debatte",
+          "count": 33
+        },
+        {
+          "label": "Innere Sicherheit und Extremismusbekämpfung",
+          "count": 23
+        }
+      ],
       "metrics": {
         "sentiment": {
           "value": -0.064,
@@ -777,10 +1041,6 @@
           "total_words": 130901,
           "avg_per_speech": 555.0,
           "percentile": 89.7
-        },
-        "engagement": {
-          "exclamations_per_1000": 3.65,
-          "questions_per_1000": 1.74
         }
       },
       "summary": "Sehr sachlich (untere 7%)"
@@ -791,25 +1051,35 @@
       "sitzungsnr": 232,
       "datum": "09.06.2021",
       "jahr": 2021,
-      "num_speeches": 129,
+      "num_speeches": 128,
+      "top_topics": [
+        {
+          "label": "Fragestunde zur Ukraine-Politik",
+          "count": 46
+        },
+        {
+          "label": "Ukraine-Krieg und Bundeswehr-Stärkung",
+          "count": 18
+        },
+        {
+          "label": "Pandemiebekämpfung und Infektionsschutzmaßnahmen",
+          "count": 14
+        }
+      ],
       "metrics": {
         "sentiment": {
           "value": 0.01,
           "percentile": 96.6,
-          "spread": 0.413
+          "spread": 0.414
         },
         "emotionality": {
-          "value": 0.1694,
+          "value": 0.1705,
           "percentile": 13.8
         },
         "length": {
-          "total_words": 52834,
-          "avg_per_speech": 410.0,
+          "total_words": 52823,
+          "avg_per_speech": 413.0,
           "percentile": 41.4
-        },
-        "engagement": {
-          "exclamations_per_1000": 3.92,
-          "questions_per_1000": 2.69
         }
       },
       "summary": "Sehr positives sentiment (top 3%)"
@@ -821,6 +1091,20 @@
       "datum": "21.05.2021",
       "jahr": 2021,
       "num_speeches": 120,
+      "top_topics": [
+        {
+          "label": "Klimapolitik und Energiewende-Debatte",
+          "count": 23
+        },
+        {
+          "label": "AfD, Demokratie und Grundgesetz",
+          "count": 17
+        },
+        {
+          "label": "Rente, Armut und Erbschaftsteuer",
+          "count": 14
+        }
+      ],
       "metrics": {
         "sentiment": {
           "value": -0.033,
@@ -835,10 +1119,6 @@
           "total_words": 73828,
           "avg_per_speech": 615.0,
           "percentile": 72.4
-        },
-        "engagement": {
-          "exclamations_per_1000": 5.19,
-          "questions_per_1000": 2.47
         }
       },
       "summary": "Durchschnittliche Sitzung"
@@ -850,6 +1130,20 @@
       "datum": "20.05.2021",
       "jahr": 2021,
       "num_speeches": 235,
+      "top_topics": [
+        {
+          "label": "Pandemiebekämpfung und Infektionsschutzmaßnahmen",
+          "count": 32
+        },
+        {
+          "label": "Mobilität im ländlichen Raum",
+          "count": 28
+        },
+        {
+          "label": "Klimapolitik und Energiewende-Debatte",
+          "count": 23
+        }
+      ],
       "metrics": {
         "sentiment": {
           "value": -0.003,
@@ -864,10 +1158,6 @@
           "total_words": 130013,
           "avg_per_speech": 553.0,
           "percentile": 86.2
-        },
-        "engagement": {
-          "exclamations_per_1000": 4.41,
-          "questions_per_1000": 1.98
         }
       },
       "summary": "Sehr positives sentiment (top 7%)"
