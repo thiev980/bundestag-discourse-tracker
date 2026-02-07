@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-07T23:13:18.872178",
+  "generated_at": "2026-02-07T23:24:59.737615",
   "total_sessions": 40,
   "wahlperioden": [
     19,
@@ -40,7 +40,7 @@
       "num_speeches": 76,
       "top_topics": [
         {
-          "label": "Wirtschaftspolitik und Investitionen",
+          "label": "Wirtschaft und Investitionen",
           "count": 16
         },
         {
@@ -48,7 +48,7 @@
           "count": 14
         },
         {
-          "label": "Mobilität, Deutschlandticket und Maut",
+          "label": "Mobilität und Verkehrspolitik",
           "count": 14
         }
       ],
@@ -87,7 +87,7 @@
           "count": 30
         },
         {
-          "label": "Wirtschafts- und Finanzpolitik",
+          "label": "Wirtschafts- und Finanzpolitik: ESM, Schuldenbremse & Steuern",
           "count": 19
         }
       ],
@@ -126,7 +126,7 @@
           "count": 24
         },
         {
-          "label": "Landwirtschaft, Insektenschutz und Tierwohl",
+          "label": "Landwirtschaft, Bauern und Insektenschutz",
           "count": 21
         }
       ],
@@ -165,7 +165,7 @@
           "count": 14
         },
         {
-          "label": "Digitale Souveränität und Verwaltung",
+          "label": "Digitalisierung, Daten und Souveränität",
           "count": 13
         }
       ],
@@ -196,11 +196,11 @@
       "num_speeches": 183,
       "top_topics": [
         {
-          "label": "Landwirtschaft, Insektenschutz und Tierwohl",
+          "label": "Landwirtschaft, Bauern und Insektenschutz",
           "count": 31
         },
         {
-          "label": "Wirtschaftspolitik und Investitionen",
+          "label": "Wirtschaft und Investitionen",
           "count": 21
         },
         {
@@ -239,11 +239,11 @@
           "count": 68
         },
         {
-          "label": "Nahost- und Afrika-Missionen/Humanitäre Hilfe",
+          "label": "Krisen und Missionen im Nahen Osten",
           "count": 18
         },
         {
-          "label": "Landwirtschaft, Insektenschutz und Tierwohl",
+          "label": "Landwirtschaft, Bauern und Insektenschutz",
           "count": 15
         }
       ],
@@ -274,11 +274,11 @@
       "num_speeches": 94,
       "top_topics": [
         {
-          "label": "Wirtschafts- und Finanzpolitik",
+          "label": "Wirtschafts- und Finanzpolitik: ESM, Schuldenbremse & Steuern",
           "count": 22
         },
         {
-          "label": "Digitale Souveränität und Verwaltung",
+          "label": "Digitalisierung, Daten und Souveränität",
           "count": 12
         },
         {
@@ -313,7 +313,7 @@
       "num_speeches": 205,
       "top_topics": [
         {
-          "label": "Demokratie, Petitionen und parlamentarische Praxis",
+          "label": "Demokratie, Petitionen und Parlamentsbetrieb",
           "count": 33
         },
         {
@@ -321,7 +321,7 @@
           "count": 28
         },
         {
-          "label": "AfD und Demokratiedebatte",
+          "label": "AfD und Demokratie-Debatte",
           "count": 25
         }
       ],
@@ -395,11 +395,11 @@
           "count": 40
         },
         {
-          "label": "Bundeswehr, Verteidigung und Wehrdienst",
+          "label": "Bundeswehr, Sicherheit und Wehrdienst",
           "count": 18
         },
         {
-          "label": "Digitale Souveränität und Verwaltung",
+          "label": "Digitalisierung, Daten und Souveränität",
           "count": 14
         }
       ],
@@ -434,11 +434,11 @@
           "count": 34
         },
         {
-          "label": "AfD und Demokratiedebatte",
+          "label": "AfD und Demokratie-Debatte",
           "count": 19
         },
         {
-          "label": "Gedenken, Entschädigung und Frauenrechte",
+          "label": "Gewalt, Antisemitismus und NS-Vergangenheit",
           "count": 16
         }
       ],
@@ -473,11 +473,11 @@
           "count": 94
         },
         {
-          "label": "Afghanistan, Ortskräfte und Aufnahmen",
+          "label": "Afghanistan-Einsatz und Ortskräfte",
           "count": 26
         },
         {
-          "label": "AfD und Demokratiedebatte",
+          "label": "AfD und Demokratie-Debatte",
           "count": 25
         }
       ],
@@ -508,7 +508,7 @@
       "num_speeches": 66,
       "top_topics": [
         {
-          "label": "Wirtschaftspolitik und Investitionen",
+          "label": "Wirtschaft und Investitionen",
           "count": 26
         },
         {
@@ -516,7 +516,7 @@
           "count": 15
         },
         {
-          "label": "Wirtschafts- und Finanzpolitik",
+          "label": "Wirtschafts- und Finanzpolitik: ESM, Schuldenbremse & Steuern",
           "count": 10
         }
       ],
@@ -547,15 +547,15 @@
       "num_speeches": 117,
       "top_topics": [
         {
-          "label": "Mobilität, Deutschlandticket und Maut",
+          "label": "Mobilität und Verkehrspolitik",
           "count": 20
         },
         {
-          "label": "Landwirtschaft, Insektenschutz und Tierwohl",
+          "label": "Landwirtschaft, Bauern und Insektenschutz",
           "count": 19
         },
         {
-          "label": "Pflege, Gesundheit und Familienpolitik",
+          "label": "Pflege, Gesundheit und Mutterschutz",
           "count": 16
         }
       ],
@@ -586,11 +586,11 @@
       "num_speeches": 102,
       "top_topics": [
         {
-          "label": "Wirtschaftspolitik und Investitionen",
+          "label": "Wirtschaft und Investitionen",
           "count": 25
         },
         {
-          "label": "Bundeswehr, Verteidigung und Wehrdienst",
+          "label": "Bundeswehr, Sicherheit und Wehrdienst",
           "count": 19
         },
         {
@@ -625,7 +625,7 @@
       "num_speeches": 104,
       "top_topics": [
         {
-          "label": "Wirtschaftspolitik und Investitionen",
+          "label": "Wirtschaft und Investitionen",
           "count": 25
         },
         {
@@ -633,7 +633,7 @@
           "count": 23
         },
         {
-          "label": "Digitale Souveränität und Verwaltung",
+          "label": "Digitalisierung, Daten und Souveränität",
           "count": 18
         }
       ],
@@ -668,7 +668,7 @@
           "count": 33
         },
         {
-          "label": "Digitale Souveränität und Verwaltung",
+          "label": "Digitalisierung, Daten und Souveränität",
           "count": 15
         },
         {
@@ -703,7 +703,7 @@
       "num_speeches": 153,
       "top_topics": [
         {
-          "label": "Wirtschaftspolitik und Investitionen",
+          "label": "Wirtschaft und Investitionen",
           "count": 46
         },
         {
@@ -711,7 +711,7 @@
           "count": 32
         },
         {
-          "label": "Mobilität, Deutschlandticket und Maut",
+          "label": "Mobilität und Verkehrspolitik",
           "count": 16
         }
       ],
@@ -750,7 +750,7 @@
           "count": 48
         },
         {
-          "label": "AfD und Demokratiedebatte",
+          "label": "AfD und Demokratie-Debatte",
           "count": 22
         }
       ],
@@ -785,11 +785,11 @@
           "count": 16
         },
         {
-          "label": "Nahost- und Afrika-Missionen/Humanitäre Hilfe",
+          "label": "Krisen und Missionen im Nahen Osten",
           "count": 15
         },
         {
-          "label": "Wirtschaftspolitik und Investitionen",
+          "label": "Wirtschaft und Investitionen",
           "count": 13
         }
       ],
@@ -820,15 +820,15 @@
       "num_speeches": 83,
       "top_topics": [
         {
-          "label": "Wirtschafts- und Finanzpolitik",
+          "label": "Wirtschafts- und Finanzpolitik: ESM, Schuldenbremse & Steuern",
           "count": 27
         },
         {
-          "label": "Bundeswehr, Verteidigung und Wehrdienst",
+          "label": "Bundeswehr, Sicherheit und Wehrdienst",
           "count": 19
         },
         {
-          "label": "Demokratie, Petitionen und parlamentarische Praxis",
+          "label": "Demokratie, Petitionen und Parlamentsbetrieb",
           "count": 13
         }
       ],
@@ -859,15 +859,15 @@
       "num_speeches": 38,
       "top_topics": [
         {
-          "label": "Wirtschaftspolitik und Investitionen",
+          "label": "Wirtschaft und Investitionen",
           "count": 9
         },
         {
-          "label": "Wirtschafts- und Finanzpolitik",
+          "label": "Wirtschafts- und Finanzpolitik: ESM, Schuldenbremse & Steuern",
           "count": 8
         },
         {
-          "label": "Demokratie, Petitionen und parlamentarische Praxis",
+          "label": "Demokratie, Petitionen und Parlamentsbetrieb",
           "count": 7
         }
       ],
@@ -898,15 +898,15 @@
       "num_speeches": 22,
       "top_topics": [
         {
-          "label": "Wirtschaftspolitik und Investitionen",
+          "label": "Wirtschaft und Investitionen",
           "count": 12
         },
         {
-          "label": "AfD und Demokratiedebatte",
+          "label": "AfD und Demokratie-Debatte",
           "count": 3
         },
         {
-          "label": "Demokratie, Petitionen und parlamentarische Praxis",
+          "label": "Demokratie, Petitionen und Parlamentsbetrieb",
           "count": 3
         }
       ],
@@ -937,7 +937,7 @@
       "num_speeches": 134,
       "top_topics": [
         {
-          "label": "Gedenken, Entschädigung und Frauenrechte",
+          "label": "Gewalt, Antisemitismus und NS-Vergangenheit",
           "count": 27
         },
         {
@@ -945,7 +945,7 @@
           "count": 24
         },
         {
-          "label": "AfD und Demokratiedebatte",
+          "label": "AfD und Demokratie-Debatte",
           "count": 17
         }
       ],
@@ -976,15 +976,15 @@
       "num_speeches": 225,
       "top_topics": [
         {
-          "label": "AfD und Demokratiedebatte",
+          "label": "AfD und Demokratie-Debatte",
           "count": 35
         },
         {
-          "label": "Wirtschafts- und Finanzpolitik",
+          "label": "Wirtschafts- und Finanzpolitik: ESM, Schuldenbremse & Steuern",
           "count": 30
         },
         {
-          "label": "Pflege, Gesundheit und Familienpolitik",
+          "label": "Pflege, Gesundheit und Mutterschutz",
           "count": 26
         }
       ],
@@ -1019,11 +1019,11 @@
           "count": 48
         },
         {
-          "label": "Landwirtschaft, Insektenschutz und Tierwohl",
+          "label": "Landwirtschaft, Bauern und Insektenschutz",
           "count": 34
         },
         {
-          "label": "Gedenken, Entschädigung und Frauenrechte",
+          "label": "Gewalt, Antisemitismus und NS-Vergangenheit",
           "count": 27
         }
       ],
@@ -1062,7 +1062,7 @@
           "count": 11
         },
         {
-          "label": "AfD und Demokratiedebatte",
+          "label": "AfD und Demokratie-Debatte",
           "count": 10
         }
       ],
@@ -1093,15 +1093,15 @@
       "num_speeches": 194,
       "top_topics": [
         {
-          "label": "Wirtschaftspolitik und Investitionen",
+          "label": "Wirtschaft und Investitionen",
           "count": 46
         },
         {
-          "label": "Demokratie, Petitionen und parlamentarische Praxis",
+          "label": "Demokratie, Petitionen und Parlamentsbetrieb",
           "count": 29
         },
         {
-          "label": "Wirtschafts- und Finanzpolitik",
+          "label": "Wirtschafts- und Finanzpolitik: ESM, Schuldenbremse & Steuern",
           "count": 22
         }
       ],
@@ -1140,7 +1140,7 @@
           "count": 34
         },
         {
-          "label": "Nahost- und Afrika-Missionen/Humanitäre Hilfe",
+          "label": "Krisen und Missionen im Nahen Osten",
           "count": 22
         }
       ],
@@ -1171,11 +1171,11 @@
       "num_speeches": 22,
       "top_topics": [
         {
-          "label": "Wirtschaftspolitik und Investitionen",
+          "label": "Wirtschaft und Investitionen",
           "count": 10
         },
         {
-          "label": "Demokratie, Petitionen und parlamentarische Praxis",
+          "label": "Demokratie, Petitionen und Parlamentsbetrieb",
           "count": 7
         },
         {
@@ -1214,7 +1214,7 @@
           "count": 31
         },
         {
-          "label": "Wirtschaftspolitik und Investitionen",
+          "label": "Wirtschaft und Investitionen",
           "count": 12
         },
         {
@@ -1249,7 +1249,7 @@
       "num_speeches": 71,
       "top_topics": [
         {
-          "label": "Afghanistan, Ortskräfte und Aufnahmen",
+          "label": "Afghanistan-Einsatz und Ortskräfte",
           "count": 26
         },
         {
@@ -1257,7 +1257,7 @@
           "count": 25
         },
         {
-          "label": "Wirtschaftspolitik und Investitionen",
+          "label": "Wirtschaft und Investitionen",
           "count": 11
         }
       ],
@@ -1288,15 +1288,15 @@
       "num_speeches": 94,
       "top_topics": [
         {
-          "label": "Wirtschafts- und Finanzpolitik",
+          "label": "Wirtschafts- und Finanzpolitik: ESM, Schuldenbremse & Steuern",
           "count": 27
         },
         {
-          "label": "Gedenken, Entschädigung und Frauenrechte",
+          "label": "Gewalt, Antisemitismus und NS-Vergangenheit",
           "count": 15
         },
         {
-          "label": "Digitale Souveränität und Verwaltung",
+          "label": "Digitalisierung, Daten und Souveränität",
           "count": 12
         }
       ],
@@ -1331,7 +1331,7 @@
           "count": 40
         },
         {
-          "label": "Landwirtschaft, Insektenschutz und Tierwohl",
+          "label": "Landwirtschaft, Bauern und Insektenschutz",
           "count": 32
         },
         {
@@ -1366,7 +1366,7 @@
       "num_speeches": 114,
       "top_topics": [
         {
-          "label": "Afghanistan, Ortskräfte und Aufnahmen",
+          "label": "Afghanistan-Einsatz und Ortskräfte",
           "count": 25
         },
         {
@@ -1413,7 +1413,7 @@
           "count": 15
         },
         {
-          "label": "Wirtschaftspolitik und Investitionen",
+          "label": "Wirtschaft und Investitionen",
           "count": 15
         }
       ],
@@ -1448,7 +1448,7 @@
           "count": 44
         },
         {
-          "label": "Wirtschafts- und Finanzpolitik",
+          "label": "Wirtschafts- und Finanzpolitik: ESM, Schuldenbremse & Steuern",
           "count": 33
         },
         {
@@ -1491,7 +1491,7 @@
           "count": 17
         },
         {
-          "label": "Demokratie, Petitionen und parlamentarische Praxis",
+          "label": "Demokratie, Petitionen und Parlamentsbetrieb",
           "count": 16
         }
       ],
@@ -1526,7 +1526,7 @@
           "count": 23
         },
         {
-          "label": "Demokratie, Petitionen und parlamentarische Praxis",
+          "label": "Demokratie, Petitionen und Parlamentsbetrieb",
           "count": 19
         },
         {
@@ -1565,7 +1565,7 @@
           "count": 28
         },
         {
-          "label": "Mobilität, Deutschlandticket und Maut",
+          "label": "Mobilität und Verkehrspolitik",
           "count": 26
         },
         {
