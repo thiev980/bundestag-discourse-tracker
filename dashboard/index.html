@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bundestag Discourse Tracker</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'bt-black': '#1a1a1a',
+                        'bt-gold': '#c9a227',
+                        'bt-red': '#dd1c1a',
+                        'bt-blue': '#0077b6',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+        }
+        .card-hover {
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .card-hover:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+        .percentile-bar {
+            transition: width 0.5s ease-out;
+        }
+        .fade-in {
+            animation: fadeIn 0.5s ease-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    
+    <!-- Navigation -->
+    <nav class="gradient-bg text-white sticky top-0 z-50 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-bt-gold rounded-lg flex items-center justify-center">
+                        <span class="text-xl">🏛️</span>
+                    </div>
+                    <div>
+                        <h1 class="text-lg font-bold">Bundestag Discourse Tracker</h1>
+                        <p class="text-xs text-gray-400">Parlamentsreden-Analyse mit KI</p>
+                    </div>
+                </div>
+                <div class="flex space-x-1">
+                    <button onclick="showSection('overview')" id="nav-overview" class="nav-btn px-4 py-2 rounded-lg text-sm font-medium bg-white/10">
+                        Übersicht
+                    </button>
+                    <button onclick="showSection('barometer')" id="nav-barometer" class="nav-btn px-4 py-2 rounded-lg text-sm font-medium hover:bg-white/10">
+                        Sitzungs-Barometer
+                    </button>
+                    <button onclick="showSection('topics')" id="nav-topics" class="nav-btn px-4 py-2 rounded-lg text-sm font-medium hover:bg-white/10">
+                        Themen
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        
+        <!-- Overview Section -->
+        <section id="section-overview" class="fade-in">
+            <!-- Hero Stats -->
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8">
+                <div class="bg-white rounded-xl shadow-sm p-6 card-hover">
+                    <p class="text-sm text-gray-500 mb-1">Analysierte Reden</p>
+                    <p class="text-3xl font-bold text-bt-black" id="stat-speeches">-</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-sm p-6 card-hover">
+                    <p class="text-sm text-gray-500 mb-1">Sitzungen</p>
+                    <p class="text-3xl font-bold text-bt-black" id="stat-sessions">-</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-sm p-6 card-hover">
+                    <p class="text-sm text-gray-500 mb-1">Themen-Cluster</p>
+                    <p class="text-3xl font-bold text-bt-black" id="stat-clusters">-</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-sm p-6 card-hover">
+                    <p class="text-sm text-gray-500 mb-1">Wahlperioden</p>
+                    <p class="text-3xl font-bold text-bt-black" id="stat-periods">-</p>
+                </div>
+            </div>
+            
+            <!-- Charts Row -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+                <!-- Sentiment Timeline -->
+                <div class="bg-white rounded-xl shadow-sm p-6">
+                    <h3 class="text-lg font-semibold mb-4">Sentiment im Zeitverlauf</h3>
+                    <div class="h-64">
+                        <canvas id="chart-sentiment-timeline"></canvas>
+                    </div>
+                </div>
+                
+                <!-- Topic Distribution -->
+                <div class="bg-white rounded-xl shadow-sm p-6">
+                    <h3 class="text-lg font-semibold mb-4">Themenverteilung</h3>
+                    <div class="h-64">
+                        <canvas id="chart-topic-distribution"></canvas>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Recent Highlights -->
+            <div class="bg-white rounded-xl shadow-sm p-6">
+                <h3 class="text-lg font-semibold mb-4">🔥 Auffällige Sitzungen</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4" id="highlights-container">
+                    <!-- Filled by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Barometer Section -->
+        <section id="section-barometer" class="hidden fade-in">
+            <div class="mb-6 flex flex-wrap items-center gap-4">
+                <h2 class="text-2xl font-bold">Sitzungs-Barometer</h2>
+                <select id="filter-wp" class="rounded-lg border-gray-300 text-sm" onchange="filterSessions()">
+                    <option value="">Alle Wahlperioden</option>
+                </select>
+                <select id="filter-year" class="rounded-lg border-gray-300 text-sm" onchange="filterSessions()">
+                    <option value="">Alle Jahre</option>
+                </select>
+            </div>
+            
+            <!-- Barometer Legend -->
+            <div class="bg-white rounded-xl shadow-sm p-4 mb-6">
+                <div class="flex flex-wrap gap-6 text-sm">
+                    <div class="flex items-center gap-2">
+                        <div class="w-4 h-4 rounded bg-red-500"></div>
+                        <span>Negativ (0-20%)</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <div class="w-4 h-4 rounded bg-orange-400"></div>
+                        <span>Unter Durchschnitt (20-40%)</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <div class="w-4 h-4 rounded bg-gray-400"></div>
+                        <span>Durchschnitt (40-60%)</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <div class="w-4 h-4 rounded bg-lime-500"></div>
+                        <span>Über Durchschnitt (60-80%)</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <div class="w-4 h-4 rounded bg-green-500"></div>
+                        <span>Positiv (80-100%)</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Sessions List -->
+            <div class="space-y-4" id="sessions-container">
+                <!-- Filled by JS -->
+            </div>
+            
+            <!-- Load More -->
+            <div class="text-center mt-6">
+                <button onclick="loadMoreSessions()" id="load-more-btn" class="px-6 py-2 bg-bt-black text-white rounded-lg hover:bg-gray-800 transition">
+                    Mehr laden
+                </button>
+            </div>
+        </section>
+
+        <!-- Topics Section -->
+        <section id="section-topics" class="hidden fade-in">
+            <div class="mb-6">
+                <h2 class="text-2xl font-bold">Themen-Cluster</h2>
+                <p class="text-gray-600">Automatisch erkannte Themen aus <span id="topics-speech-count">-</span> Reden</p>
+            </div>
+            
+            <!-- Topic Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="topics-container">
+                <!-- Filled by JS -->
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 border-t mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                <div class="text-sm text-gray-600">
+                    <p><strong>Bundestag Discourse Tracker</strong> – Portfolio-Projekt</p>
+                    <p>Daten: <a href="https://www.bundestag.de/services/opendata" class="text-bt-blue hover:underline">Bundestag Open Data</a></p>
+                </div>
+                <div class="text-sm text-gray-500">
+                    <p>Powered by Google Cloud • Vertex AI • BigQuery</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // ============================================================
+        // DATA
+        // ============================================================
+        let barometerData = null;
+        let topicsData = null;
+        let displayedSessions = 0;
+        const SESSIONS_PER_PAGE = 10;
+
+        // ============================================================
+        // LOAD DATA
+        // ============================================================
+        async function loadData() {
+            try {
+                const [barometerRes, topicsRes] = await Promise.all([
+                    fetch('data/sessions_barometer.json'),
+                    fetch('data/topic_clusters.json')
+                ]);
+                
+                barometerData = await barometerRes.json();
+                topicsData = await topicsRes.json();
+                
+                initDashboard();
+            } catch (error) {
+                console.error('Error loading data:', error);
+                document.body.innerHTML = `
+                    <div class="min-h-screen flex items-center justify-center">
+                        <div class="text-center">
+                            <p class="text-xl text-gray-600 mb-2">⚠️ Daten konnten nicht geladen werden</p>
+                            <p class="text-sm text-gray-500">Stelle sicher, dass die JSON-Dateien in /data/ liegen</p>
+                        </div>
+                    </div>
+                `;
+            }
+        }
+
+        // ============================================================
+        // INIT DASHBOARD
+        // ============================================================
+        function initDashboard() {
+            // Stats
+            document.getElementById('stat-speeches').textContent = topicsData.total_speeches.toLocaleString('de-DE');
+            document.getElementById('stat-sessions').textContent = barometerData.total_sessions.toLocaleString('de-DE');
+            document.getElementById('stat-clusters').textContent = topicsData.n_clusters;
+            document.getElementById('stat-periods').textContent = barometerData.wahlperioden.length;
+            document.getElementById('topics-speech-count').textContent = topicsData.total_speeches.toLocaleString('de-DE');
+            
+            // Filters
+            populateFilters();
+            
+            // Charts
+            createSentimentTimeline();
+            createTopicDistribution();
+            
+            // Highlights
+            createHighlights();
+            
+            // Sessions
+            loadMoreSessions();
+            
+            // Topics
+            renderTopics();
+        }
+
+        // ============================================================
+        // NAVIGATION
+        // ============================================================
+        function showSection(section) {
+            // Hide all sections
+            document.querySelectorAll('section').forEach(s => s.classList.add('hidden'));
+            
+            // Show selected section
+            document.getElementById(`section-${section}`).classList.remove('hidden');
+            
+            // Update nav buttons
+            document.querySelectorAll('.nav-btn').forEach(btn => {
+                btn.classList.remove('bg-white/10');
+            });
+            document.getElementById(`nav-${section}`).classList.add('bg-white/10');
+        }
+
+        // ============================================================
+        // FILTERS
+        // ============================================================
+        function populateFilters() {
+            const wpSelect = document.getElementById('filter-wp');
+            const yearSelect = document.getElementById('filter-year');
+            
+            // Wahlperioden
+            barometerData.wahlperioden.forEach(wp => {
+                const opt = document.createElement('option');
+                opt.value = wp;
+                opt.textContent = `WP ${wp}`;
+                wpSelect.appendChild(opt);
+            });
+            
+            // Jahre
+            const years = [...new Set(barometerData.sessions.map(s => s.jahr))].sort((a,b) => b-a);
+            years.forEach(year => {
+                const opt = document.createElement('option');
+                opt.value = year;
+                opt.textContent = year;
+                yearSelect.appendChild(opt);
+            });
+        }
+
+        function filterSessions() {
+            displayedSessions = 0;
+            document.getElementById('sessions-container').innerHTML = '';
+            loadMoreSessions();
+        }
+
+        function getFilteredSessions() {
+            const wp = document.getElementById('filter-wp').value;
+            const year = document.getElementById('filter-year').value;
+            
+            return barometerData.sessions.filter(s => {
+                if (wp && s.wahlperiode != wp) return false;
+                if (year && s.jahr != year) return false;
+                return true;
+            });
+        }
+
+        // ============================================================
+        // CHARTS
+        // ============================================================
+        function createSentimentTimeline() {
+            const sessions = barometerData.sessions.slice().reverse().slice(-30); // Last 30
+            
+            new Chart(document.getElementById('chart-sentiment-timeline'), {
+                type: 'line',
+                data: {
+                    labels: sessions.map(s => s.datum),
+                    datasets: [{
+                        label: 'Sentiment',
+                        data: sessions.map(s => s.metrics.sentiment.value),
+                        borderColor: '#0077b6',
+                        backgroundColor: 'rgba(0, 119, 182, 0.1)',
+                        fill: true,
+                        tension: 0.3
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { display: false }
+                    },
+                    scales: {
+                        y: {
+                            min: -1,
+                            max: 1,
+                            grid: { color: '#f0f0f0' }
+                        },
+                        x: {
+                            grid: { display: false },
+                            ticks: { maxTicksLimit: 6 }
+                        }
+                    }
+                }
+            });
+        }
+
+        function createTopicDistribution() {
+            const top8 = topicsData.clusters.slice(0, 8);
+            
+            new Chart(document.getElementById('chart-topic-distribution'), {
+                type: 'doughnut',
+                data: {
+                    labels: top8.map(c => c.label),
+                    datasets: [{
+                        data: top8.map(c => c.num_speeches),
+                        backgroundColor: [
+                            '#0077b6', '#00b4d8', '#90e0ef', '#caf0f8',
+                            '#c9a227', '#ffd166', '#06d6a0', '#118ab2'
+                        ]
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'right',
+                            labels: { boxWidth: 12, font: { size: 11 } }
+                        }
+                    }
+                }
+            });
+        }
+
+        // ============================================================
+        // HIGHLIGHTS
+        // ============================================================
+        function createHighlights() {
+            const container = document.getElementById('highlights-container');
+            
+            // Find extremes
+            const sessions = barometerData.sessions;
+            const mostNegative = sessions.reduce((a, b) => 
+                a.metrics.sentiment.value < b.metrics.sentiment.value ? a : b
+            );
+            const mostEmotional = sessions.reduce((a, b) => 
+                a.metrics.emotionality.value > b.metrics.emotionality.value ? a : b
+            );
+            const longest = sessions.reduce((a, b) => 
+                a.metrics.length.total_words > b.metrics.length.total_words ? a : b
+            );
+            
+            const highlights = [
+                { session: mostNegative, title: '😠 Negativste Sitzung', metric: `Sentiment: ${mostNegative.metrics.sentiment.value.toFixed(2)}` },
+                { session: mostEmotional, title: '🔥 Emotionalste Sitzung', metric: `Score: ${mostEmotional.metrics.emotionality.value.toFixed(3)}` },
+                { session: longest, title: '📚 Längste Sitzung', metric: `${longest.metrics.length.total_words.toLocaleString('de-DE')} Wörter` }
+            ];
+            
+            container.innerHTML = highlights.map(h => `
+                <div class="bg-gray-50 rounded-lg p-4">
+                    <p class="font-medium mb-1">${h.title}</p>
+                    <p class="text-sm text-gray-600">WP ${h.session.wahlperiode}, Sitzung ${h.session.sitzungsnr}</p>
+                    <p class="text-sm text-gray-600">${h.session.datum}</p>
+                    <p class="text-sm font-medium text-bt-blue mt-2">${h.metric}</p>
+                </div>
+            `).join('');
+        }
+
+        // ============================================================
+        // SESSIONS LIST
+        // ============================================================
+        function loadMoreSessions() {
+            const container = document.getElementById('sessions-container');
+            const filtered = getFilteredSessions();
+            const toShow = filtered.slice(displayedSessions, displayedSessions + SESSIONS_PER_PAGE);
+            
+            toShow.forEach(session => {
+                container.appendChild(createSessionCard(session));
+            });
+            
+            displayedSessions += toShow.length;
+            
+            // Hide button if no more
+            document.getElementById('load-more-btn').style.display = 
+                displayedSessions >= filtered.length ? 'none' : 'inline-block';
+        }
+
+        function createSessionCard(session) {
+            const div = document.createElement('div');
+            div.className = 'bg-white rounded-xl shadow-sm p-6 card-hover';
+            
+            const sentimentColor = getPercentileColor(session.metrics.sentiment.percentile);
+            const emotionalityColor = getPercentileColor(session.metrics.emotionality.percentile);
+            
+            div.innerHTML = `
+                <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+                    <div>
+                        <div class="flex items-center gap-3 mb-2">
+                            <span class="text-lg font-semibold">WP ${session.wahlperiode} / Sitzung ${session.sitzungsnr}</span>
+                            <span class="text-sm text-gray-500">${session.datum}</span>
+                        </div>
+                        <p class="text-sm text-gray-600">${session.num_speeches} Reden • ${session.metrics.length.total_words.toLocaleString('de-DE')} Wörter</p>
+                        ${session.summary !== 'Durchschnittliche Sitzung' ? 
+                            `<p class="text-sm text-bt-blue mt-1">💡 ${session.summary}</p>` : ''}
+                    </div>
+                    <div class="flex gap-6">
+                        <div class="text-center">
+                            <p class="text-xs text-gray-500 mb-1">Sentiment</p>
+                            <div class="flex items-center gap-2">
+                                <div class="w-3 h-3 rounded-full ${sentimentColor}"></div>
+                                <span class="font-medium">${session.metrics.sentiment.value.toFixed(2)}</span>
+                            </div>
+                            <p class="text-xs text-gray-400">${session.metrics.sentiment.percentile.toFixed(0)}%</p>
+                        </div>
+                        <div class="text-center">
+                            <p class="text-xs text-gray-500 mb-1">Emotionalität</p>
+                            <div class="flex items-center gap-2">
+                                <div class="w-3 h-3 rounded-full ${emotionalityColor}"></div>
+                                <span class="font-medium">${session.metrics.emotionality.value.toFixed(3)}</span>
+                            </div>
+                            <p class="text-xs text-gray-400">${session.metrics.emotionality.percentile.toFixed(0)}%</p>
+                        </div>
+                    </div>
+                </div>
+            `;
+            
+            return div;
+        }
+
+        function getPercentileColor(percentile) {
+            if (percentile < 20) return 'bg-red-500';
+            if (percentile < 40) return 'bg-orange-400';
+            if (percentile < 60) return 'bg-gray-400';
+            if (percentile < 80) return 'bg-lime-500';
+            return 'bg-green-500';
+        }
+
+        // ============================================================
+        // TOPICS
+        // ============================================================
+        function renderTopics() {
+            const container = document.getElementById('topics-container');
+            
+            container.innerHTML = topicsData.clusters.map(cluster => `
+                <div class="bg-white rounded-xl shadow-sm p-6 card-hover">
+                    <div class="flex items-start justify-between mb-3">
+                        <h3 class="font-semibold text-lg">${cluster.label}</h3>
+                        <span class="bg-bt-blue/10 text-bt-blue text-xs px-2 py-1 rounded-full">
+                            ${cluster.percentage}%
+                        </span>
+                    </div>
+                    <p class="text-sm text-gray-600 mb-4">${cluster.description}</p>
+                    
+                    <div class="mb-4">
+                        <p class="text-xs text-gray-500 mb-2">Unterscheidende Keywords:</p>
+                        <div class="flex flex-wrap gap-1">
+                            ${cluster.keywords.discriminative.slice(0, 6).map(kw => 
+                                `<span class="bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded">${kw}</span>`
+                            ).join('')}
+                        </div>
+                    </div>
+                    
+                    <div class="flex justify-between text-sm border-t pt-3">
+                        <div>
+                            <span class="text-gray-500">Reden:</span>
+                            <span class="font-medium ml-1">${cluster.num_speeches.toLocaleString('de-DE')}</span>
+                        </div>
+                        <div>
+                            <span class="text-gray-500">Sentiment:</span>
+                            <span class="font-medium ml-1 ${cluster.metrics.avg_sentiment >= 0 ? 'text-green-600' : 'text-red-600'}">
+                                ${cluster.metrics.avg_sentiment.toFixed(2)}
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // ============================================================
+        // INIT
+        // ============================================================
+        document.addEventListener('DOMContentLoaded', loadData);
+    </script>
+</body>
+</html>

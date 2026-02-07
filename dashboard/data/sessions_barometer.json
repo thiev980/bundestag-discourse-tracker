@@ -1,0 +1,876 @@
+{
+  "generated_at": "2026-02-06T22:24:00.072371",
+  "total_sessions": 29,
+  "wahlperioden": [
+    19,
+    20,
+    21
+  ],
+  "date_range": {
+    "from": "05.12.2025",
+    "to": "31.01.2025"
+  },
+  "statistics": {
+    "avg_sentiment": {
+      "min": -0.38181818181818183,
+      "max": 0.010077519379844961,
+      "median": -0.11170212765957446,
+      "mean": -0.12081507495230331
+    },
+    "avg_emotionality": {
+      "min": 0.1469820895522388,
+      "max": 0.32335909090909093,
+      "median": 0.2328044871794872,
+      "mean": 0.23173198085226687
+    },
+    "num_speeches": {
+      "min": 22,
+      "max": 275,
+      "median": 129.0,
+      "mean": 131.9655172413793
+    }
+  },
+  "sessions": [
+    {
+      "session_id": "21_57",
+      "wahlperiode": 21,
+      "sitzungsnr": 57,
+      "datum": "30.01.2026",
+      "jahr": 2026,
+      "num_speeches": 76,
+      "metrics": {
+        "sentiment": {
+          "value": -0.161,
+          "percentile": 27.6,
+          "spread": 0.476
+        },
+        "emotionality": {
+          "value": 0.307,
+          "percentile": 93.1
+        },
+        "length": {
+          "total_words": 44001,
+          "avg_per_speech": 579.0,
+          "percentile": 17.2
+        },
+        "engagement": {
+          "exclamations_per_1000": 7.02,
+          "questions_per_1000": 2.66
+        }
+      },
+      "summary": "Hohe emotionalität (top 7%)"
+    },
+    {
+      "session_id": "21_56",
+      "wahlperiode": 21,
+      "sitzungsnr": 56,
+      "datum": "29.01.2026",
+      "jahr": 2026,
+      "num_speeches": 162,
+      "metrics": {
+        "sentiment": {
+          "value": -0.194,
+          "percentile": 13.8,
+          "spread": 0.506
+        },
+        "emotionality": {
+          "value": 0.2638,
+          "percentile": 65.5
+        },
+        "length": {
+          "total_words": 98539,
+          "avg_per_speech": 608.0,
+          "percentile": 75.9
+        },
+        "engagement": {
+          "exclamations_per_1000": 5.67,
+          "questions_per_1000": 3.05
+        }
+      },
+      "summary": "Durchschnittliche Sitzung"
+    },
+    {
+      "session_id": "21_55",
+      "wahlperiode": 21,
+      "sitzungsnr": 55,
+      "datum": "28.01.2026",
+      "jahr": 2026,
+      "num_speeches": 156,
+      "metrics": {
+        "sentiment": {
+          "value": -0.083,
+          "percentile": 62.1,
+          "spread": 0.436
+        },
+        "emotionality": {
+          "value": 0.2328,
+          "percentile": 48.3
+        },
+        "length": {
+          "total_words": 38862,
+          "avg_per_speech": 249.0,
+          "percentile": 13.8
+        },
+        "engagement": {
+          "exclamations_per_1000": 4.97,
+          "questions_per_1000": 4.3
+        }
+      },
+      "summary": "Durchschnittliche Sitzung"
+    },
+    {
+      "session_id": "21_54",
+      "wahlperiode": 21,
+      "sitzungsnr": 54,
+      "datum": "16.01.2026",
+      "jahr": 2026,
+      "num_speeches": 92,
+      "metrics": {
+        "sentiment": {
+          "value": -0.214,
+          "percentile": 10.3,
+          "spread": 0.505
+        },
+        "emotionality": {
+          "value": 0.2475,
+          "percentile": 58.6
+        },
+        "length": {
+          "total_words": 50270,
+          "avg_per_speech": 546.0,
+          "percentile": 31.0
+        },
+        "engagement": {
+          "exclamations_per_1000": 5.65,
+          "questions_per_1000": 2.15
+        }
+      },
+      "summary": "Durchschnittliche Sitzung"
+    },
+    {
+      "session_id": "21_53",
+      "wahlperiode": 21,
+      "sitzungsnr": 53,
+      "datum": "15.01.2026",
+      "jahr": 2026,
+      "num_speeches": 183,
+      "metrics": {
+        "sentiment": {
+          "value": -0.162,
+          "percentile": 24.1,
+          "spread": 0.494
+        },
+        "emotionality": {
+          "value": 0.2732,
+          "percentile": 72.4
+        },
+        "length": {
+          "total_words": 98954,
+          "avg_per_speech": 541.0,
+          "percentile": 79.3
+        },
+        "engagement": {
+          "exclamations_per_1000": 5.91,
+          "questions_per_1000": 3.3
+        }
+      },
+      "summary": "Durchschnittliche Sitzung"
+    },
+    {
+      "session_id": "21_52",
+      "wahlperiode": 21,
+      "sitzungsnr": 52,
+      "datum": "14.01.2026",
+      "jahr": 2026,
+      "num_speeches": 164,
+      "metrics": {
+        "sentiment": {
+          "value": -0.097,
+          "percentile": 55.2,
+          "spread": 0.408
+        },
+        "emotionality": {
+          "value": 0.2213,
+          "percentile": 37.9
+        },
+        "length": {
+          "total_words": 35532,
+          "avg_per_speech": 217.0,
+          "percentile": 10.3
+        },
+        "engagement": {
+          "exclamations_per_1000": 4.42,
+          "questions_per_1000": 4.95
+        }
+      },
+      "summary": "Durchschnittliche Sitzung"
+    },
+    {
+      "session_id": "21_51",
+      "wahlperiode": 21,
+      "sitzungsnr": 51,
+      "datum": "19.12.2025",
+      "jahr": 2025,
+      "num_speeches": 94,
+      "metrics": {
+        "sentiment": {
+          "value": -0.112,
+          "percentile": 48.3,
+          "spread": 0.524
+        },
+        "emotionality": {
+          "value": 0.2567,
+          "percentile": 62.1
+        },
+        "length": {
+          "total_words": 51717,
+          "avg_per_speech": 550.0,
+          "percentile": 37.9
+        },
+        "engagement": {
+          "exclamations_per_1000": 5.82,
+          "questions_per_1000": 3.02
+        }
+      },
+      "summary": "Kontroverse debatte"
+    },
+    {
+      "session_id": "21_49",
+      "wahlperiode": 21,
+      "sitzungsnr": 49,
+      "datum": "17.12.2025",
+      "jahr": 2025,
+      "num_speeches": 132,
+      "metrics": {
+        "sentiment": {
+          "value": -0.069,
+          "percentile": 65.5,
+          "spread": 0.446
+        },
+        "emotionality": {
+          "value": 0.2019,
+          "percentile": 31.0
+        },
+        "length": {
+          "total_words": 47584,
+          "avg_per_speech": 360.0,
+          "percentile": 24.1
+        },
+        "engagement": {
+          "exclamations_per_1000": 4.43,
+          "questions_per_1000": 3.28
+        }
+      },
+      "summary": "Durchschnittliche Sitzung"
+    },
+    {
+      "session_id": "21_48",
+      "wahlperiode": 21,
+      "sitzungsnr": 48,
+      "datum": "05.12.2025",
+      "jahr": 2025,
+      "num_speeches": 113,
+      "metrics": {
+        "sentiment": {
+          "value": -0.147,
+          "percentile": 34.5,
+          "spread": 0.464
+        },
+        "emotionality": {
+          "value": 0.2311,
+          "percentile": 44.8
+        },
+        "length": {
+          "total_words": 57213,
+          "avg_per_speech": 506.0,
+          "percentile": 51.7
+        },
+        "engagement": {
+          "exclamations_per_1000": 4.98,
+          "questions_per_1000": 2.66
+        }
+      },
+      "summary": "Durchschnittliche Sitzung"
+    },
+    {
+      "session_id": "20_214",
+      "wahlperiode": 20,
+      "sitzungsnr": 214,
+      "datum": "18.03.2025",
+      "jahr": 2025,
+      "num_speeches": 83,
+      "metrics": {
+        "sentiment": {
+          "value": -0.018,
+          "percentile": 79.3,
+          "spread": 0.47
+        },
+        "emotionality": {
+          "value": 0.1478,
+          "percentile": 3.4
+        },
+        "length": {
+          "total_words": 53125,
+          "avg_per_speech": 640.0,
+          "percentile": 44.8
+        },
+        "engagement": {
+          "exclamations_per_1000": 2.9,
+          "questions_per_1000": 1.71
+        }
+      },
+      "summary": "Sehr sachlich (untere 3%)"
+    },
+    {
+      "session_id": "20_213",
+      "wahlperiode": 20,
+      "sitzungsnr": 213,
+      "datum": "13.03.2025",
+      "jahr": 2025,
+      "num_speeches": 38,
+      "metrics": {
+        "sentiment": {
+          "value": -0.239,
+          "percentile": 6.9,
+          "spread": 0.435
+        },
+        "emotionality": {
+          "value": 0.2847,
+          "percentile": 82.8
+        },
+        "length": {
+          "total_words": 29702,
+          "avg_per_speech": 782.0,
+          "percentile": 6.9
+        },
+        "engagement": {
+          "exclamations_per_1000": 4.75,
+          "questions_per_1000": 3.23
+        }
+      },
+      "summary": "Sehr negatives sentiment (untere 7%), kurze sitzung (untere 7%)"
+    },
+    {
+      "session_id": "20_212",
+      "wahlperiode": 20,
+      "sitzungsnr": 212,
+      "datum": "11.02.2025",
+      "jahr": 2025,
+      "num_speeches": 22,
+      "metrics": {
+        "sentiment": {
+          "value": -0.368,
+          "percentile": 3.4,
+          "spread": 0.449
+        },
+        "emotionality": {
+          "value": 0.3234,
+          "percentile": 96.6
+        },
+        "length": {
+          "total_words": 26565,
+          "avg_per_speech": 1208.0,
+          "percentile": 3.4
+        },
+        "engagement": {
+          "exclamations_per_1000": 4.37,
+          "questions_per_1000": 4.82
+        }
+      },
+      "summary": "Sehr negatives sentiment (untere 3%), hohe emotionalität (top 3%), kurze sitzung (untere 3%)"
+    },
+    {
+      "session_id": "20_211",
+      "wahlperiode": 20,
+      "sitzungsnr": 211,
+      "datum": "31.01.2025",
+      "jahr": 2025,
+      "num_speeches": 134,
+      "metrics": {
+        "sentiment": {
+          "value": -0.174,
+          "percentile": 20.7,
+          "spread": 0.492
+        },
+        "emotionality": {
+          "value": 0.2931,
+          "percentile": 86.2
+        },
+        "length": {
+          "total_words": 71683,
+          "avg_per_speech": 535.0,
+          "percentile": 65.5
+        },
+        "engagement": {
+          "exclamations_per_1000": 6.03,
+          "questions_per_1000": 2.58
+        }
+      },
+      "summary": "Durchschnittliche Sitzung"
+    },
+    {
+      "session_id": "20_210",
+      "wahlperiode": 20,
+      "sitzungsnr": 210,
+      "datum": "30.01.2025",
+      "jahr": 2025,
+      "num_speeches": 225,
+      "metrics": {
+        "sentiment": {
+          "value": -0.137,
+          "percentile": 37.9,
+          "spread": 0.527
+        },
+        "emotionality": {
+          "value": 0.2664,
+          "percentile": 69.0
+        },
+        "length": {
+          "total_words": 136726,
+          "avg_per_speech": 608.0,
+          "percentile": 93.1
+        },
+        "engagement": {
+          "exclamations_per_1000": 5.76,
+          "questions_per_1000": 2.27
+        }
+      },
+      "summary": "Überdurchschnittlich lang (top 7%), kontroverse debatte"
+    },
+    {
+      "session_id": "20_209",
+      "wahlperiode": 20,
+      "sitzungsnr": 209,
+      "datum": "29.01.2025",
+      "jahr": 2025,
+      "num_speeches": 193,
+      "metrics": {
+        "sentiment": {
+          "value": -0.122,
+          "percentile": 44.8,
+          "spread": 0.428
+        },
+        "emotionality": {
+          "value": 0.2,
+          "percentile": 27.6
+        },
+        "length": {
+          "total_words": 66333,
+          "avg_per_speech": 344.0,
+          "percentile": 62.1
+        },
+        "engagement": {
+          "exclamations_per_1000": 4.07,
+          "questions_per_1000": 3.15
+        }
+      },
+      "summary": "Durchschnittliche Sitzung"
+    },
+    {
+      "session_id": "20_208",
+      "wahlperiode": 20,
+      "sitzungsnr": 208,
+      "datum": "20.12.2024",
+      "jahr": 2024,
+      "num_speeches": 89,
+      "metrics": {
+        "sentiment": {
+          "value": -0.183,
+          "percentile": 17.2,
+          "spread": 0.507
+        },
+        "emotionality": {
+          "value": 0.28,
+          "percentile": 75.9
+        },
+        "length": {
+          "total_words": 57631,
+          "avg_per_speech": 648.0,
+          "percentile": 55.2
+        },
+        "engagement": {
+          "exclamations_per_1000": 5.81,
+          "questions_per_1000": 2.74
+        }
+      },
+      "summary": "Durchschnittliche Sitzung"
+    },
+    {
+      "session_id": "20_207",
+      "wahlperiode": 20,
+      "sitzungsnr": 207,
+      "datum": "19.12.2024",
+      "jahr": 2024,
+      "num_speeches": 194,
+      "metrics": {
+        "sentiment": {
+          "value": -0.151,
+          "percentile": 31.0,
+          "spread": 0.507
+        },
+        "emotionality": {
+          "value": 0.2819,
+          "percentile": 79.3
+        },
+        "length": {
+          "total_words": 114588,
+          "avg_per_speech": 591.0,
+          "percentile": 82.8
+        },
+        "engagement": {
+          "exclamations_per_1000": 5.86,
+          "questions_per_1000": 2.63
+        }
+      },
+      "summary": "Durchschnittliche Sitzung"
+    },
+    {
+      "session_id": "20_206",
+      "wahlperiode": 20,
+      "sitzungsnr": 206,
+      "datum": "18.12.2024",
+      "jahr": 2024,
+      "num_speeches": 183,
+      "metrics": {
+        "sentiment": {
+          "value": -0.101,
+          "percentile": 51.7,
+          "spread": 0.376
+        },
+        "emotionality": {
+          "value": 0.2399,
+          "percentile": 51.7
+        },
+        "length": {
+          "total_words": 48526,
+          "avg_per_speech": 265.0,
+          "percentile": 27.6
+        },
+        "engagement": {
+          "exclamations_per_1000": 5.15,
+          "questions_per_1000": 3.5
+        }
+      },
+      "summary": "Durchschnittliche Sitzung"
+    },
+    {
+      "session_id": "20_205",
+      "wahlperiode": 20,
+      "sitzungsnr": 205,
+      "datum": "16.12.2024",
+      "jahr": 2024,
+      "num_speeches": 22,
+      "metrics": {
+        "sentiment": {
+          "value": -0.382,
+          "percentile": 0.0,
+          "spread": 0.437
+        },
+        "emotionality": {
+          "value": 0.2946,
+          "percentile": 89.7
+        },
+        "length": {
+          "total_words": 21579,
+          "avg_per_speech": 981.0,
+          "percentile": 0.0
+        },
+        "engagement": {
+          "exclamations_per_1000": 4.91,
+          "questions_per_1000": 3.43
+        }
+      },
+      "summary": "Sehr negatives sentiment (untere 0%), kurze sitzung (untere 0%)"
+    },
+    {
+      "session_id": "19_239",
+      "wahlperiode": 19,
+      "sitzungsnr": 239,
+      "datum": "07.09.2021",
+      "jahr": 2021,
+      "num_speeches": 67,
+      "metrics": {
+        "sentiment": {
+          "value": -0.087,
+          "percentile": 58.6,
+          "spread": 0.488
+        },
+        "emotionality": {
+          "value": 0.147,
+          "percentile": 0.0
+        },
+        "length": {
+          "total_words": 51007,
+          "avg_per_speech": 761.0,
+          "percentile": 34.5
+        },
+        "engagement": {
+          "exclamations_per_1000": 3.18,
+          "questions_per_1000": 2.84
+        }
+      },
+      "summary": "Sehr sachlich (untere 0%)"
+    },
+    {
+      "session_id": "19_238",
+      "wahlperiode": 19,
+      "sitzungsnr": 238,
+      "datum": "25.08.2021",
+      "jahr": 2021,
+      "num_speeches": 71,
+      "metrics": {
+        "sentiment": {
+          "value": -0.134,
+          "percentile": 41.4,
+          "spread": 0.473
+        },
+        "emotionality": {
+          "value": 0.1901,
+          "percentile": 20.7
+        },
+        "length": {
+          "total_words": 54042,
+          "avg_per_speech": 761.0,
+          "percentile": 48.3
+        },
+        "engagement": {
+          "exclamations_per_1000": 3.53,
+          "questions_per_1000": 3.16
+        }
+      },
+      "summary": "Durchschnittliche Sitzung"
+    },
+    {
+      "session_id": "19_237",
+      "wahlperiode": 19,
+      "sitzungsnr": 237,
+      "datum": "25.06.2021",
+      "jahr": 2021,
+      "num_speeches": 94,
+      "metrics": {
+        "sentiment": {
+          "value": -0.061,
+          "percentile": 72.4,
+          "spread": 0.51
+        },
+        "emotionality": {
+          "value": 0.2231,
+          "percentile": 41.4
+        },
+        "length": {
+          "total_words": 60864,
+          "avg_per_speech": 647.0,
+          "percentile": 58.6
+        },
+        "engagement": {
+          "exclamations_per_1000": 5.04,
+          "questions_per_1000": 1.68
+        }
+      },
+      "summary": "Durchschnittliche Sitzung"
+    },
+    {
+      "session_id": "19_236",
+      "wahlperiode": 19,
+      "sitzungsnr": 236,
+      "datum": "24.06.2021",
+      "jahr": 2021,
+      "num_speeches": 275,
+      "metrics": {
+        "sentiment": {
+          "value": -0.004,
+          "percentile": 86.2,
+          "spread": 0.468
+        },
+        "emotionality": {
+          "value": 0.1607,
+          "percentile": 10.3
+        },
+        "length": {
+          "total_words": 156602,
+          "avg_per_speech": 569.0,
+          "percentile": 96.6
+        },
+        "engagement": {
+          "exclamations_per_1000": 3.82,
+          "questions_per_1000": 1.47
+        }
+      },
+      "summary": "Überdurchschnittlich lang (top 3%)"
+    },
+    {
+      "session_id": "19_235",
+      "wahlperiode": 19,
+      "sitzungsnr": 235,
+      "datum": "23.06.2021",
+      "jahr": 2021,
+      "num_speeches": 114,
+      "metrics": {
+        "sentiment": {
+          "value": -0.011,
+          "percentile": 82.8,
+          "spread": 0.365
+        },
+        "emotionality": {
+          "value": 0.1828,
+          "percentile": 17.2
+        },
+        "length": {
+          "total_words": 47513,
+          "avg_per_speech": 417.0,
+          "percentile": 20.7
+        },
+        "engagement": {
+          "exclamations_per_1000": 4.1,
+          "questions_per_1000": 2.78
+        }
+      },
+      "summary": "Durchschnittliche Sitzung"
+    },
+    {
+      "session_id": "19_234",
+      "wahlperiode": 19,
+      "sitzungsnr": 234,
+      "datum": "11.06.2021",
+      "jahr": 2021,
+      "num_speeches": 131,
+      "metrics": {
+        "sentiment": {
+          "value": -0.004,
+          "percentile": 89.7,
+          "spread": 0.491
+        },
+        "emotionality": {
+          "value": 0.202,
+          "percentile": 34.5
+        },
+        "length": {
+          "total_words": 71738,
+          "avg_per_speech": 548.0,
+          "percentile": 69.0
+        },
+        "engagement": {
+          "exclamations_per_1000": 4.68,
+          "questions_per_1000": 2.05
+        }
+      },
+      "summary": "Durchschnittliche Sitzung"
+    },
+    {
+      "session_id": "19_233",
+      "wahlperiode": 19,
+      "sitzungsnr": 233,
+      "datum": "10.06.2021",
+      "jahr": 2021,
+      "num_speeches": 236,
+      "metrics": {
+        "sentiment": {
+          "value": -0.064,
+          "percentile": 69.0,
+          "spread": 0.445
+        },
+        "emotionality": {
+          "value": 0.1566,
+          "percentile": 6.9
+        },
+        "length": {
+          "total_words": 130901,
+          "avg_per_speech": 555.0,
+          "percentile": 89.7
+        },
+        "engagement": {
+          "exclamations_per_1000": 3.65,
+          "questions_per_1000": 1.74
+        }
+      },
+      "summary": "Sehr sachlich (untere 7%)"
+    },
+    {
+      "session_id": "19_232",
+      "wahlperiode": 19,
+      "sitzungsnr": 232,
+      "datum": "09.06.2021",
+      "jahr": 2021,
+      "num_speeches": 129,
+      "metrics": {
+        "sentiment": {
+          "value": 0.01,
+          "percentile": 96.6,
+          "spread": 0.413
+        },
+        "emotionality": {
+          "value": 0.1694,
+          "percentile": 13.8
+        },
+        "length": {
+          "total_words": 52834,
+          "avg_per_speech": 410.0,
+          "percentile": 41.4
+        },
+        "engagement": {
+          "exclamations_per_1000": 3.92,
+          "questions_per_1000": 2.69
+        }
+      },
+      "summary": "Sehr positives sentiment (top 3%)"
+    },
+    {
+      "session_id": "19_231",
+      "wahlperiode": 19,
+      "sitzungsnr": 231,
+      "datum": "21.05.2021",
+      "jahr": 2021,
+      "num_speeches": 120,
+      "metrics": {
+        "sentiment": {
+          "value": -0.033,
+          "percentile": 75.9,
+          "spread": 0.51
+        },
+        "emotionality": {
+          "value": 0.2446,
+          "percentile": 55.2
+        },
+        "length": {
+          "total_words": 73828,
+          "avg_per_speech": 615.0,
+          "percentile": 72.4
+        },
+        "engagement": {
+          "exclamations_per_1000": 5.19,
+          "questions_per_1000": 2.47
+        }
+      },
+      "summary": "Durchschnittliche Sitzung"
+    },
+    {
+      "session_id": "19_230",
+      "wahlperiode": 19,
+      "sitzungsnr": 230,
+      "datum": "20.05.2021",
+      "jahr": 2021,
+      "num_speeches": 235,
+      "metrics": {
+        "sentiment": {
+          "value": -0.003,
+          "percentile": 93.1,
+          "spread": 0.506
+        },
+        "emotionality": {
+          "value": 0.197,
+          "percentile": 24.1
+        },
+        "length": {
+          "total_words": 130013,
+          "avg_per_speech": 553.0,
+          "percentile": 86.2
+        },
+        "engagement": {
+          "exclamations_per_1000": 4.41,
+          "questions_per_1000": 1.98
+        }
+      },
+      "summary": "Sehr positives sentiment (top 7%)"
+    }
+  ]
+}
