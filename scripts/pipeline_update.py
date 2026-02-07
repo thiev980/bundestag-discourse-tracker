@@ -53,9 +53,15 @@ DATASET_ID = "bundestag_data"
 LOCATION = "EU"
 VERTEX_LOCATION = "europe-west1"
 
-# URLs
-OPEN_DATA_URL = "https://www.bundestag.de/services/opendata"
-BASE_BLOB_URL = "https://www.bundestag.de"
+# DIP API Konfiguration
+DIP_API_URL = "https://search.dip.bundestag.de/api/v1/plenarprotokoll"
+DIP_API_KEY = "OSOegLs.PR2lwJ1dwCeje9vTj7FPOt3hvpYKtwKkhw"  # Öffentlich, gültig bis Mai 2026
+
+# XML URL Patterns (verschiedene Quellen)
+XML_URL_PATTERNS = [
+    "https://www.bundestag.de/resource/blob/{blob_id}/{wp:02d}{sitzung:03d}.xml",
+    "https://dserver.bundestag.de/btp/{wp}/{wp:02d}{sitzung:03d}.xml",
+]
 
 # Tabellen
 SPEECHES_RAW_TABLE = "speeches_raw"
@@ -94,48 +100,209 @@ def get_existing_sessions(client: bigquery.Client) -> set:
         return set()
 
 
+def fetch_protocols_from_dip(wahlperiode: int = 21, limit: int = 100) -> List[Dict]:
+    """
+    Holt Plenarprotokolle von der DIP API.
+    Gibt Liste von {wahlperiode, sitzungsnr, datum, dokumentnummer, dip_id} zurück.
+    """
+    
+    print(f"  🌐 Rufe DIP API ab (WP {wahlperiode})...")
+    
+    protocols = []
+    cursor = None
+    
+    while True:
+        params = {
+            "f.wahlperiode": wahlperiode,
+            "apikey": DIP_API_KEY,
+            "format": "json",
+        }
+        if cursor:
+            params["cursor"] = cursor
+        
+        try:
+            response = requests.get(DIP_API_URL, params=params, timeout=30)
+            response.raise_for_status()
+            data = response.json()
+        except Exception as e:
+            print(f"  ❌ DIP API Fehler: {e}")
+            break
+        
+        documents = data.get("documents", [])
+        if not documents:
+            break
+        
+        for doc in documents:
+            # Extrahiere Sitzungsnummer aus dokumentnummer (z.B. "21/57" → 57)
+            dok_nr = doc.get("dokumentnummer", "")
+            try:
+                sitzung = int(dok_nr.split("/")[1])
+            except:
+                continue
+            
+            protocols.append({
+                "wahlperiode": wahlperiode,
+                "sitzungsnr": sitzung,
+                "datum": doc.get("datum"),
+                "dokumentnummer": dok_nr,
+                "dip_id": doc.get("id"),
+                "session_id": f"{wahlperiode}_{sitzung}",
+                "titel": doc.get("titel", ""),
+            })
+        
+        # Pagination
+        new_cursor = data.get("cursor")
+        if new_cursor == cursor or len(protocols) >= limit:
+            break
+        cursor = new_cursor
+        
+        time.sleep(0.5)  # Rate limiting
+    
+    print(f"  ✓ {len(protocols)} Protokolle von DIP API")
+    return protocols
+
+
+def find_xml_url(wahlperiode: int, sitzungsnr: int) -> Optional[str]:
+    """
+    Versucht die XML-URL für ein Protokoll zu finden.
+    Probiert dserver.bundestag.de (funktioniert für die meisten Protokolle).
+    """
+    
+    # dserver URL konstruieren
+    dserver_url = f"https://dserver.bundestag.de/btp/{wahlperiode}/{wahlperiode:02d}{sitzungsnr:03d}.xml"
+    try:
+        response = requests.head(dserver_url, timeout=10, allow_redirects=True)
+        if response.status_code == 200:
+            return dserver_url
+    except:
+        pass
+    
+    return None
+
+
+def find_all_xml_urls(protocols: List[Dict], xml_urls_cache: Dict[str, str]) -> List[Dict]:
+    """
+    Findet XML-URLs für alle Protokolle.
+    Versucht erst Cache (Open Data), dann dserver.
+    """
+    
+    results = []
+    dserver_checked = 0
+    dserver_found = 0
+    
+    for p in protocols:
+        session_id = p['session_id']
+        
+        # Erst im Cache schauen (Open Data URLs)
+        if session_id in xml_urls_cache:
+            p['url'] = xml_urls_cache[session_id]
+            p['url_source'] = 'open_data'
+            results.append(p)
+            continue
+        
+        # Dann dserver versuchen
+        dserver_checked += 1
+        url = find_xml_url(p['wahlperiode'], p['sitzungsnr'])
+        if url:
+            p['url'] = url
+            p['url_source'] = 'dserver'
+            results.append(p)
+            dserver_found += 1
+        else:
+            p['url'] = None
+            p['url_source'] = None
+            results.append(p)
+        
+        # Rate limiting für dserver
+        if dserver_checked % 5 == 0:
+            time.sleep(0.5)
+    
+    if dserver_checked > 0:
+        print(f"  📡 dserver: {dserver_found}/{dserver_checked} URLs gefunden")
+    
+    return results
+
+
+def scrape_open_data_for_xml_urls() -> Dict[str, str]:
+    """
+    Scraped die Open Data Seite für XML Blob-URLs.
+    Gibt Dict von session_id → URL zurück.
+    
+    Hinweis: Die Open Data Seite lädt Links per JavaScript.
+    Diese Funktion versucht den AJAX-Endpoint direkt anzufragen.
+    """
+    
+    print("  🔍 Suche XML-URLs auf Open Data...")
+    
+    xml_urls = {}
+    
+    # Versuche AJAX-Endpoint für verschiedene Wahlperioden
+    # Die Collapse-IDs von der Seite: 1058442 (WP21), 866354 (WP20), 543410 (WP19)
+    collapse_ids = {
+        21: "1058442",
+        20: "866354", 
+        19: "543410",
+    }
+    
+    for wp, collapse_id in collapse_ids.items():
+        ajax_url = f"https://www.bundestag.de/ajax/filterlist/de/services/opendata/{collapse_id}-{collapse_id}"
+        params = {
+            "limit": 100,
+            "noFilterSet": "true",
+            "offset": 0,
+        }
+        
+        try:
+            response = requests.get(ajax_url, params=params, timeout=30)
+            if response.status_code == 200:
+                soup = BeautifulSoup(response.text, 'html.parser')
+                
+                for link in soup.find_all('a', href=True):
+                    href = link['href']
+                    if '.xml' in href and '/resource/blob/' in href:
+                        # Extrahiere WP und Sitzung aus Dateiname
+                        match = re.search(r'/(\d{2})(\d{3})\.xml', href)
+                        if match:
+                            found_wp = int(match.group(1))
+                            sitzung = int(match.group(2))
+                            session_id = f"{found_wp}_{sitzung}"
+                            
+                            full_url = href if href.startswith('http') else f"https://www.bundestag.de{href}"
+                            xml_urls[session_id] = full_url
+        except Exception as e:
+            print(f"    ⚠️ WP {wp}: {e}")
+    
+    print(f"  ✓ {len(xml_urls)} XML-URLs gefunden")
+    return xml_urls
+
+
 def scrape_open_data_page() -> List[Dict]:
     """
-    Scraped die Bundestag Open Data Seite für Plenarprotokolle.
-    Gibt Liste von {wahlperiode, sitzungsnr, url, title} zurück.
+    Legacy-Funktion für Kompatibilität.
+    Nutzt jetzt intern DIP API + Open Data AJAX.
     """
     
-    print("  🌐 Scrape Open Data Seite...")
+    # Hole Protokoll-Liste von DIP
+    protocols = fetch_protocols_from_dip(wahlperiode=21)
     
-    try:
-        response = requests.get(OPEN_DATA_URL, timeout=30)
-        response.raise_for_status()
-    except Exception as e:
-        print(f"  ❌ Fehler beim Abrufen: {e}")
-        return []
+    # Hole XML-URLs von Open Data
+    xml_urls = scrape_open_data_for_xml_urls()
     
-    soup = BeautifulSoup(response.text, 'html.parser')
-    protocols = []
+    # Merge: Füge URLs hinzu wo verfügbar
+    for p in protocols:
+        session_id = p['session_id']
+        if session_id in xml_urls:
+            p['url'] = xml_urls[session_id]
+        else:
+            # Versuche URL zu konstruieren (falls Open Data nicht alle hat)
+            p['url'] = None
     
-    # Suche nach Protokoll-Links
-    # Pattern: /resource/blob/{id}/{wp}{sitzung}.xml
-    for link in soup.find_all('a', href=True):
-        href = link['href']
-        
-        if '/resource/blob/' in href and '.xml' in href:
-            # Extrahiere WP und Sitzungsnummer aus Dateiname
-            match = re.search(r'/(\d{2})(\d{3})\.xml', href)
-            if match:
-                wp = int(match.group(1))
-                sitzung = int(match.group(2))
-                
-                # Vollständige URL
-                full_url = href if href.startswith('http') else BASE_BLOB_URL + href
-                
-                protocols.append({
-                    'wahlperiode': wp,
-                    'sitzungsnr': sitzung,
-                    'url': full_url,
-                    'session_id': f"{wp}_{sitzung}"
-                })
+    # Filtere auf Protokolle mit URL
+    protocols_with_url = [p for p in protocols if p.get('url')]
     
-    print(f"  ✓ {len(protocols)} Protokolle gefunden")
-    return protocols
+    print(f"  📋 {len(protocols_with_url)} Protokolle mit XML-URL verfügbar")
+    
+    return protocols_with_url
 
 
 def download_xml(url: str, save_path: Path) -> bool:
@@ -353,6 +520,10 @@ def main():
     parser.add_argument('--skip-metrics', action='store_true', help='Überspringe Embeddings/Sentiment')
     parser.add_argument('--url', type=str, help='Manuelle URL eines Protokolls (z.B. https://www.bundestag.de/resource/blob/1140642/21057.xml)')
     parser.add_argument('--delete-session', type=str, help='Lösche eine Sitzung zum Testen (Format: WP_SITZUNG, z.B. 21_57)')
+    parser.add_argument('--wp', type=int, default=21, help='Wahlperiode (default: 21)')
+    parser.add_argument('--all-wp', action='store_true', help='Alle Wahlperioden (19, 20, 21) prüfen')
+    parser.add_argument('--full', action='store_true', help='Vollständiger Update inkl. Barometer + Dashboard')
+    parser.add_argument('--limit', type=int, default=10, help='Max. Anzahl neuer Sitzungen pro Durchlauf (default: 10)')
     args = parser.parse_args()
     
     print("""
@@ -430,9 +601,45 @@ def main():
         
         print(f"  ✓ Verarbeite WP {wp}, Sitzung {sitzung}")
     else:
-        # Automatischer Modus: Scrape Open Data
-        available = scrape_open_data_page()
-        new_protocols = [p for p in available if p['session_id'] not in existing]
+        # Automatischer Modus: DIP API + Open Data AJAX + dserver Fallback
+        wahlperioden = [19, 20, 21] if args.all_wp else [args.wp]
+        
+        # Erst Open Data URLs holen (schnell)
+        xml_urls = scrape_open_data_for_xml_urls()
+        
+        all_available = []
+        for wp in wahlperioden:
+            protocols = fetch_protocols_from_dip(wahlperiode=wp)
+            all_available.extend(protocols)
+        
+        # Filtere auf neue Sitzungen
+        new_candidates = [p for p in all_available if p['session_id'] not in existing]
+        
+        if not new_candidates:
+            print("\n  ✅ Keine neuen Sitzungen gefunden!")
+            return
+        
+        print(f"\n  🔎 {len(new_candidates)} potenzielle neue Sitzungen, suche XML-URLs...")
+        
+        # Finde XML-URLs (erst Cache, dann dserver)
+        new_candidates = find_all_xml_urls(new_candidates, xml_urls)
+        
+        # Nur Sitzungen MIT URL
+        new_protocols = [p for p in new_candidates if p.get('url')]
+        missing_url = [p for p in new_candidates if not p.get('url')]
+        
+        if missing_url:
+            print(f"\n  ⚠️  {len(missing_url)} Sitzungen ohne XML-URL (noch nicht verfügbar):")
+            for p in missing_url[:3]:
+                print(f"     WP {p['wahlperiode']}, Sitzung {p['sitzungsnr']}")
+            if len(missing_url) > 3:
+                print(f"     ... und {len(missing_url) - 3} weitere")
+        
+        # Limit anwenden
+        if len(new_protocols) > args.limit:
+            print(f"\n  📊 Limitiere auf {args.limit} Sitzungen (--limit ändern für mehr)")
+            # Sortiere nach Sitzungsnummer (neueste zuerst)
+            new_protocols = sorted(new_protocols, key=lambda x: (x['wahlperiode'], x['sitzungsnr']), reverse=True)[:args.limit]
     
     if not new_protocols:
         print("\n  ✅ Keine neuen Sitzungen gefunden!")
@@ -579,26 +786,67 @@ def main():
     
     print(f"  ✓ Metriken zu {metrics_table_id} hinzugefügt")
     
-    # Schritt 6: Hinweis für manuelle Schritte
-    print("\n" + "=" * 60)
-    print("✅ PIPELINE ABGESCHLOSSEN")
-    print("=" * 60)
-    print(f"""
+    # Schritt 6: Post-Processing
+    if args.full:
+        print("\n" + "=" * 60)
+        print("SCHRITT 6: Post-Processing (--full)")
+        print("=" * 60)
+        
+        import subprocess
+        
+        # Barometer aktualisieren
+        print("\n  📊 Aktualisiere Sitzungs-Barometer...")
+        try:
+            result = subprocess.run(
+                ["python", "scripts/create_session_barometer.py"],
+                capture_output=True,
+                text=True,
+                timeout=300
+            )
+            if result.returncode == 0:
+                print("  ✓ Barometer aktualisiert")
+            else:
+                print(f"  ⚠️ Barometer-Fehler: {result.stderr[:200]}")
+        except Exception as e:
+            print(f"  ⚠️ Barometer konnte nicht ausgeführt werden: {e}")
+        
+        # JSONs kopieren
+        print("\n  📁 Kopiere JSONs ins Dashboard...")
+        try:
+            import shutil
+            shutil.copy("dashboard_data/sessions_barometer.json", "dashboard/data/")
+            if os.path.exists("dashboard_data/topic_clusters.json"):
+                shutil.copy("dashboard_data/topic_clusters.json", "dashboard/data/")
+            print("  ✓ JSONs kopiert")
+        except Exception as e:
+            print(f"  ⚠️ Kopieren fehlgeschlagen: {e}")
+        
+        print("\n" + "=" * 60)
+        print("✅ VOLLSTÄNDIGER UPDATE ABGESCHLOSSEN")
+        print("=" * 60)
+        print(f"""
 Verarbeitet: {len(new_protocols)} Sitzungen, {len(all_speeches)} Reden
 
-Für vollständiges Update, führe noch aus:
+Dashboard aktualisiert! Zum Deployen:
+  cd dashboard && git add . && git commit -m "Update {datetime.now().strftime('%Y-%m-%d')}" && git push
 
-1. Clustering aktualisieren (optional):
-   python scripts/create_topic_clusters.py --cluster 22
+Hinweis: Clustering wurde NICHT aktualisiert (neue Reden haben kein cluster_label).
+         Führe bei Bedarf manuell aus: python scripts/create_topic_clusters.py --cluster 22
+""")
+    else:
+        print("\n" + "=" * 60)
+        print("✅ PIPELINE ABGESCHLOSSEN")
+        print("=" * 60)
+        print(f"""
+Verarbeitet: {len(new_protocols)} Sitzungen, {len(all_speeches)} Reden
 
-2. Barometer aktualisieren:
-   python scripts/create_session_barometer.py
+Für vollständiges Update mit --full Flag:
+  python scripts/pipeline_update.py --full
 
-3. JSONs ins Dashboard kopieren:
-   cp dashboard_data/*.json dashboard/data/
-
-4. Auf GitHub pushen:
-   git add . && git commit -m "Update {datetime.now().strftime('%Y-%m-%d')}" && git push
+Oder manuell:
+  1. python scripts/create_session_barometer.py
+  2. cp dashboard_data/*.json dashboard/data/
+  3. git add . && git commit -m "Update" && git push
 """)
 
 
