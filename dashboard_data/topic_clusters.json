@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-07T23:24:14.608375",
+  "generated_at": "2026-02-08T22:30:04.343692",
   "n_clusters": 22,
   "total_speeches": 5281,
   "silhouette_score": 0.021678542503279958,
@@ -7,7 +7,7 @@
     {
       "id": 11,
       "label": "Fragestunde und Ministerbefragung",
-      "description": "Der Cluster konzentriert sich auf die Fragestunde im Bundestag, insbesondere auf Nachfragen an Minister und Ministerinnen zu aktuellen politischen Themen und dem Koalitionsvertrag.",
+      "description": "Der Cluster umfasst Redebeiträge im Kontext von Fragestunden und Ministerbefragungen im Bundestag, oft mit Bezug auf EU-Themen und Koalitionsvereinbarungen.",
       "num_speeches": 480,
       "percentage": 9.1,
       "keywords": {
@@ -51,8 +51,8 @@
     },
     {
       "id": 18,
-      "label": "Wirtschaft und Investitionen",
-      "description": "Debatte über die Förderung von Wirtschaft, Unternehmen und Investitionen in Deutschland.",
+      "label": "Wirtschaft, Investitionen und Unternehmen",
+      "description": "Debatten über die Förderung der Wirtschaft, Investitionen in Schlüsselbereiche und die Rolle von Unternehmen.",
       "num_speeches": 438,
       "percentage": 8.3,
       "keywords": {
@@ -97,7 +97,7 @@
     {
       "id": 9,
       "label": "Klimaschutz und Energiewende im Bundestag",
-      "description": "Debatten über Klimaschutzmaßnahmen, Energiewende und die Rolle verschiedener Parteien, insbesondere AfD, im Kontext der deutschen Klimapolitik.",
+      "description": "Debatten über Klimaschutzmaßnahmen, Energiewende und damit verbundene politische Auseinandersetzungen im Deutschen Bundestag.",
       "num_speeches": 422,
       "percentage": 8.0,
       "keywords": {
@@ -141,8 +141,8 @@
     },
     {
       "id": 19,
-      "label": "Wirtschafts- und Finanzpolitik: ESM, Schuldenbremse & Steuern",
-      "description": "Debatten über staatliche Investitionen, Schuldenbegrenzung, Steuerpolitik und europäische Finanzmechanismen, insbesondere im Kontext von Unternehmen und Finanzmärkten.",
+      "label": "Wirtschafts- und Finanzpolitik",
+      "description": "Debatten über Haushalt, Steuern, Investitionen, Schuldenbremse und europäische Finanzmarktregulierung.",
       "num_speeches": 353,
       "percentage": 6.7,
       "keywords": {
@@ -187,7 +187,7 @@
     {
       "id": 14,
       "label": "Ukraine-Krieg und europäische Sicherheit",
-      "description": "Debatten über den russischen Angriffskrieg in der Ukraine, seine Auswirkungen auf die europäische Sicherheitsordnung und die Rolle Deutschlands und der NATO.",
+      "description": "Debatten über den Krieg in der Ukraine, seine Auswirkungen auf die europäische Sicherheit und die Rolle der NATO und der EU.",
       "num_speeches": 285,
       "percentage": 5.4,
       "keywords": {
@@ -231,8 +231,8 @@
     },
     {
       "id": 12,
-      "label": "Demokratie, Petitionen und Parlamentsbetrieb",
-      "description": "Diskussionen über die Grundlagen der Demokratie, Bürgerbeteiligung durch Petitionen und die Funktionsweise des Bundestages.",
+      "label": "Demokratie, Petitionen und parlamentarische Verfahren",
+      "description": "Dieser Themen-Cluster behandelt die Funktionsweise der Demokratie im Bundestag, insbesondere Petitionen, das Grundgesetz und die Rolle der Parteien, sowie parlamentarische Verfahren und Geschäftsordnungsfragen.",
       "num_speeches": 264,
       "percentage": 5.0,
       "keywords": {
@@ -276,8 +276,8 @@
     },
     {
       "id": 1,
-      "label": "AfD und Demokratie-Debatte",
-      "description": "Auseinandersetzung mit der AfD, ihrer Politik und deren Auswirkungen auf die Demokratie und Zivilgesellschaft.",
+      "label": "AfD und Demokratiedebatte",
+      "description": "Auseinandersetzung mit der AfD, ihrer Politik und den Auswirkungen auf die Demokratie.",
       "num_speeches": 252,
       "percentage": 4.8,
       "keywords": {
@@ -322,7 +322,7 @@
     {
       "id": 8,
       "label": "Familie, Bildung und Arbeitsmarkt",
-      "description": "Debatte über die Vereinbarkeit von Familie, Bildungschancen und Arbeitsmarktbedingungen, insbesondere für Frauen und Eltern.",
+      "description": "Debatte über die Vereinbarkeit von Familie und Beruf, Bildungsangebote und Arbeitsmarktbedingungen, insbesondere für Eltern und Frauen.",
       "num_speeches": 245,
       "percentage": 4.6,
       "keywords": {
@@ -366,8 +366,8 @@
     },
     {
       "id": 20,
-      "label": "Gewalt, Antisemitismus und NS-Vergangenheit",
-      "description": "Debatten über Gewalt gegen Frauen, Antisemitismus, Aufarbeitung der NS-Vergangenheit und Menschenrechtsverletzungen, insbesondere im Iran.",
+      "label": "Gedenken, Wiedergutmachung und Frauenrechte",
+      "description": "Dieser Cluster behandelt Themen der Aufarbeitung historischer Verbrechen, insbesondere NS-Verbrechen und Antisemitismus, sowie Gewalt gegen Frauen und Menschenrechtsverletzungen, vor allem im Iran, und Gesetze zur Entschädigung und Rehabilitierung von Opfern.",
       "num_speeches": 231,
       "percentage": 4.4,
       "keywords": {
@@ -411,8 +411,8 @@
     },
     {
       "id": 10,
-      "label": "Landwirtschaft, Bauern und Insektenschutz",
-      "description": "Debatten über Agrarpolitik, Tierschutz, Insektenschutz und die Situation der Landwirte.",
+      "label": "Landwirtschaft, Insektenschutz und Tierwohl",
+      "description": "Debatte über die Zukunft der Landwirtschaft, insbesondere Insektenschutz, Tierwohl und die Situation der Landwirte.",
       "num_speeches": 224,
       "percentage": 4.2,
       "keywords": {
@@ -457,7 +457,7 @@
     {
       "id": 2,
       "label": "Rentenpolitik und Altersvorsorge",
-      "description": "Debatten über die gesetzliche Rente, Altersvorsorge und Rentenüberleitung, insbesondere im Kontext der Rentenversicherung und des Rentenniveaus.",
+      "description": "Debatten über die gesetzliche Rente, Altersvorsorge, Rentenniveau und spezifische Themen wie die Rentenüberleitung.",
       "num_speeches": 223,
       "percentage": 4.2,
       "keywords": {
@@ -502,7 +502,7 @@
     {
       "id": 15,
       "label": "Innere Sicherheit und Polizeiarbeit",
-      "description": "Debatte über Maßnahmen zur Stärkung der inneren Sicherheit, Polizeiarbeit und den Umgang mit Kriminalität, einschließlich Datenaustausch und Befugnisse von Sicherheitsbehörden.",
+      "description": "Debatten über die Befugnisse der Bundespolizei, Datenaustausch zur Verbrechensbekämpfung und Maßnahmen zur Erhöhung der inneren Sicherheit.",
       "num_speeches": 212,
       "percentage": 4.0,
       "keywords": {
@@ -546,8 +546,8 @@
     },
     {
       "id": 3,
-      "label": "Digitalisierung, Daten und Souveränität",
-      "description": "Fördert die digitale Transformation Deutschlands unter Berücksichtigung von Datensicherheit, digitaler Souveränität und Bürgerrechten.",
+      "label": "Digitale Souveränität und Verwaltung",
+      "description": "Debatte über Digitalisierung von Verwaltungsprozessen, Datensicherheit, digitale Identität und digitale Souveränität Deutschlands.",
       "num_speeches": 191,
       "percentage": 3.6,
       "keywords": {
@@ -591,8 +591,8 @@
     },
     {
       "id": 21,
-      "label": "Krisen und Missionen im Nahen Osten",
-      "description": "Debatten über humanitäre Hilfe, militärische Missionen und die politische Lage in Konfliktregionen wie Syrien, Sudan, Irak und Libanon.",
+      "label": "Naher Osten und humanitäre Krisen",
+      "description": "Debatten über deutsche Beteiligung an Missionen und humanitäre Hilfe in Konfliktregionen des Nahen Ostens und Afrikas.",
       "num_speeches": 190,
       "percentage": 3.6,
       "keywords": {
@@ -637,7 +637,7 @@
     {
       "id": 17,
       "label": "Verbraucherschutz und Lieferketten",
-      "description": "Debatte über Verbraucherschutz, Produktsicherheit, EU-Regulierungen und das Lieferkettengesetz mit Fokus auf Unternehmensverantwortung.",
+      "description": "Debatten zu Verbraucherschutz, Produktregulierung und Unternehmensverantwortung, insbesondere im Kontext des Lieferkettengesetzes und EU-weiten Regelungen.",
       "num_speeches": 188,
       "percentage": 3.6,
       "keywords": {
@@ -681,8 +681,8 @@
     },
     {
       "id": 4,
-      "label": "Bundeswehr, Sicherheit und Wehrdienst",
-      "description": "Debatten über die Bundeswehr, ihre Einsatzbereitschaft, die Sicherheitspolitik Deutschlands und Fragen des Wehrdienstes.",
+      "label": "Bundeswehr, Verteidigung und Sicherheitspolitik",
+      "description": "Debatten über die Bundeswehr, ihre Einsatzfähigkeit, die Rolle von Soldaten und Reservisten, sowie Fragen der Verteidigung und Sicherheit, insbesondere im Kontext der Ukraine und der NATO.",
       "num_speeches": 164,
       "percentage": 3.1,
       "keywords": {
@@ -727,7 +727,7 @@
     {
       "id": 0,
       "label": "Pandemiebekämpfung und Infektionsschutzmaßnahmen",
-      "description": "Debatte über die rechtlichen und politischen Maßnahmen zur Eindämmung der COVID-19-Pandemie, einschließlich des Infektionsschutzgesetzes (IfSG) und der Feststellung der epidemischen Lage von nationaler Tragweite.",
+      "description": "Debatten über die Bewältigung der COVID-19-Pandemie, insbesondere Maßnahmen wie Maskenpflicht, Impfungen und das Infektionsschutzgesetz.",
       "num_speeches": 160,
       "percentage": 3.0,
       "keywords": {
@@ -772,7 +772,7 @@
     {
       "id": 6,
       "label": "Migrationspolitik und Ausländerzentralregister",
-      "description": "Debatten über Migration, Asyl, Grenzkontrollen und die Weiterentwicklung des Ausländerzentralregisters im Bundestag, oft kontrovers diskutiert zwischen AfD, Union und SPD.",
+      "description": "Debatte über Migration, Asyl, Integration und die Weiterentwicklung des Ausländerzentralregisters (AZR) im Bundestag, oft kontrovers diskutiert, insbesondere im Kontext der AfD und der Migrationswende.",
       "num_speeches": 158,
       "percentage": 3.0,
       "keywords": {
@@ -817,7 +817,7 @@
     {
       "id": 13,
       "label": "Pflege, Gesundheit und Mutterschutz",
-      "description": "Debatten über die Versorgung von Patienten, Pflegebedürftigen, Frauen und Kindern, einschließlich Themen wie Pflegeversicherung, Mutterschutz und Fehlgeburten.",
+      "description": "Debatten über die Versorgung von Patienten, Pflegebedürftigen, sowie Themen rund um Mutterschutz und Frauengesundheit.",
       "num_speeches": 158,
       "percentage": 3.0,
       "keywords": {
@@ -862,7 +862,7 @@
     {
       "id": 16,
       "label": "Mobilität und Verkehrspolitik",
-      "description": "Diskussionen über ÖPNV, Deutschlandticket, Bahn, Auto, Maut und Mobilität im ländlichen Raum.",
+      "description": "Debatten über ÖPNV, Deutschlandticket, Maut, Elektromobilität und die Verkehrsanbindung ländlicher Räume.",
       "num_speeches": 154,
       "percentage": 2.9,
       "keywords": {
@@ -906,8 +906,8 @@
     },
     {
       "id": 5,
-      "label": "Wohnungsbau und Mietenpolitik",
-      "description": "Debatte über Maßnahmen zur Steigerung des Wohnungsbaus und zur Entlastung von Mietern in Deutschland.",
+      "label": "Wohnungsbau und Mietpreise",
+      "description": "Die Debatte fokussiert auf Maßnahmen zur Ankurbelung des Wohnungsbaus, insbesondere bezüglich steigender Mietpreise und der Rolle des Bundes und der Kommunen.",
       "num_speeches": 149,
       "percentage": 2.8,
       "keywords": {
@@ -951,8 +951,8 @@
     },
     {
       "id": 7,
-      "label": "Afghanistan-Einsatz und Ortskräfte",
-      "description": "Debatte über den Abzug aus Afghanistan, die Situation der Ortskräfte und deren Aufnahme in Deutschland.",
+      "label": "Afghanistan, Ortskräfte und Aufnahmepolitik",
+      "description": "Die Debatte fokussiert sich auf die Evakuierung afghanischer Ortskräfte nach dem Abzug der Bundeswehr und die damit verbundene Aufnahmepolitik.",
       "num_speeches": 140,
       "percentage": 2.7,
       "keywords": {

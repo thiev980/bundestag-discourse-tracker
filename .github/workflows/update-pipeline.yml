@@ -1,0 +1,110 @@
+# yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
+name: Bundestag Pipeline Update
+
+on:
+  # Täglich um 6:00 Uhr UTC (7:00 MEZ / 8:00 MESZ)
+  schedule:
+    - cron: '0 6 * * *'
+  
+  # Manuell auslösbar
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: 'Max. Anzahl neuer Sitzungen'
+        required: false
+        default: '10'
+
+env:
+  PYTHON_VERSION: '3.11'
+
+jobs:
+  update-pipeline:
+    runs-on: ubuntu-latest
+    
+    # Nur im Main-Branch laufen
+    if: github.ref == 'refs/heads/main'
+    
+    steps:
+      # 1. Repository auschecken
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # 2. Python Setup
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: 'pip'
+
+      # 3. Dependencies installieren
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      # 4. GCP Authentifizierung
+      - name: Authenticate to Google Cloud
+        uses: google-github-actions/auth@v2
+        with:
+          credentials_json: ${{ secrets.GCP_SERVICE_ACCOUNT_KEY }}
+
+      # 5. Verzeichnisse erstellen
+      - name: Create Directories
+        run: |
+          mkdir -p bundestag_xml_data/wp19
+          mkdir -p bundestag_xml_data/wp20
+          mkdir -p bundestag_xml_data/wp21
+          mkdir -p dashboard_data
+          mkdir -p models
+
+      # 6. Pipeline ausführen
+      - name: Run Pipeline
+        run: |
+          cd ${{ github.workspace }}
+          python scripts/pipeline_update.py --full --limit ${{ github.event.inputs.limit || '10' }}
+        env:
+          GOOGLE_CLOUD_PROJECT: bt-discourse-tracker
+
+      # 7. Änderungen committen und pushen
+      - name: Commit and Push Changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          
+          # Prüfen ob es Änderungen gibt
+          if git diff --quiet && git diff --staged --quiet; then
+            echo "Keine Änderungen zum Committen"
+            exit 0
+          fi
+          
+          # Änderungen stagen
+          git add dashboard/data/*.json
+          git add dashboard_data/*.json
+          
+          # Optional: XML-Dateien nicht committen (zu groß)
+          # git add bundestag_xml_data/
+          
+          # Committen falls Änderungen vorhanden
+          if git diff --staged --quiet; then
+            echo "Keine relevanten Änderungen"
+          else
+            git commit -m "🔄 Auto-Update $(date +'%Y-%m-%d')"
+            git push
+            echo "✅ Änderungen gepusht"
+          fi
+
+      # 8. Summary
+      - name: Job Summary
+        run: |
+          echo "## 🏛️ Bundestag Pipeline Update" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "- **Datum:** $(date +'%Y-%m-%d %H:%M UTC')" >> $GITHUB_STEP_SUMMARY
+          echo "- **Limit:** ${{ github.event.inputs.limit || '10' }} Sitzungen" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          if [ -f dashboard/data/sessions_barometer.json ]; then
+            SESSIONS=$(jq '.sessions | length' dashboard/data/sessions_barometer.json)
+            echo "- **Sitzungen im Dashboard:** $SESSIONS" >> $GITHUB_STEP_SUMMARY
+          fi

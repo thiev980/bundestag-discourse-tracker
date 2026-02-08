@@ -24,6 +24,7 @@ import os
 import sys
 import json
 import time
+import pickle
 import argparse
 import pandas as pd
 import numpy as np
@@ -36,7 +37,7 @@ from sklearn.metrics import silhouette_score, silhouette_samples
 import matplotlib.pyplot as plt
 from collections import Counter
 from tqdm import tqdm
-from typing import List, Dict, Tuple
+from typing import List, Dict, Tuple, Optional
 import warnings
 warnings.filterwarnings('ignore')
 
@@ -51,6 +52,12 @@ SPEECHES_TARGET = "speeches_with_clusters"
 CLUSTERS_TARGET = "topic_clusters"
 LOCATION = "EU"
 VERTEX_LOCATION = "europe-west1"
+
+# Modell-Speicherung für inkrementelles Clustering
+MODELS_DIR = "models"
+KMEANS_MODEL_FILE = "kmeans_model.pkl"
+TFIDF_MODEL_FILE = "tfidf_vectorizer.pkl"
+CLUSTER_LABELS_FILE = "cluster_labels.json"
 
 # Analyse-Parameter
 K_RANGE = range(5, 26)  # Teste k von 5 bis 25
@@ -543,6 +550,19 @@ def run_clustering(df: pd.DataFrame, embeddings: np.ndarray, n_clusters: int, cl
     
     print(f"  ✓ {output_path}")
     
+    # Modell speichern für inkrementelles Clustering
+    os.makedirs(MODELS_DIR, exist_ok=True)
+    
+    kmeans_path = os.path.join(MODELS_DIR, KMEANS_MODEL_FILE)
+    with open(kmeans_path, 'wb') as f:
+        pickle.dump(kmeans, f)
+    print(f"  ✓ K-Means Modell: {kmeans_path}")
+    
+    labels_path = os.path.join(MODELS_DIR, CLUSTER_LABELS_FILE)
+    with open(labels_path, 'w', encoding='utf-8') as f:
+        json.dump(cluster_labels, f, ensure_ascii=False, indent=2)
+    print(f"  ✓ Cluster-Labels: {labels_path}")
+    
     # Zusammenfassung
     print("\n" + "=" * 60)
     print("✅ CLUSTERING ABGESCHLOSSEN")
@@ -562,6 +582,101 @@ Top 5 Cluster:
 
 
 # ============================================================
+# INKREMENTELLES CLUSTERING
+# ============================================================
+
+def assign_new_speeches(client: bigquery.Client) -> int:
+    """
+    Weist neue Reden dem nächsten Cluster zu (ohne Re-Training).
+    
+    Returns:
+        Anzahl neu zugewiesener Reden
+    """
+    
+    # Prüfen ob Modell existiert
+    kmeans_path = os.path.join(MODELS_DIR, KMEANS_MODEL_FILE)
+    labels_path = os.path.join(MODELS_DIR, CLUSTER_LABELS_FILE)
+    
+    if not os.path.exists(kmeans_path) or not os.path.exists(labels_path):
+        print("  ❌ Kein gespeichertes Modell gefunden!")
+        print("     Führe erst aus: python create_topic_clusters.py --cluster K")
+        return 0
+    
+    # Modell laden
+    print("  📂 Lade gespeichertes Modell...")
+    with open(kmeans_path, 'rb') as f:
+        kmeans = pickle.load(f)
+    with open(labels_path, 'r', encoding='utf-8') as f:
+        cluster_labels = json.load(f)
+    
+    n_clusters = kmeans.n_clusters
+    print(f"  ✓ K-Means Modell geladen ({n_clusters} Cluster)")
+    
+    # Neue Reden laden (die noch nicht in speeches_with_clusters sind)
+    query = f"""
+    SELECT m.*
+    FROM `{PROJECT_ID}.{DATASET_ID}.{SOURCE_TABLE}` m
+    LEFT JOIN `{PROJECT_ID}.{DATASET_ID}.{SPEECHES_TARGET}` c
+      ON m.rede_id = c.rede_id
+    WHERE c.rede_id IS NULL
+      AND m.embedding IS NOT NULL
+      AND m.text IS NOT NULL
+      AND LENGTH(m.text) > 100
+    """
+    
+    print("  📥 Lade neue Reden...")
+    new_df = client.query(query).to_dataframe()
+    
+    if len(new_df) == 0:
+        print("  ✓ Keine neuen Reden zum Zuweisen")
+        return 0
+    
+    print(f"  ✓ {len(new_df)} neue Reden gefunden")
+    
+    # Embeddings parsen
+    print("  🔢 Parse Embeddings...")
+    embeddings_list = []
+    for e in tqdm(new_df['embedding'], desc="  Embeddings"):
+        try:
+            embeddings_list.append(np.array(json.loads(e)))
+        except:
+            embeddings_list.append(np.zeros(768))
+    
+    embeddings = np.array(embeddings_list)
+    
+    # Cluster zuweisen (predict, nicht fit!)
+    print("  🎯 Weise Cluster zu...")
+    new_df['cluster_id'] = kmeans.predict(embeddings)
+    new_df['cluster_label'] = new_df['cluster_id'].map(
+        lambda x: cluster_labels[str(x)]['label']
+    )
+    
+    # Statistik
+    print("\n  📊 Zuweisungen:")
+    for cid, count in new_df['cluster_id'].value_counts().sort_index().items():
+        label = cluster_labels[str(cid)]['label']
+        print(f"     {cid:2d} ({label[:30]:30s}): {count:4d} Reden")
+    
+    # In BigQuery speichern (APPEND!)
+    print("\n  ⬆️  Speichere in BigQuery...")
+    
+    speeches_for_bq = new_df.drop(columns=['embedding'])
+    speeches_for_bq['datum'] = pd.to_datetime(speeches_for_bq['datum']).dt.strftime('%Y-%m-%d')
+    
+    speeches_table = f"{PROJECT_ID}.{DATASET_ID}.{SPEECHES_TARGET}"
+    
+    job_config = bigquery.LoadJobConfig(
+        write_disposition=bigquery.WriteDisposition.WRITE_APPEND,  # APPEND!
+    )
+    job = client.load_table_from_dataframe(speeches_for_bq, speeches_table, job_config=job_config)
+    job.result()
+    
+    print(f"  ✓ {len(new_df)} Reden zu {speeches_table} hinzugefügt")
+    
+    return len(new_df)
+
+
+# ============================================================
 # MAIN
 # ============================================================
 
@@ -569,16 +684,43 @@ def main():
     parser = argparse.ArgumentParser(description='Themen-Clustering für Bundestagsreden')
     parser.add_argument('--analyze', action='store_true', help='Nur Analyse (Elbow + Silhouette Plots)')
     parser.add_argument('--cluster', type=int, metavar='K', help='Clustering mit k Clustern durchführen')
+    parser.add_argument('--assign', action='store_true', help='Neue Reden bestehendem Modell zuweisen (inkrementell)')
     
     args = parser.parse_args()
     
-    if not args.analyze and not args.cluster:
+    if not args.analyze and not args.cluster and not args.assign:
         parser.print_help()
         print("\n💡 Empfohlener Workflow:")
         print("   1. python create_topic_clusters.py --analyze")
         print("   2. Plot anschauen, k wählen")
         print("   3. python create_topic_clusters.py --cluster K")
+        print("\n🔄 Für Updates (neue Reden):")
+        print("   python create_topic_clusters.py --assign")
         sys.exit(0)
+    
+    # --assign Mode: Schneller Pfad ohne alle Daten zu laden
+    if args.assign:
+        print("""
+╔════════════════════════════════════════════════════════════╗
+║     Inkrementelles Clustering - Neue Reden zuweisen       ║
+╚════════════════════════════════════════════════════════════╝
+        """)
+        print("🔌 Setup...")
+        client = bigquery.Client(project=PROJECT_ID, location=LOCATION)
+        
+        print("\n" + "=" * 60)
+        print("Cluster-Zuweisung")
+        print("=" * 60)
+        
+        n_assigned = assign_new_speeches(client)
+        
+        print("\n" + "=" * 60)
+        if n_assigned > 0:
+            print(f"✅ {n_assigned} REDEN ZUGEWIESEN")
+        else:
+            print("✅ KEINE NEUEN REDEN")
+        print("=" * 60)
+        return
     
     print("""
 ╔════════════════════════════════════════════════════════════╗

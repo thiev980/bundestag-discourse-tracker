@@ -1,0 +1,90 @@
+{
+  "0": {
+    "label": "Pandemiebekämpfung und Infektionsschutzmaßnahmen",
+    "description": "Debatten über die Bewältigung der COVID-19-Pandemie, insbesondere Maßnahmen wie Maskenpflicht, Impfungen und das Infektionsschutzgesetz."
+  },
+  "1": {
+    "label": "AfD und Demokratiedebatte",
+    "description": "Auseinandersetzung mit der AfD, ihrer Politik und den Auswirkungen auf die Demokratie."
+  },
+  "2": {
+    "label": "Rentenpolitik und Altersvorsorge",
+    "description": "Debatten über die gesetzliche Rente, Altersvorsorge, Rentenniveau und spezifische Themen wie die Rentenüberleitung."
+  },
+  "3": {
+    "label": "Digitale Souveränität und Verwaltung",
+    "description": "Debatte über Digitalisierung von Verwaltungsprozessen, Datensicherheit, digitale Identität und digitale Souveränität Deutschlands."
+  },
+  "4": {
+    "label": "Bundeswehr, Verteidigung und Sicherheitspolitik",
+    "description": "Debatten über die Bundeswehr, ihre Einsatzfähigkeit, die Rolle von Soldaten und Reservisten, sowie Fragen der Verteidigung und Sicherheit, insbesondere im Kontext der Ukraine und der NATO."
+  },
+  "5": {
+    "label": "Wohnungsbau und Mietpreise",
+    "description": "Die Debatte fokussiert auf Maßnahmen zur Ankurbelung des Wohnungsbaus, insbesondere bezüglich steigender Mietpreise und der Rolle des Bundes und der Kommunen."
+  },
+  "6": {
+    "label": "Migrationspolitik und Ausländerzentralregister",
+    "description": "Debatte über Migration, Asyl, Integration und die Weiterentwicklung des Ausländerzentralregisters (AZR) im Bundestag, oft kontrovers diskutiert, insbesondere im Kontext der AfD und der Migrationswende."
+  },
+  "7": {
+    "label": "Afghanistan, Ortskräfte und Aufnahmepolitik",
+    "description": "Die Debatte fokussiert sich auf die Evakuierung afghanischer Ortskräfte nach dem Abzug der Bundeswehr und die damit verbundene Aufnahmepolitik."
+  },
+  "8": {
+    "label": "Familie, Bildung und Arbeitsmarkt",
+    "description": "Debatte über die Vereinbarkeit von Familie und Beruf, Bildungsangebote und Arbeitsmarktbedingungen, insbesondere für Eltern und Frauen."
+  },
+  "9": {
+    "label": "Klimaschutz und Energiewende im Bundestag",
+    "description": "Debatten über Klimaschutzmaßnahmen, Energiewende und damit verbundene politische Auseinandersetzungen im Deutschen Bundestag."
+  },
+  "10": {
+    "label": "Landwirtschaft, Insektenschutz und Tierwohl",
+    "description": "Debatte über die Zukunft der Landwirtschaft, insbesondere Insektenschutz, Tierwohl und die Situation der Landwirte."
+  },
+  "11": {
+    "label": "Fragestunde und Ministerbefragung",
+    "description": "Der Cluster umfasst Redebeiträge im Kontext von Fragestunden und Ministerbefragungen im Bundestag, oft mit Bezug auf EU-Themen und Koalitionsvereinbarungen."
+  },
+  "12": {
+    "label": "Demokratie, Petitionen und parlamentarische Verfahren",
+    "description": "Dieser Themen-Cluster behandelt die Funktionsweise der Demokratie im Bundestag, insbesondere Petitionen, das Grundgesetz und die Rolle der Parteien, sowie parlamentarische Verfahren und Geschäftsordnungsfragen."
+  },
+  "13": {
+    "label": "Pflege, Gesundheit und Mutterschutz",
+    "description": "Debatten über die Versorgung von Patienten, Pflegebedürftigen, sowie Themen rund um Mutterschutz und Frauengesundheit."
+  },
+  "14": {
+    "label": "Ukraine-Krieg und europäische Sicherheit",
+    "description": "Debatten über den Krieg in der Ukraine, seine Auswirkungen auf die europäische Sicherheit und die Rolle der NATO und der EU."
+  },
+  "15": {
+    "label": "Innere Sicherheit und Polizeiarbeit",
+    "description": "Debatten über die Befugnisse der Bundespolizei, Datenaustausch zur Verbrechensbekämpfung und Maßnahmen zur Erhöhung der inneren Sicherheit."
+  },
+  "16": {
+    "label": "Mobilität und Verkehrspolitik",
+    "description": "Debatten über ÖPNV, Deutschlandticket, Maut, Elektromobilität und die Verkehrsanbindung ländlicher Räume."
+  },
+  "17": {
+    "label": "Verbraucherschutz und Lieferketten",
+    "description": "Debatten zu Verbraucherschutz, Produktregulierung und Unternehmensverantwortung, insbesondere im Kontext des Lieferkettengesetzes und EU-weiten Regelungen."
+  },
+  "18": {
+    "label": "Wirtschaft, Investitionen und Unternehmen",
+    "description": "Debatten über die Förderung der Wirtschaft, Investitionen in Schlüsselbereiche und die Rolle von Unternehmen."
+  },
+  "19": {
+    "label": "Wirtschafts- und Finanzpolitik",
+    "description": "Debatten über Haushalt, Steuern, Investitionen, Schuldenbremse und europäische Finanzmarktregulierung."
+  },
+  "20": {
+    "label": "Gedenken, Wiedergutmachung und Frauenrechte",
+    "description": "Dieser Cluster behandelt Themen der Aufarbeitung historischer Verbrechen, insbesondere NS-Verbrechen und Antisemitismus, sowie Gewalt gegen Frauen und Menschenrechtsverletzungen, vor allem im Iran, und Gesetze zur Entschädigung und Rehabilitierung von Opfern."
+  },
+  "21": {
+    "label": "Naher Osten und humanitäre Krisen",
+    "description": "Debatten über deutsche Beteiligung an Missionen und humanitäre Hilfe in Konfliktregionen des Nahen Ostens und Afrikas."
+  }
+}

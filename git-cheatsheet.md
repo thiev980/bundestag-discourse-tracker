@@ -6,6 +6,7 @@ source .venv/bin/activate
 pip install -U pip 
 pip install pandas numpy matplotlib jupyter ipykernel
 pip list
+pip freeze > requirements.txt
 which python
 
 ## Git initiieren

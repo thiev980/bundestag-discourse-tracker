@@ -794,6 +794,26 @@ def main():
         
         import subprocess
         
+        # Cluster-Zuweisung (inkrementell)
+        print("\n  🏷️  Weise Cluster zu (inkrementell)...")
+        try:
+            result = subprocess.run(
+                ["python", "scripts/create_topic_clusters.py", "--assign"],
+                capture_output=True,
+                text=True,
+                timeout=600
+            )
+            if result.returncode == 0:
+                print("  ✓ Cluster zugewiesen")
+            else:
+                if "Kein gespeichertes Modell" in result.stdout or "Kein gespeichertes Modell" in result.stderr:
+                    print("  ⚠️ Kein Clustering-Modell vorhanden")
+                    print("     Führe einmalig aus: python scripts/create_topic_clusters.py --cluster 22")
+                else:
+                    print(f"  ⚠️ Cluster-Fehler: {result.stderr[:200]}")
+        except Exception as e:
+            print(f"  ⚠️ Clustering konnte nicht ausgeführt werden: {e}")
+        
         # Barometer aktualisieren
         print("\n  📊 Aktualisiere Sitzungs-Barometer...")
         try:
@@ -828,10 +848,7 @@ def main():
 Verarbeitet: {len(new_protocols)} Sitzungen, {len(all_speeches)} Reden
 
 Dashboard aktualisiert! Zum Deployen:
-  cd dashboard && git add . && git commit -m "Update {datetime.now().strftime('%Y-%m-%d')}" && git push
-
-Hinweis: Clustering wurde NICHT aktualisiert (neue Reden haben kein cluster_label).
-         Führe bei Bedarf manuell aus: python scripts/create_topic_clusters.py --cluster 22
+  git add . && git commit -m "Update {datetime.now().strftime('%Y-%m-%d')}" && git push
 """)
     else:
         print("\n" + "=" * 60)
@@ -844,9 +861,10 @@ Für vollständiges Update mit --full Flag:
   python scripts/pipeline_update.py --full
 
 Oder manuell:
-  1. python scripts/create_session_barometer.py
-  2. cp dashboard_data/*.json dashboard/data/
-  3. git add . && git commit -m "Update" && git push
+  1. python scripts/create_topic_clusters.py --assign
+  2. python scripts/create_session_barometer.py
+  3. cp dashboard_data/*.json dashboard/data/
+  4. git add . && git commit -m "Update" && git push
 """)
 
 
