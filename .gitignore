@@ -61,8 +61,8 @@ github-actions-key.json
 # ============================================================
 # Data Files (optional - uncomment if too large)
 # ============================================================
-# bundestag_xml_data/
-# *.xml
+bundestag_xml_data/
+*.xml
 
 # ============================================================
 # Logs & Temp Files
