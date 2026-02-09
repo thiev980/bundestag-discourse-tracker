@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-02-07T23:24:59.737615",
-  "total_sessions": 40,
+  "generated_at": "2026-02-09T22:55:52.715295",
+  "total_sessions": 58,
   "wahlperioden": [
     19,
     20,
@@ -14,20 +14,20 @@
     "avg_sentiment": {
       "min": -0.38181818181818183,
       "max": 0.010077519379844961,
-      "median": -0.11699096020284423,
-      "mean": -0.12848006865586573
+      "median": -0.1356837606837607,
+      "mean": -0.13921775562073846
     },
     "avg_emotionality": {
       "min": 0.031774665757988166,
       "max": 0.32335909090909093,
-      "median": 0.19849139234924484,
-      "mean": 0.18449414575816178
+      "median": 0.10921863646447741,
+      "mean": 0.15297359250815834
     },
     "num_speeches": {
       "min": 22,
       "max": 275,
-      "median": 124.5,
-      "mean": 132.125
+      "median": 130.0,
+      "mean": 129.63793103448276
     }
   },
   "sessions": [
@@ -40,7 +40,7 @@
       "num_speeches": 76,
       "top_topics": [
         {
-          "label": "Wirtschaft und Investitionen",
+          "label": "Wirtschaft, Investitionen und Unternehmen",
           "count": 16
         },
         {
@@ -55,17 +55,17 @@
       "metrics": {
         "sentiment": {
           "value": -0.171,
-          "percentile": 25.0,
+          "percentile": 32.8,
           "spread": 0.504
         },
         "emotionality": {
           "value": 0.1034,
-          "percentile": 25.0
+          "percentile": 44.8
         },
         "length": {
           "total_words": 44001,
           "avg_per_speech": 579.0,
-          "percentile": 17.5
+          "percentile": 24.1
         }
       },
       "summary": "Durchschnittliche Sitzung"
@@ -87,24 +87,24 @@
           "count": 30
         },
         {
-          "label": "Wirtschafts- und Finanzpolitik: ESM, Schuldenbremse & Steuern",
+          "label": "Wirtschafts- und Finanzpolitik",
           "count": 19
         }
       ],
       "metrics": {
         "sentiment": {
           "value": -0.194,
-          "percentile": 17.5,
+          "percentile": 25.9,
           "spread": 0.506
         },
         "emotionality": {
           "value": 0.2638,
-          "percentile": 77.5
+          "percentile": 84.5
         },
         "length": {
           "total_words": 98539,
           "avg_per_speech": 608.0,
-          "percentile": 80.0
+          "percentile": 86.2
         }
       },
       "summary": "Durchschnittliche Sitzung"
@@ -126,27 +126,27 @@
           "count": 24
         },
         {
-          "label": "Landwirtschaft, Bauern und Insektenschutz",
+          "label": "Landwirtschaft, Insektenschutz und Tierwohl",
           "count": 21
         }
       ],
       "metrics": {
         "sentiment": {
           "value": -0.083,
-          "percentile": 67.5,
+          "percentile": 70.7,
           "spread": 0.436
         },
         "emotionality": {
           "value": 0.2328,
-          "percentile": 65.0
+          "percentile": 75.9
         },
         "length": {
           "total_words": 38862,
           "avg_per_speech": 249.0,
-          "percentile": 10.0
+          "percentile": 12.1
         }
       },
-      "summary": "Kurze sitzung (untere 10%)"
+      "summary": "Durchschnittliche Sitzung"
     },
     {
       "session_id": "21_54",
@@ -165,24 +165,24 @@
           "count": 14
         },
         {
-          "label": "Digitalisierung, Daten und Souveränität",
+          "label": "Digitale Souveränität und Verwaltung",
           "count": 13
         }
       ],
       "metrics": {
         "sentiment": {
           "value": -0.214,
-          "percentile": 12.5,
+          "percentile": 17.2,
           "spread": 0.505
         },
         "emotionality": {
           "value": 0.2475,
-          "percentile": 72.5
+          "percentile": 81.0
         },
         "length": {
           "total_words": 50270,
           "avg_per_speech": 546.0,
-          "percentile": 32.5
+          "percentile": 37.9
         }
       },
       "summary": "Durchschnittliche Sitzung"
@@ -196,11 +196,11 @@
       "num_speeches": 183,
       "top_topics": [
         {
-          "label": "Landwirtschaft, Bauern und Insektenschutz",
+          "label": "Landwirtschaft, Insektenschutz und Tierwohl",
           "count": 31
         },
         {
-          "label": "Wirtschaft und Investitionen",
+          "label": "Wirtschaft, Investitionen und Unternehmen",
           "count": 21
         },
         {
@@ -211,17 +211,17 @@
       "metrics": {
         "sentiment": {
           "value": -0.162,
-          "percentile": 27.5,
+          "percentile": 34.5,
           "spread": 0.494
         },
         "emotionality": {
           "value": 0.2732,
-          "percentile": 82.5
+          "percentile": 87.9
         },
         "length": {
           "total_words": 98954,
           "avg_per_speech": 541.0,
-          "percentile": 82.5
+          "percentile": 87.9
         }
       },
       "summary": "Durchschnittliche Sitzung"
@@ -239,31 +239,31 @@
           "count": 68
         },
         {
-          "label": "Krisen und Missionen im Nahen Osten",
+          "label": "Naher Osten und humanitäre Krisen",
           "count": 18
         },
         {
-          "label": "Landwirtschaft, Bauern und Insektenschutz",
+          "label": "Landwirtschaft, Insektenschutz und Tierwohl",
           "count": 15
         }
       ],
       "metrics": {
         "sentiment": {
           "value": -0.097,
-          "percentile": 60.0,
+          "percentile": 65.5,
           "spread": 0.408
         },
         "emotionality": {
           "value": 0.2213,
-          "percentile": 57.5
+          "percentile": 70.7
         },
         "length": {
           "total_words": 35532,
           "avg_per_speech": 217.0,
-          "percentile": 7.5
+          "percentile": 8.6
         }
       },
-      "summary": "Kurze sitzung (untere 8%)"
+      "summary": "Kurze sitzung (untere 9%)"
     },
     {
       "session_id": "21_51",
@@ -274,11 +274,11 @@
       "num_speeches": 94,
       "top_topics": [
         {
-          "label": "Wirtschafts- und Finanzpolitik: ESM, Schuldenbremse & Steuern",
+          "label": "Wirtschafts- und Finanzpolitik",
           "count": 22
         },
         {
-          "label": "Digitalisierung, Daten und Souveränität",
+          "label": "Digitale Souveränität und Verwaltung",
           "count": 12
         },
         {
@@ -289,17 +289,17 @@
       "metrics": {
         "sentiment": {
           "value": -0.112,
-          "percentile": 50.0,
+          "percentile": 55.2,
           "spread": 0.524
         },
         "emotionality": {
           "value": 0.2567,
-          "percentile": 75.0
+          "percentile": 82.8
         },
         "length": {
           "total_words": 51717,
           "avg_per_speech": 550.0,
-          "percentile": 40.0
+          "percentile": 44.8
         }
       },
       "summary": "Durchschnittliche Sitzung"
@@ -313,7 +313,7 @@
       "num_speeches": 205,
       "top_topics": [
         {
-          "label": "Demokratie, Petitionen und Parlamentsbetrieb",
+          "label": "Demokratie, Petitionen und parlamentarische Verfahren",
           "count": 33
         },
         {
@@ -321,27 +321,27 @@
           "count": 28
         },
         {
-          "label": "AfD und Demokratie-Debatte",
+          "label": "AfD und Demokratiedebatte",
           "count": 25
         }
       ],
       "metrics": {
         "sentiment": {
           "value": -0.107,
-          "percentile": 55.0,
+          "percentile": 60.3,
           "spread": 0.476
         },
         "emotionality": {
           "value": 0.0838,
-          "percentile": 7.5
+          "percentile": 17.2
         },
         "length": {
           "total_words": 106099,
           "avg_per_speech": 518.0,
-          "percentile": 85.0
+          "percentile": 89.7
         }
       },
-      "summary": "Sehr sachlich (untere 8%)"
+      "summary": "Durchschnittliche Sitzung"
     },
     {
       "session_id": "21_49",
@@ -367,17 +367,17 @@
       "metrics": {
         "sentiment": {
           "value": -0.069,
-          "percentile": 72.5,
+          "percentile": 74.1,
           "spread": 0.446
         },
         "emotionality": {
           "value": 0.2019,
-          "percentile": 52.5
+          "percentile": 67.2
         },
         "length": {
           "total_words": 47584,
           "avg_per_speech": 360.0,
-          "percentile": 25.0
+          "percentile": 32.8
         }
       },
       "summary": "Durchschnittliche Sitzung"
@@ -395,28 +395,28 @@
           "count": 40
         },
         {
-          "label": "Bundeswehr, Sicherheit und Wehrdienst",
+          "label": "Bundeswehr, Verteidigung und Sicherheitspolitik",
           "count": 18
         },
         {
-          "label": "Digitalisierung, Daten und Souveränität",
+          "label": "Digitale Souveränität und Verwaltung",
           "count": 14
         }
       ],
       "metrics": {
         "sentiment": {
           "value": -0.147,
-          "percentile": 35.0,
+          "percentile": 41.4,
           "spread": 0.464
         },
         "emotionality": {
           "value": 0.2311,
-          "percentile": 62.5
+          "percentile": 74.1
         },
         "length": {
           "total_words": 57213,
           "avg_per_speech": 506.0,
-          "percentile": 50.0
+          "percentile": 51.7
         }
       },
       "summary": "Durchschnittliche Sitzung"
@@ -434,31 +434,31 @@
           "count": 34
         },
         {
-          "label": "AfD und Demokratie-Debatte",
+          "label": "AfD und Demokratiedebatte",
           "count": 19
         },
         {
-          "label": "Gewalt, Antisemitismus und NS-Vergangenheit",
+          "label": "Gedenken, Wiedergutmachung und Frauenrechte",
           "count": 16
         }
       ],
       "metrics": {
         "sentiment": {
           "value": -0.235,
-          "percentile": 10.0,
+          "percentile": 10.3,
           "spread": 0.468
         },
         "emotionality": {
           "value": 0.0852,
-          "percentile": 10.0
+          "percentile": 19.0
         },
         "length": {
           "total_words": 87043,
           "avg_per_speech": 521.0,
-          "percentile": 77.5
+          "percentile": 79.3
         }
       },
-      "summary": "Sehr negatives sentiment (untere 10%), sehr sachlich (untere 10%)"
+      "summary": "Durchschnittliche Sitzung"
     },
     {
       "session_id": "21_46",
@@ -473,31 +473,31 @@
           "count": 94
         },
         {
-          "label": "Afghanistan-Einsatz und Ortskräfte",
+          "label": "Afghanistan, Ortskräfte und Aufnahmepolitik",
           "count": 26
         },
         {
-          "label": "AfD und Demokratie-Debatte",
+          "label": "AfD und Demokratiedebatte",
           "count": 25
         }
       ],
       "metrics": {
         "sentiment": {
           "value": -0.081,
-          "percentile": 70.0,
+          "percentile": 72.4,
           "spread": 0.346
         },
         "emotionality": {
           "value": 0.0388,
-          "percentile": 2.5
+          "percentile": 3.4
         },
         "length": {
           "total_words": 49250,
           "avg_per_speech": 250.0,
-          "percentile": 30.0
+          "percentile": 36.2
         }
       },
-      "summary": "Sehr sachlich (untere 2%)"
+      "summary": "Sehr sachlich (untere 3%)"
     },
     {
       "session_id": "21_45",
@@ -508,7 +508,7 @@
       "num_speeches": 66,
       "top_topics": [
         {
-          "label": "Wirtschaft und Investitionen",
+          "label": "Wirtschaft, Investitionen und Unternehmen",
           "count": 26
         },
         {
@@ -516,24 +516,24 @@
           "count": 15
         },
         {
-          "label": "Wirtschafts- und Finanzpolitik: ESM, Schuldenbremse & Steuern",
+          "label": "Wirtschafts- und Finanzpolitik",
           "count": 10
         }
       ],
       "metrics": {
         "sentiment": {
           "value": -0.09,
-          "percentile": 62.5,
+          "percentile": 67.2,
           "spread": 0.574
         },
         "emotionality": {
           "value": 0.0895,
-          "percentile": 22.5
+          "percentile": 32.8
         },
         "length": {
           "total_words": 39732,
           "avg_per_speech": 602.0,
-          "percentile": 12.5
+          "percentile": 15.5
         }
       },
       "summary": "Kontroverse debatte"
@@ -551,7 +551,7 @@
           "count": 20
         },
         {
-          "label": "Landwirtschaft, Bauern und Insektenschutz",
+          "label": "Landwirtschaft, Insektenschutz und Tierwohl",
           "count": 19
         },
         {
@@ -562,20 +562,20 @@
       "metrics": {
         "sentiment": {
           "value": -0.137,
-          "percentile": 40.0,
+          "percentile": 48.3,
           "spread": 0.526
         },
         "emotionality": {
           "value": 0.0894,
-          "percentile": 20.0
+          "percentile": 31.0
         },
         "length": {
           "total_words": 79194,
           "avg_per_speech": 677.0,
-          "percentile": 72.5
+          "percentile": 70.7
         }
       },
-      "summary": "Kontroverse debatte"
+      "summary": "Durchschnittliche Sitzung"
     },
     {
       "session_id": "21_43",
@@ -586,11 +586,11 @@
       "num_speeches": 102,
       "top_topics": [
         {
-          "label": "Wirtschaft und Investitionen",
+          "label": "Wirtschaft, Investitionen und Unternehmen",
           "count": 25
         },
         {
-          "label": "Bundeswehr, Sicherheit und Wehrdienst",
+          "label": "Bundeswehr, Verteidigung und Sicherheitspolitik",
           "count": 19
         },
         {
@@ -601,17 +601,17 @@
       "metrics": {
         "sentiment": {
           "value": -0.203,
-          "percentile": 15.0,
+          "percentile": 24.1,
           "spread": 0.477
         },
         "emotionality": {
           "value": 0.0857,
-          "percentile": 12.5
+          "percentile": 20.7
         },
         "length": {
           "total_words": 72721,
           "avg_per_speech": 713.0,
-          "percentile": 67.5
+          "percentile": 67.2
         }
       },
       "summary": "Durchschnittliche Sitzung"
@@ -625,7 +625,7 @@
       "num_speeches": 104,
       "top_topics": [
         {
-          "label": "Wirtschaft und Investitionen",
+          "label": "Wirtschaft, Investitionen und Unternehmen",
           "count": 25
         },
         {
@@ -633,24 +633,24 @@
           "count": 23
         },
         {
-          "label": "Digitalisierung, Daten und Souveränität",
+          "label": "Digitale Souveränität und Verwaltung",
           "count": 18
         }
       ],
       "metrics": {
         "sentiment": {
           "value": -0.135,
-          "percentile": 42.5,
+          "percentile": 50.0,
           "spread": 0.567
         },
         "emotionality": {
           "value": 0.0872,
-          "percentile": 15.0
+          "percentile": 24.1
         },
         "length": {
           "total_words": 63298,
           "avg_per_speech": 609.0,
-          "percentile": 57.5
+          "percentile": 56.9
         }
       },
       "summary": "Kontroverse debatte"
@@ -668,7 +668,7 @@
           "count": 33
         },
         {
-          "label": "Digitalisierung, Daten und Souveränität",
+          "label": "Digitale Souveränität und Verwaltung",
           "count": 15
         },
         {
@@ -679,20 +679,20 @@
       "metrics": {
         "sentiment": {
           "value": -0.109,
-          "percentile": 52.5,
+          "percentile": 58.6,
           "spread": 0.498
         },
         "emotionality": {
           "value": 0.0788,
-          "percentile": 5.0
+          "percentile": 10.3
         },
         "length": {
           "total_words": 46969,
           "avg_per_speech": 522.0,
-          "percentile": 20.0
+          "percentile": 29.3
         }
       },
-      "summary": "Sehr sachlich (untere 5%)"
+      "summary": "Durchschnittliche Sitzung"
     },
     {
       "session_id": "21_40",
@@ -703,7 +703,7 @@
       "num_speeches": 153,
       "top_topics": [
         {
-          "label": "Wirtschaft und Investitionen",
+          "label": "Wirtschaft, Investitionen und Unternehmen",
           "count": 46
         },
         {
@@ -718,17 +718,17 @@
       "metrics": {
         "sentiment": {
           "value": -0.158,
-          "percentile": 30.0,
+          "percentile": 36.2,
           "spread": 0.479
         },
         "emotionality": {
           "value": 0.1054,
-          "percentile": 27.5
+          "percentile": 46.6
         },
         "length": {
           "total_words": 84857,
           "avg_per_speech": 555.0,
-          "percentile": 75.0
+          "percentile": 74.1
         }
       },
       "summary": "Durchschnittliche Sitzung"
@@ -742,7 +742,7 @@
       "num_speeches": 169,
       "top_topics": [
         {
-          "label": "Wohnungsbau und Mietenpolitik",
+          "label": "Wohnungsbau und Mietpreise",
           "count": 52
         },
         {
@@ -750,14 +750,14 @@
           "count": 48
         },
         {
-          "label": "AfD und Demokratie-Debatte",
+          "label": "AfD und Demokratiedebatte",
           "count": 22
         }
       ],
       "metrics": {
         "sentiment": {
           "value": -0.068,
-          "percentile": 75.0,
+          "percentile": 75.9,
           "spread": 0.393
         },
         "emotionality": {
@@ -767,7 +767,7 @@
         "length": {
           "total_words": 39780,
           "avg_per_speech": 235.0,
-          "percentile": 15.0
+          "percentile": 17.2
         }
       },
       "summary": "Sehr sachlich (untere 0%)"
@@ -785,31 +785,499 @@
           "count": 16
         },
         {
-          "label": "Krisen und Missionen im Nahen Osten",
+          "label": "Naher Osten und humanitäre Krisen",
           "count": 15
         },
         {
-          "label": "Wirtschaft und Investitionen",
+          "label": "Wirtschaft, Investitionen und Unternehmen",
           "count": 13
         }
       ],
       "metrics": {
         "sentiment": {
           "value": -0.302,
-          "percentile": 5.0,
+          "percentile": 5.2,
           "spread": 0.458
         },
         "emotionality": {
           "value": 0.0875,
-          "percentile": 17.5
+          "percentile": 25.9
         },
         "length": {
           "total_words": 50334,
           "avg_per_speech": 572.0,
-          "percentile": 35.0
+          "percentile": 39.7
         }
       },
       "summary": "Sehr negatives sentiment (untere 5%)"
+    },
+    {
+      "session_id": "21_37",
+      "wahlperiode": 21,
+      "sitzungsnr": 37,
+      "datum": "06.11.2025",
+      "jahr": 2025,
+      "num_speeches": 147,
+      "top_topics": [],
+      "metrics": {
+        "sentiment": {
+          "value": -0.229,
+          "percentile": 12.1,
+          "spread": 0.469
+        },
+        "emotionality": {
+          "value": 0.0908,
+          "percentile": 34.5
+        },
+        "length": {
+          "total_words": 80860,
+          "avg_per_speech": 550.0,
+          "percentile": 72.4
+        }
+      },
+      "summary": "Durchschnittliche Sitzung"
+    },
+    {
+      "session_id": "21_36",
+      "wahlperiode": 21,
+      "sitzungsnr": 36,
+      "datum": "05.11.2025",
+      "jahr": 2025,
+      "num_speeches": 186,
+      "top_topics": [],
+      "metrics": {
+        "sentiment": {
+          "value": -0.101,
+          "percentile": 62.1,
+          "spread": 0.427
+        },
+        "emotionality": {
+          "value": 0.0487,
+          "percentile": 6.9
+        },
+        "length": {
+          "total_words": 42722,
+          "avg_per_speech": 230.0,
+          "percentile": 20.7
+        }
+      },
+      "summary": "Sehr sachlich (untere 7%)"
+    },
+    {
+      "session_id": "21_35",
+      "wahlperiode": 21,
+      "sitzungsnr": 35,
+      "datum": "17.10.2025",
+      "jahr": 2025,
+      "num_speeches": 83,
+      "top_topics": [],
+      "metrics": {
+        "sentiment": {
+          "value": -0.203,
+          "percentile": 22.4,
+          "spread": 0.398
+        },
+        "emotionality": {
+          "value": 0.0836,
+          "percentile": 15.5
+        },
+        "length": {
+          "total_words": 43451,
+          "avg_per_speech": 524.0,
+          "percentile": 22.4
+        }
+      },
+      "summary": "Durchschnittliche Sitzung"
+    },
+    {
+      "session_id": "21_34",
+      "wahlperiode": 21,
+      "sitzungsnr": 34,
+      "datum": "16.10.2025",
+      "jahr": 2025,
+      "num_speeches": 137,
+      "top_topics": [],
+      "metrics": {
+        "sentiment": {
+          "value": -0.226,
+          "percentile": 13.8,
+          "spread": 0.449
+        },
+        "emotionality": {
+          "value": 0.0884,
+          "percentile": 27.6
+        },
+        "length": {
+          "total_words": 86929,
+          "avg_per_speech": 635.0,
+          "percentile": 77.6
+        }
+      },
+      "summary": "Durchschnittliche Sitzung"
+    },
+    {
+      "session_id": "21_33",
+      "wahlperiode": 21,
+      "sitzungsnr": 33,
+      "datum": "15.10.2025",
+      "jahr": 2025,
+      "num_speeches": 189,
+      "top_topics": [],
+      "metrics": {
+        "sentiment": {
+          "value": -0.06,
+          "percentile": 82.8,
+          "spread": 0.319
+        },
+        "emotionality": {
+          "value": 0.0431,
+          "percentile": 5.2
+        },
+        "length": {
+          "total_words": 44031,
+          "avg_per_speech": 233.0,
+          "percentile": 25.9
+        }
+      },
+      "summary": "Sehr sachlich (untere 5%)"
+    },
+    {
+      "session_id": "21_32",
+      "wahlperiode": 21,
+      "sitzungsnr": 32,
+      "datum": "10.10.2025",
+      "jahr": 2025,
+      "num_speeches": 79,
+      "top_topics": [],
+      "metrics": {
+        "sentiment": {
+          "value": -0.19,
+          "percentile": 27.6,
+          "spread": 0.481
+        },
+        "emotionality": {
+          "value": 0.1026,
+          "percentile": 43.1
+        },
+        "length": {
+          "total_words": 46000,
+          "avg_per_speech": 582.0,
+          "percentile": 27.6
+        }
+      },
+      "summary": "Durchschnittliche Sitzung"
+    },
+    {
+      "session_id": "21_31",
+      "wahlperiode": 21,
+      "sitzungsnr": 31,
+      "datum": "09.10.2025",
+      "jahr": 2025,
+      "num_speeches": 155,
+      "top_topics": [],
+      "metrics": {
+        "sentiment": {
+          "value": -0.147,
+          "percentile": 43.1,
+          "spread": 0.491
+        },
+        "emotionality": {
+          "value": 0.0977,
+          "percentile": 39.7
+        },
+        "length": {
+          "total_words": 87816,
+          "avg_per_speech": 567.0,
+          "percentile": 81.0
+        }
+      },
+      "summary": "Durchschnittliche Sitzung"
+    },
+    {
+      "session_id": "21_30",
+      "wahlperiode": 21,
+      "sitzungsnr": 30,
+      "datum": "08.10.2025",
+      "jahr": 2025,
+      "num_speeches": 173,
+      "top_topics": [],
+      "metrics": {
+        "sentiment": {
+          "value": -0.039,
+          "percentile": 86.2,
+          "spread": 0.4
+        },
+        "emotionality": {
+          "value": 0.0334,
+          "percentile": 1.7
+        },
+        "length": {
+          "total_words": 41548,
+          "avg_per_speech": 240.0,
+          "percentile": 19.0
+        }
+      },
+      "summary": "Sehr sachlich (untere 2%)"
+    },
+    {
+      "session_id": "21_29",
+      "wahlperiode": 21,
+      "sitzungsnr": 29,
+      "datum": "26.09.2025",
+      "jahr": 2025,
+      "num_speeches": 60,
+      "top_topics": [],
+      "metrics": {
+        "sentiment": {
+          "value": -0.262,
+          "percentile": 6.9,
+          "spread": 0.58
+        },
+        "emotionality": {
+          "value": 0.1065,
+          "percentile": 48.3
+        },
+        "length": {
+          "total_words": 37587,
+          "avg_per_speech": 626.0,
+          "percentile": 10.3
+        }
+      },
+      "summary": "Sehr negatives sentiment (untere 7%), kontroverse debatte"
+    },
+    {
+      "session_id": "21_27",
+      "wahlperiode": 21,
+      "sitzungsnr": 27,
+      "datum": "24.09.2025",
+      "jahr": 2025,
+      "num_speeches": 87,
+      "top_topics": [],
+      "metrics": {
+        "sentiment": {
+          "value": -0.211,
+          "percentile": 20.7,
+          "spread": 0.508
+        },
+        "emotionality": {
+          "value": 0.0916,
+          "percentile": 36.2
+        },
+        "length": {
+          "total_words": 66265,
+          "avg_per_speech": 762.0,
+          "percentile": 58.6
+        }
+      },
+      "summary": "Durchschnittliche Sitzung"
+    },
+    {
+      "session_id": "21_26",
+      "wahlperiode": 21,
+      "sitzungsnr": 26,
+      "datum": "23.09.2025",
+      "jahr": 2025,
+      "num_speeches": 103,
+      "top_topics": [],
+      "metrics": {
+        "sentiment": {
+          "value": -0.214,
+          "percentile": 15.5,
+          "spread": 0.456
+        },
+        "emotionality": {
+          "value": 0.0941,
+          "percentile": 37.9
+        },
+        "length": {
+          "total_words": 71021,
+          "avg_per_speech": 690.0,
+          "percentile": 62.1
+        }
+      },
+      "summary": "Durchschnittliche Sitzung"
+    },
+    {
+      "session_id": "21_25",
+      "wahlperiode": 21,
+      "sitzungsnr": 25,
+      "datum": "18.09.2025",
+      "jahr": 2025,
+      "num_speeches": 52,
+      "top_topics": [],
+      "metrics": {
+        "sentiment": {
+          "value": -0.06,
+          "percentile": 84.5,
+          "spread": 0.557
+        },
+        "emotionality": {
+          "value": 0.0795,
+          "percentile": 12.1
+        },
+        "length": {
+          "total_words": 34447,
+          "avg_per_speech": 662.0,
+          "percentile": 5.2
+        }
+      },
+      "summary": "Kurze sitzung (untere 5%), kontroverse debatte"
+    },
+    {
+      "session_id": "21_24",
+      "wahlperiode": 21,
+      "sitzungsnr": 24,
+      "datum": "17.09.2025",
+      "jahr": 2025,
+      "num_speeches": 147,
+      "top_topics": [],
+      "metrics": {
+        "sentiment": {
+          "value": -0.212,
+          "percentile": 19.0,
+          "spread": 0.48
+        },
+        "emotionality": {
+          "value": 0.0867,
+          "percentile": 22.4
+        },
+        "length": {
+          "total_words": 95107,
+          "avg_per_speech": 647.0,
+          "percentile": 84.5
+        }
+      },
+      "summary": "Durchschnittliche Sitzung"
+    },
+    {
+      "session_id": "21_23",
+      "wahlperiode": 21,
+      "sitzungsnr": 23,
+      "datum": "16.09.2025",
+      "jahr": 2025,
+      "num_speeches": 148,
+      "top_topics": [],
+      "metrics": {
+        "sentiment": {
+          "value": -0.112,
+          "percentile": 56.9,
+          "spread": 0.501
+        },
+        "emotionality": {
+          "value": 0.0977,
+          "percentile": 41.4
+        },
+        "length": {
+          "total_words": 88221,
+          "avg_per_speech": 596.0,
+          "percentile": 82.8
+        }
+      },
+      "summary": "Durchschnittliche Sitzung"
+    },
+    {
+      "session_id": "21_22",
+      "wahlperiode": 21,
+      "sitzungsnr": 22,
+      "datum": "12.09.2025",
+      "jahr": 2025,
+      "num_speeches": 85,
+      "top_topics": [],
+      "metrics": {
+        "sentiment": {
+          "value": -0.158,
+          "percentile": 37.9,
+          "spread": 0.474
+        },
+        "emotionality": {
+          "value": 0.0828,
+          "percentile": 13.8
+        },
+        "length": {
+          "total_words": 50518,
+          "avg_per_speech": 594.0,
+          "percentile": 41.4
+        }
+      },
+      "summary": "Durchschnittliche Sitzung"
+    },
+    {
+      "session_id": "21_21",
+      "wahlperiode": 21,
+      "sitzungsnr": 21,
+      "datum": "11.09.2025",
+      "jahr": 2025,
+      "num_speeches": 161,
+      "top_topics": [],
+      "metrics": {
+        "sentiment": {
+          "value": -0.139,
+          "percentile": 44.8,
+          "spread": 0.493
+        },
+        "emotionality": {
+          "value": 0.0885,
+          "percentile": 29.3
+        },
+        "length": {
+          "total_words": 85981,
+          "avg_per_speech": 534.0,
+          "percentile": 75.9
+        }
+      },
+      "summary": "Durchschnittliche Sitzung"
+    },
+    {
+      "session_id": "21_20",
+      "wahlperiode": 21,
+      "sitzungsnr": 20,
+      "datum": "10.09.2025",
+      "jahr": 2025,
+      "num_speeches": 183,
+      "top_topics": [],
+      "metrics": {
+        "sentiment": {
+          "value": -0.062,
+          "percentile": 79.3,
+          "spread": 0.337
+        },
+        "emotionality": {
+          "value": 0.0651,
+          "percentile": 8.6
+        },
+        "length": {
+          "total_words": 38937,
+          "avg_per_speech": 213.0,
+          "percentile": 13.8
+        }
+      },
+      "summary": "Sehr sachlich (untere 9%)"
+    },
+    {
+      "session_id": "21_19",
+      "wahlperiode": 21,
+      "sitzungsnr": 19,
+      "datum": "11.07.2025",
+      "jahr": 2025,
+      "num_speeches": 59,
+      "top_topics": [],
+      "metrics": {
+        "sentiment": {
+          "value": -0.31,
+          "percentile": 3.4,
+          "spread": 0.496
+        },
+        "emotionality": {
+          "value": 0.1119,
+          "percentile": 50.0
+        },
+        "length": {
+          "total_words": 34842,
+          "avg_per_speech": 591.0,
+          "percentile": 6.9
+        }
+      },
+      "summary": "Sehr negatives sentiment (untere 3%), kurze sitzung (untere 7%)"
     },
     {
       "session_id": "20_214",
@@ -820,32 +1288,32 @@
       "num_speeches": 83,
       "top_topics": [
         {
-          "label": "Wirtschafts- und Finanzpolitik: ESM, Schuldenbremse & Steuern",
+          "label": "Wirtschafts- und Finanzpolitik",
           "count": 27
         },
         {
-          "label": "Bundeswehr, Sicherheit und Wehrdienst",
+          "label": "Bundeswehr, Verteidigung und Sicherheitspolitik",
           "count": 19
         },
         {
-          "label": "Demokratie, Petitionen und Parlamentsbetrieb",
+          "label": "Demokratie, Petitionen und parlamentarische Verfahren",
           "count": 13
         }
       ],
       "metrics": {
         "sentiment": {
           "value": -0.018,
-          "percentile": 85.0,
+          "percentile": 89.7,
           "spread": 0.47
         },
         "emotionality": {
           "value": 0.1478,
-          "percentile": 32.5
+          "percentile": 53.4
         },
         "length": {
           "total_words": 53125,
           "avg_per_speech": 640.0,
-          "percentile": 45.0
+          "percentile": 48.3
         }
       },
       "summary": "Durchschnittliche Sitzung"
@@ -859,35 +1327,35 @@
       "num_speeches": 38,
       "top_topics": [
         {
-          "label": "Wirtschaft und Investitionen",
+          "label": "Wirtschaft, Investitionen und Unternehmen",
           "count": 9
         },
         {
-          "label": "Wirtschafts- und Finanzpolitik: ESM, Schuldenbremse & Steuern",
+          "label": "Wirtschafts- und Finanzpolitik",
           "count": 8
         },
         {
-          "label": "Demokratie, Petitionen und Parlamentsbetrieb",
+          "label": "Demokratie, Petitionen und parlamentarische Verfahren",
           "count": 7
         }
       ],
       "metrics": {
         "sentiment": {
           "value": -0.239,
-          "percentile": 7.5,
+          "percentile": 8.6,
           "spread": 0.435
         },
         "emotionality": {
           "value": 0.2847,
-          "percentile": 90.0
+          "percentile": 93.1
         },
         "length": {
           "total_words": 29702,
           "avg_per_speech": 782.0,
-          "percentile": 5.0
+          "percentile": 3.4
         }
       },
-      "summary": "Sehr negatives sentiment (untere 8%), hohe emotionalität (top 10%), kurze sitzung (untere 5%)"
+      "summary": "Sehr negatives sentiment (untere 9%), hohe emotionalität (top 7%), kurze sitzung (untere 3%)"
     },
     {
       "session_id": "20_212",
@@ -898,32 +1366,32 @@
       "num_speeches": 22,
       "top_topics": [
         {
-          "label": "Wirtschaft und Investitionen",
+          "label": "Wirtschaft, Investitionen und Unternehmen",
           "count": 12
         },
         {
-          "label": "AfD und Demokratie-Debatte",
+          "label": "AfD und Demokratiedebatte",
           "count": 3
         },
         {
-          "label": "Demokratie, Petitionen und Parlamentsbetrieb",
+          "label": "Demokratie, Petitionen und parlamentarische Verfahren",
           "count": 3
         }
       ],
       "metrics": {
         "sentiment": {
           "value": -0.368,
-          "percentile": 2.5,
+          "percentile": 1.7,
           "spread": 0.449
         },
         "emotionality": {
           "value": 0.3234,
-          "percentile": 97.5
+          "percentile": 98.3
         },
         "length": {
           "total_words": 26565,
           "avg_per_speech": 1208.0,
-          "percentile": 2.5
+          "percentile": 1.7
         }
       },
       "summary": "Sehr negatives sentiment (untere 2%), hohe emotionalität (top 2%), kurze sitzung (untere 2%)"
@@ -937,7 +1405,7 @@
       "num_speeches": 134,
       "top_topics": [
         {
-          "label": "Gewalt, Antisemitismus und NS-Vergangenheit",
+          "label": "Gedenken, Wiedergutmachung und Frauenrechte",
           "count": 27
         },
         {
@@ -945,27 +1413,27 @@
           "count": 24
         },
         {
-          "label": "AfD und Demokratie-Debatte",
+          "label": "AfD und Demokratiedebatte",
           "count": 17
         }
       ],
       "metrics": {
         "sentiment": {
           "value": -0.174,
-          "percentile": 22.5,
+          "percentile": 31.0,
           "spread": 0.492
         },
         "emotionality": {
           "value": 0.2931,
-          "percentile": 92.5
+          "percentile": 94.8
         },
         "length": {
           "total_words": 71683,
           "avg_per_speech": 535.0,
-          "percentile": 62.5
+          "percentile": 63.8
         }
       },
-      "summary": "Hohe emotionalität (top 8%)"
+      "summary": "Hohe emotionalität (top 5%)"
     },
     {
       "session_id": "20_210",
@@ -976,11 +1444,11 @@
       "num_speeches": 225,
       "top_topics": [
         {
-          "label": "AfD und Demokratie-Debatte",
+          "label": "AfD und Demokratiedebatte",
           "count": 35
         },
         {
-          "label": "Wirtschafts- und Finanzpolitik: ESM, Schuldenbremse & Steuern",
+          "label": "Wirtschafts- und Finanzpolitik",
           "count": 30
         },
         {
@@ -991,20 +1459,20 @@
       "metrics": {
         "sentiment": {
           "value": -0.137,
-          "percentile": 37.5,
+          "percentile": 46.6,
           "spread": 0.527
         },
         "emotionality": {
           "value": 0.2664,
-          "percentile": 80.0
+          "percentile": 86.2
         },
         "length": {
           "total_words": 136726,
           "avg_per_speech": 608.0,
-          "percentile": 95.0
+          "percentile": 96.6
         }
       },
-      "summary": "Überdurchschnittlich lang (top 5%), kontroverse debatte"
+      "summary": "Überdurchschnittlich lang (top 3%), kontroverse debatte"
     },
     {
       "session_id": "20_209",
@@ -1019,28 +1487,28 @@
           "count": 48
         },
         {
-          "label": "Landwirtschaft, Bauern und Insektenschutz",
+          "label": "Landwirtschaft, Insektenschutz und Tierwohl",
           "count": 34
         },
         {
-          "label": "Gewalt, Antisemitismus und NS-Vergangenheit",
+          "label": "Gedenken, Wiedergutmachung und Frauenrechte",
           "count": 27
         }
       ],
       "metrics": {
         "sentiment": {
           "value": -0.122,
-          "percentile": 47.5,
+          "percentile": 53.4,
           "spread": 0.428
         },
         "emotionality": {
           "value": 0.2,
-          "percentile": 50.0
+          "percentile": 65.5
         },
         "length": {
           "total_words": 66333,
           "avg_per_speech": 344.0,
-          "percentile": 60.0
+          "percentile": 60.3
         }
       },
       "summary": "Durchschnittliche Sitzung"
@@ -1062,24 +1530,24 @@
           "count": 11
         },
         {
-          "label": "AfD und Demokratie-Debatte",
+          "label": "AfD und Demokratiedebatte",
           "count": 10
         }
       ],
       "metrics": {
         "sentiment": {
           "value": -0.183,
-          "percentile": 20.0,
+          "percentile": 29.3,
           "spread": 0.507
         },
         "emotionality": {
           "value": 0.28,
-          "percentile": 85.0
+          "percentile": 89.7
         },
         "length": {
           "total_words": 57631,
           "avg_per_speech": 648.0,
-          "percentile": 52.5
+          "percentile": 53.4
         }
       },
       "summary": "Durchschnittliche Sitzung"
@@ -1093,35 +1561,35 @@
       "num_speeches": 194,
       "top_topics": [
         {
-          "label": "Wirtschaft und Investitionen",
+          "label": "Wirtschaft, Investitionen und Unternehmen",
           "count": 46
         },
         {
-          "label": "Demokratie, Petitionen und Parlamentsbetrieb",
+          "label": "Demokratie, Petitionen und parlamentarische Verfahren",
           "count": 29
         },
         {
-          "label": "Wirtschafts- und Finanzpolitik: ESM, Schuldenbremse & Steuern",
+          "label": "Wirtschafts- und Finanzpolitik",
           "count": 22
         }
       ],
       "metrics": {
         "sentiment": {
           "value": -0.151,
-          "percentile": 32.5,
+          "percentile": 39.7,
           "spread": 0.507
         },
         "emotionality": {
           "value": 0.2819,
-          "percentile": 87.5
+          "percentile": 91.4
         },
         "length": {
           "total_words": 114588,
           "avg_per_speech": 591.0,
-          "percentile": 87.5
+          "percentile": 91.4
         }
       },
-      "summary": "Durchschnittliche Sitzung"
+      "summary": "Hohe emotionalität (top 9%), überdurchschnittlich lang (top 9%)"
     },
     {
       "session_id": "20_206",
@@ -1132,7 +1600,7 @@
       "num_speeches": 183,
       "top_topics": [
         {
-          "label": "Wohnungsbau und Mietenpolitik",
+          "label": "Wohnungsbau und Mietpreise",
           "count": 69
         },
         {
@@ -1140,24 +1608,24 @@
           "count": 34
         },
         {
-          "label": "Krisen und Missionen im Nahen Osten",
+          "label": "Naher Osten und humanitäre Krisen",
           "count": 22
         }
       ],
       "metrics": {
         "sentiment": {
           "value": -0.101,
-          "percentile": 57.5,
+          "percentile": 63.8,
           "spread": 0.376
         },
         "emotionality": {
           "value": 0.2399,
-          "percentile": 67.5
+          "percentile": 77.6
         },
         "length": {
           "total_words": 48526,
           "avg_per_speech": 265.0,
-          "percentile": 27.5
+          "percentile": 34.5
         }
       },
       "summary": "Durchschnittliche Sitzung"
@@ -1171,11 +1639,11 @@
       "num_speeches": 22,
       "top_topics": [
         {
-          "label": "Wirtschaft und Investitionen",
+          "label": "Wirtschaft, Investitionen und Unternehmen",
           "count": 10
         },
         {
-          "label": "Demokratie, Petitionen und Parlamentsbetrieb",
+          "label": "Demokratie, Petitionen und parlamentarische Verfahren",
           "count": 7
         },
         {
@@ -1191,7 +1659,7 @@
         },
         "emotionality": {
           "value": 0.2946,
-          "percentile": 95.0
+          "percentile": 96.6
         },
         "length": {
           "total_words": 21579,
@@ -1199,7 +1667,7 @@
           "percentile": 0.0
         }
       },
-      "summary": "Sehr negatives sentiment (untere 0%), hohe emotionalität (top 5%), kurze sitzung (untere 0%)"
+      "summary": "Sehr negatives sentiment (untere 0%), hohe emotionalität (top 3%), kurze sitzung (untere 0%)"
     },
     {
       "session_id": "19_239",
@@ -1214,7 +1682,7 @@
           "count": 31
         },
         {
-          "label": "Wirtschaft und Investitionen",
+          "label": "Wirtschaft, Investitionen und Unternehmen",
           "count": 12
         },
         {
@@ -1225,17 +1693,17 @@
       "metrics": {
         "sentiment": {
           "value": -0.087,
-          "percentile": 65.0,
+          "percentile": 69.0,
           "spread": 0.488
         },
         "emotionality": {
           "value": 0.147,
-          "percentile": 30.0
+          "percentile": 51.7
         },
         "length": {
           "total_words": 51007,
           "avg_per_speech": 761.0,
-          "percentile": 37.5
+          "percentile": 43.1
         }
       },
       "summary": "Durchschnittliche Sitzung"
@@ -1249,7 +1717,7 @@
       "num_speeches": 71,
       "top_topics": [
         {
-          "label": "Afghanistan-Einsatz und Ortskräfte",
+          "label": "Afghanistan, Ortskräfte und Aufnahmepolitik",
           "count": 26
         },
         {
@@ -1257,24 +1725,24 @@
           "count": 25
         },
         {
-          "label": "Wirtschaft und Investitionen",
+          "label": "Wirtschaft, Investitionen und Unternehmen",
           "count": 11
         }
       ],
       "metrics": {
         "sentiment": {
           "value": -0.134,
-          "percentile": 45.0,
+          "percentile": 51.7,
           "spread": 0.473
         },
         "emotionality": {
           "value": 0.1901,
-          "percentile": 45.0
+          "percentile": 62.1
         },
         "length": {
           "total_words": 54042,
           "avg_per_speech": 761.0,
-          "percentile": 47.5
+          "percentile": 50.0
         }
       },
       "summary": "Durchschnittliche Sitzung"
@@ -1288,32 +1756,32 @@
       "num_speeches": 94,
       "top_topics": [
         {
-          "label": "Wirtschafts- und Finanzpolitik: ESM, Schuldenbremse & Steuern",
+          "label": "Wirtschafts- und Finanzpolitik",
           "count": 27
         },
         {
-          "label": "Gewalt, Antisemitismus und NS-Vergangenheit",
+          "label": "Gedenken, Wiedergutmachung und Frauenrechte",
           "count": 15
         },
         {
-          "label": "Digitalisierung, Daten und Souveränität",
+          "label": "Digitale Souveränität und Verwaltung",
           "count": 12
         }
       ],
       "metrics": {
         "sentiment": {
           "value": -0.061,
-          "percentile": 80.0,
+          "percentile": 81.0,
           "spread": 0.51
         },
         "emotionality": {
           "value": 0.2231,
-          "percentile": 60.0
+          "percentile": 72.4
         },
         "length": {
           "total_words": 60864,
           "avg_per_speech": 647.0,
-          "percentile": 55.0
+          "percentile": 55.2
         }
       },
       "summary": "Durchschnittliche Sitzung"
@@ -1331,7 +1799,7 @@
           "count": 40
         },
         {
-          "label": "Landwirtschaft, Bauern und Insektenschutz",
+          "label": "Landwirtschaft, Insektenschutz und Tierwohl",
           "count": 32
         },
         {
@@ -1342,20 +1810,20 @@
       "metrics": {
         "sentiment": {
           "value": -0.004,
-          "percentile": 90.0,
+          "percentile": 93.1,
           "spread": 0.468
         },
         "emotionality": {
           "value": 0.1607,
-          "percentile": 37.5
+          "percentile": 56.9
         },
         "length": {
           "total_words": 156602,
           "avg_per_speech": 569.0,
-          "percentile": 97.5
+          "percentile": 98.3
         }
       },
-      "summary": "Sehr positives sentiment (top 10%), überdurchschnittlich lang (top 2%)"
+      "summary": "Sehr positives sentiment (top 7%), überdurchschnittlich lang (top 2%)"
     },
     {
       "session_id": "19_235",
@@ -1366,7 +1834,7 @@
       "num_speeches": 114,
       "top_topics": [
         {
-          "label": "Afghanistan-Einsatz und Ortskräfte",
+          "label": "Afghanistan, Ortskräfte und Aufnahmepolitik",
           "count": 25
         },
         {
@@ -1381,20 +1849,20 @@
       "metrics": {
         "sentiment": {
           "value": -0.011,
-          "percentile": 87.5,
+          "percentile": 91.4,
           "spread": 0.365
         },
         "emotionality": {
           "value": 0.1828,
-          "percentile": 42.5
+          "percentile": 60.3
         },
         "length": {
           "total_words": 47513,
           "avg_per_speech": 417.0,
-          "percentile": 22.5
+          "percentile": 31.0
         }
       },
-      "summary": "Durchschnittliche Sitzung"
+      "summary": "Sehr positives sentiment (top 9%)"
     },
     {
       "session_id": "19_234",
@@ -1413,27 +1881,27 @@
           "count": 15
         },
         {
-          "label": "Wirtschaft und Investitionen",
+          "label": "Wirtschaft, Investitionen und Unternehmen",
           "count": 15
         }
       ],
       "metrics": {
         "sentiment": {
           "value": -0.004,
-          "percentile": 92.5,
+          "percentile": 94.8,
           "spread": 0.491
         },
         "emotionality": {
           "value": 0.202,
-          "percentile": 55.0
+          "percentile": 69.0
         },
         "length": {
           "total_words": 71738,
           "avg_per_speech": 548.0,
-          "percentile": 65.0
+          "percentile": 65.5
         }
       },
-      "summary": "Sehr positives sentiment (top 8%)"
+      "summary": "Sehr positives sentiment (top 5%)"
     },
     {
       "session_id": "19_233",
@@ -1448,7 +1916,7 @@
           "count": 44
         },
         {
-          "label": "Wirtschafts- und Finanzpolitik: ESM, Schuldenbremse & Steuern",
+          "label": "Wirtschafts- und Finanzpolitik",
           "count": 33
         },
         {
@@ -1459,20 +1927,20 @@
       "metrics": {
         "sentiment": {
           "value": -0.064,
-          "percentile": 77.5,
+          "percentile": 77.6,
           "spread": 0.445
         },
         "emotionality": {
           "value": 0.1566,
-          "percentile": 35.0
+          "percentile": 55.2
         },
         "length": {
           "total_words": 130901,
           "avg_per_speech": 555.0,
-          "percentile": 92.5
+          "percentile": 94.8
         }
       },
-      "summary": "Überdurchschnittlich lang (top 8%)"
+      "summary": "Überdurchschnittlich lang (top 5%)"
     },
     {
       "session_id": "19_232",
@@ -1491,24 +1959,24 @@
           "count": 17
         },
         {
-          "label": "Demokratie, Petitionen und Parlamentsbetrieb",
+          "label": "Demokratie, Petitionen und parlamentarische Verfahren",
           "count": 16
         }
       ],
       "metrics": {
         "sentiment": {
           "value": 0.01,
-          "percentile": 97.5,
+          "percentile": 98.3,
           "spread": 0.413
         },
         "emotionality": {
           "value": 0.1694,
-          "percentile": 40.0
+          "percentile": 58.6
         },
         "length": {
           "total_words": 52834,
           "avg_per_speech": 410.0,
-          "percentile": 42.5
+          "percentile": 46.6
         }
       },
       "summary": "Sehr positives sentiment (top 2%)"
@@ -1526,7 +1994,7 @@
           "count": 23
         },
         {
-          "label": "Demokratie, Petitionen und Parlamentsbetrieb",
+          "label": "Demokratie, Petitionen und parlamentarische Verfahren",
           "count": 19
         },
         {
@@ -1537,17 +2005,17 @@
       "metrics": {
         "sentiment": {
           "value": -0.033,
-          "percentile": 82.5,
+          "percentile": 87.9,
           "spread": 0.51
         },
         "emotionality": {
           "value": 0.2446,
-          "percentile": 70.0
+          "percentile": 79.3
         },
         "length": {
           "total_words": 73828,
           "avg_per_speech": 615.0,
-          "percentile": 70.0
+          "percentile": 69.0
         }
       },
       "summary": "Durchschnittliche Sitzung"
@@ -1576,20 +2044,20 @@
       "metrics": {
         "sentiment": {
           "value": -0.003,
-          "percentile": 95.0,
+          "percentile": 96.6,
           "spread": 0.506
         },
         "emotionality": {
           "value": 0.197,
-          "percentile": 47.5
+          "percentile": 63.8
         },
         "length": {
           "total_words": 130013,
           "avg_per_speech": 553.0,
-          "percentile": 90.0
+          "percentile": 93.1
         }
       },
-      "summary": "Sehr positives sentiment (top 5%), überdurchschnittlich lang (top 10%)"
+      "summary": "Sehr positives sentiment (top 3%), überdurchschnittlich lang (top 7%)"
     }
   ]
 }
