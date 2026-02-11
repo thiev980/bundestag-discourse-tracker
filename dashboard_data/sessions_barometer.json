@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-02-10T06:46:53.769642",
-  "total_sessions": 67,
+  "generated_at": "2026-02-11T06:46:04.685633",
+  "total_sessions": 76,
   "wahlperioden": [
     19,
     20,
@@ -13,21 +13,21 @@
   "statistics": {
     "avg_sentiment": {
       "min": -0.38636363636363635,
-      "max": 0.01007751937984496,
-      "median": -0.13675213675213677,
-      "mean": -0.1441661850665084
+      "max": 0.1823529411764706,
+      "median": -0.1321766378085024,
+      "mean": -0.1357294801659124
     },
     "avg_emotionality": {
       "min": 0.031774665757988166,
       "max": 0.32335909090909093,
-      "median": 0.09773308067297297,
-      "mean": 0.14305630346305143
+      "median": 0.09599925930104762,
+      "mean": 0.13518609505507767
     },
     "num_speeches": {
       "min": 16,
       "max": 275,
-      "median": 131.0,
-      "mean": 128.49253731343285
+      "median": 130.0,
+      "mean": 125.0657894736842
     }
   },
   "sessions": [
@@ -55,17 +55,17 @@
       "metrics": {
         "sentiment": {
           "value": -0.171,
-          "percentile": 34.3,
+          "percentile": 31.6,
           "spread": 0.504
         },
         "emotionality": {
           "value": 0.1034,
-          "percentile": 52.2
+          "percentile": 55.3
         },
         "length": {
           "total_words": 44001,
           "avg_per_speech": 579.0,
-          "percentile": 25.4
+          "percentile": 28.9
         }
       },
       "summary": "Durchschnittliche Sitzung"
@@ -94,17 +94,17 @@
       "metrics": {
         "sentiment": {
           "value": -0.194,
-          "percentile": 28.4,
+          "percentile": 26.3,
           "spread": 0.506
         },
         "emotionality": {
           "value": 0.2638,
-          "percentile": 86.6
+          "percentile": 88.2
         },
         "length": {
           "total_words": 98539,
           "avg_per_speech": 608.0,
-          "percentile": 88.1
+          "percentile": 89.5
         }
       },
       "summary": "Durchschnittliche Sitzung"
@@ -133,17 +133,17 @@
       "metrics": {
         "sentiment": {
           "value": -0.083,
-          "percentile": 73.1,
+          "percentile": 69.7,
           "spread": 0.436
         },
         "emotionality": {
           "value": 0.2328,
-          "percentile": 79.1
+          "percentile": 81.6
         },
         "length": {
           "total_words": 38862,
           "avg_per_speech": 249.0,
-          "percentile": 13.4
+          "percentile": 18.4
         }
       },
       "summary": "Durchschnittliche Sitzung"
@@ -172,17 +172,17 @@
       "metrics": {
         "sentiment": {
           "value": -0.214,
-          "percentile": 20.9,
+          "percentile": 19.7,
           "spread": 0.505
         },
         "emotionality": {
           "value": 0.2475,
-          "percentile": 83.6
+          "percentile": 85.5
         },
         "length": {
           "total_words": 50270,
           "avg_per_speech": 546.0,
-          "percentile": 38.8
+          "percentile": 42.1
         }
       },
       "summary": "Durchschnittliche Sitzung"
@@ -211,20 +211,20 @@
       "metrics": {
         "sentiment": {
           "value": -0.162,
-          "percentile": 35.8,
+          "percentile": 32.9,
           "spread": 0.494
         },
         "emotionality": {
           "value": 0.2732,
-          "percentile": 89.6
+          "percentile": 90.8
         },
         "length": {
           "total_words": 98954,
           "avg_per_speech": 541.0,
-          "percentile": 89.6
+          "percentile": 90.8
         }
       },
-      "summary": "Durchschnittliche Sitzung"
+      "summary": "Hohe emotionalität (top 9%), überdurchschnittlich lang (top 9%)"
     },
     {
       "session_id": "21_52",
@@ -250,20 +250,20 @@
       "metrics": {
         "sentiment": {
           "value": -0.097,
-          "percentile": 67.2,
+          "percentile": 64.5,
           "spread": 0.408
         },
         "emotionality": {
           "value": 0.2213,
-          "percentile": 74.6
+          "percentile": 77.6
         },
         "length": {
           "total_words": 35532,
           "avg_per_speech": 217.0,
-          "percentile": 9.0
+          "percentile": 11.8
         }
       },
-      "summary": "Kurze sitzung (untere 9%)"
+      "summary": "Durchschnittliche Sitzung"
     },
     {
       "session_id": "21_51",
@@ -289,17 +289,17 @@
       "metrics": {
         "sentiment": {
           "value": -0.112,
-          "percentile": 55.2,
+          "percentile": 53.9,
           "spread": 0.524
         },
         "emotionality": {
           "value": 0.2567,
-          "percentile": 85.1
+          "percentile": 86.8
         },
         "length": {
           "total_words": 51717,
           "avg_per_speech": 550.0,
-          "percentile": 44.8
+          "percentile": 47.4
         }
       },
       "summary": "Durchschnittliche Sitzung"
@@ -328,20 +328,20 @@
       "metrics": {
         "sentiment": {
           "value": -0.107,
-          "percentile": 61.2,
+          "percentile": 59.2,
           "spread": 0.476
         },
         "emotionality": {
           "value": 0.0838,
-          "percentile": 20.9
+          "percentile": 23.7
         },
         "length": {
           "total_words": 106099,
           "avg_per_speech": 518.0,
-          "percentile": 91.0
+          "percentile": 92.1
         }
       },
-      "summary": "Überdurchschnittlich lang (top 9%)"
+      "summary": "Überdurchschnittlich lang (top 8%)"
     },
     {
       "session_id": "21_49",
@@ -367,17 +367,17 @@
       "metrics": {
         "sentiment": {
           "value": -0.069,
-          "percentile": 77.6,
+          "percentile": 73.7,
           "spread": 0.446
         },
         "emotionality": {
           "value": 0.2019,
-          "percentile": 71.6
+          "percentile": 75.0
         },
         "length": {
           "total_words": 47584,
           "avg_per_speech": 360.0,
-          "percentile": 34.3
+          "percentile": 38.2
         }
       },
       "summary": "Durchschnittliche Sitzung"
@@ -406,17 +406,17 @@
       "metrics": {
         "sentiment": {
           "value": -0.147,
-          "percentile": 43.3,
+          "percentile": 39.5,
           "spread": 0.464
         },
         "emotionality": {
           "value": 0.2311,
-          "percentile": 77.6
+          "percentile": 80.3
         },
         "length": {
           "total_words": 57213,
           "avg_per_speech": 506.0,
-          "percentile": 50.7
+          "percentile": 52.6
         }
       },
       "summary": "Durchschnittliche Sitzung"
@@ -445,17 +445,17 @@
       "metrics": {
         "sentiment": {
           "value": -0.235,
-          "percentile": 10.4,
+          "percentile": 10.5,
           "spread": 0.468
         },
         "emotionality": {
           "value": 0.0852,
-          "percentile": 22.4
+          "percentile": 25.0
         },
         "length": {
           "total_words": 87043,
           "avg_per_speech": 521.0,
-          "percentile": 80.6
+          "percentile": 82.9
         }
       },
       "summary": "Durchschnittliche Sitzung"
@@ -484,20 +484,20 @@
       "metrics": {
         "sentiment": {
           "value": -0.081,
-          "percentile": 76.1,
+          "percentile": 72.4,
           "spread": 0.346
         },
         "emotionality": {
           "value": 0.0388,
-          "percentile": 3.0
+          "percentile": 3.9
         },
         "length": {
           "total_words": 49250,
           "avg_per_speech": 250.0,
-          "percentile": 37.3
+          "percentile": 40.8
         }
       },
-      "summary": "Sehr sachlich (untere 3%)"
+      "summary": "Sehr sachlich (untere 4%)"
     },
     {
       "session_id": "21_45",
@@ -523,17 +523,17 @@
       "metrics": {
         "sentiment": {
           "value": -0.09,
-          "percentile": 70.1,
+          "percentile": 67.1,
           "spread": 0.574
         },
         "emotionality": {
           "value": 0.0895,
-          "percentile": 37.3
+          "percentile": 39.5
         },
         "length": {
           "total_words": 39732,
           "avg_per_speech": 602.0,
-          "percentile": 16.4
+          "percentile": 21.1
         }
       },
       "summary": "Kontroverse debatte"
@@ -562,20 +562,20 @@
       "metrics": {
         "sentiment": {
           "value": -0.137,
-          "percentile": 49.3,
+          "percentile": 46.1,
           "spread": 0.526
         },
         "emotionality": {
           "value": 0.0894,
-          "percentile": 35.8
+          "percentile": 38.2
         },
         "length": {
           "total_words": 79194,
           "avg_per_speech": 677.0,
-          "percentile": 68.7
+          "percentile": 71.1
         }
       },
-      "summary": "Durchschnittliche Sitzung"
+      "summary": "Kontroverse debatte"
     },
     {
       "session_id": "21_43",
@@ -601,17 +601,17 @@
       "metrics": {
         "sentiment": {
           "value": -0.203,
-          "percentile": 26.9,
+          "percentile": 25.0,
           "spread": 0.477
         },
         "emotionality": {
           "value": 0.0857,
-          "percentile": 23.9
+          "percentile": 26.3
         },
         "length": {
           "total_words": 72721,
           "avg_per_speech": 713.0,
-          "percentile": 64.2
+          "percentile": 67.1
         }
       },
       "summary": "Durchschnittliche Sitzung"
@@ -640,17 +640,17 @@
       "metrics": {
         "sentiment": {
           "value": -0.135,
-          "percentile": 50.7,
+          "percentile": 47.4,
           "spread": 0.567
         },
         "emotionality": {
           "value": 0.0872,
-          "percentile": 26.9
+          "percentile": 28.9
         },
         "length": {
           "total_words": 63298,
           "avg_per_speech": 609.0,
-          "percentile": 55.2
+          "percentile": 59.2
         }
       },
       "summary": "Kontroverse debatte"
@@ -679,17 +679,17 @@
       "metrics": {
         "sentiment": {
           "value": -0.109,
-          "percentile": 59.7,
+          "percentile": 57.9,
           "spread": 0.498
         },
         "emotionality": {
           "value": 0.0788,
-          "percentile": 14.9
+          "percentile": 18.4
         },
         "length": {
           "total_words": 46969,
           "avg_per_speech": 522.0,
-          "percentile": 31.3
+          "percentile": 35.5
         }
       },
       "summary": "Durchschnittliche Sitzung"
@@ -718,17 +718,17 @@
       "metrics": {
         "sentiment": {
           "value": -0.158,
-          "percentile": 37.3,
+          "percentile": 34.2,
           "spread": 0.479
         },
         "emotionality": {
           "value": 0.1054,
-          "percentile": 53.7
+          "percentile": 57.9
         },
         "length": {
           "total_words": 84857,
           "avg_per_speech": 555.0,
-          "percentile": 74.6
+          "percentile": 76.3
         }
       },
       "summary": "Durchschnittliche Sitzung"
@@ -757,7 +757,7 @@
       "metrics": {
         "sentiment": {
           "value": -0.068,
-          "percentile": 79.1,
+          "percentile": 75.0,
           "spread": 0.393
         },
         "emotionality": {
@@ -767,7 +767,7 @@
         "length": {
           "total_words": 39780,
           "avg_per_speech": 235.0,
-          "percentile": 17.9
+          "percentile": 22.4
         }
       },
       "summary": "Sehr sachlich (untere 0%)"
@@ -796,20 +796,20 @@
       "metrics": {
         "sentiment": {
           "value": -0.302,
-          "percentile": 6.0,
+          "percentile": 5.3,
           "spread": 0.458
         },
         "emotionality": {
           "value": 0.0875,
-          "percentile": 28.4
+          "percentile": 30.3
         },
         "length": {
           "total_words": 50334,
           "avg_per_speech": 572.0,
-          "percentile": 40.3
+          "percentile": 43.4
         }
       },
-      "summary": "Sehr negatives sentiment (untere 6%)"
+      "summary": "Sehr negatives sentiment (untere 5%)"
     },
     {
       "session_id": "21_37",
@@ -822,17 +822,17 @@
       "metrics": {
         "sentiment": {
           "value": -0.229,
-          "percentile": 11.9,
+          "percentile": 11.8,
           "spread": 0.469
         },
         "emotionality": {
           "value": 0.0908,
-          "percentile": 38.8
+          "percentile": 40.8
         },
         "length": {
           "total_words": 80860,
           "avg_per_speech": 550.0,
-          "percentile": 71.6
+          "percentile": 73.7
         }
       },
       "summary": "Durchschnittliche Sitzung"
@@ -848,20 +848,20 @@
       "metrics": {
         "sentiment": {
           "value": -0.101,
-          "percentile": 64.2,
+          "percentile": 61.8,
           "spread": 0.427
         },
         "emotionality": {
           "value": 0.0487,
-          "percentile": 6.0
+          "percentile": 9.2
         },
         "length": {
           "total_words": 42722,
           "avg_per_speech": 230.0,
-          "percentile": 20.9
+          "percentile": 25.0
         }
       },
-      "summary": "Sehr sachlich (untere 6%)"
+      "summary": "Sehr sachlich (untere 9%)"
     },
     {
       "session_id": "21_35",
@@ -874,17 +874,17 @@
       "metrics": {
         "sentiment": {
           "value": -0.203,
-          "percentile": 25.4,
+          "percentile": 23.7,
           "spread": 0.398
         },
         "emotionality": {
           "value": 0.0836,
-          "percentile": 19.4
+          "percentile": 22.4
         },
         "length": {
           "total_words": 43451,
           "avg_per_speech": 524.0,
-          "percentile": 23.9
+          "percentile": 27.6
         }
       },
       "summary": "Durchschnittliche Sitzung"
@@ -900,17 +900,17 @@
       "metrics": {
         "sentiment": {
           "value": -0.226,
-          "percentile": 13.4,
+          "percentile": 13.2,
           "spread": 0.449
         },
         "emotionality": {
           "value": 0.0884,
-          "percentile": 32.8
+          "percentile": 34.2
         },
         "length": {
           "total_words": 86929,
           "avg_per_speech": 635.0,
-          "percentile": 79.1
+          "percentile": 81.6
         }
       },
       "summary": "Durchschnittliche Sitzung"
@@ -926,20 +926,20 @@
       "metrics": {
         "sentiment": {
           "value": -0.06,
-          "percentile": 85.1,
+          "percentile": 81.6,
           "spread": 0.319
         },
         "emotionality": {
           "value": 0.0431,
-          "percentile": 4.5
+          "percentile": 5.3
         },
         "length": {
           "total_words": 44031,
           "avg_per_speech": 233.0,
-          "percentile": 26.9
+          "percentile": 30.3
         }
       },
-      "summary": "Sehr sachlich (untere 4%)"
+      "summary": "Sehr sachlich (untere 5%)"
     },
     {
       "session_id": "21_32",
@@ -952,17 +952,17 @@
       "metrics": {
         "sentiment": {
           "value": -0.19,
-          "percentile": 29.9,
+          "percentile": 27.6,
           "spread": 0.481
         },
         "emotionality": {
           "value": 0.1026,
-          "percentile": 50.7
+          "percentile": 53.9
         },
         "length": {
           "total_words": 46000,
           "avg_per_speech": 582.0,
-          "percentile": 29.9
+          "percentile": 34.2
         }
       },
       "summary": "Durchschnittliche Sitzung"
@@ -978,17 +978,17 @@
       "metrics": {
         "sentiment": {
           "value": -0.147,
-          "percentile": 44.8,
+          "percentile": 40.8,
           "spread": 0.491
         },
         "emotionality": {
           "value": 0.0977,
-          "percentile": 47.8
+          "percentile": 51.3
         },
         "length": {
           "total_words": 87816,
           "avg_per_speech": 567.0,
-          "percentile": 82.1
+          "percentile": 84.2
         }
       },
       "summary": "Durchschnittliche Sitzung"
@@ -1004,20 +1004,20 @@
       "metrics": {
         "sentiment": {
           "value": -0.039,
-          "percentile": 88.1,
+          "percentile": 85.5,
           "spread": 0.4
         },
         "emotionality": {
           "value": 0.0334,
-          "percentile": 1.5
+          "percentile": 1.3
         },
         "length": {
           "total_words": 41548,
           "avg_per_speech": 240.0,
-          "percentile": 19.4
+          "percentile": 23.7
         }
       },
-      "summary": "Sehr sachlich (untere 2%)"
+      "summary": "Sehr sachlich (untere 1%)"
     },
     {
       "session_id": "21_29",
@@ -1030,17 +1030,17 @@
       "metrics": {
         "sentiment": {
           "value": -0.262,
-          "percentile": 7.5,
+          "percentile": 7.9,
           "spread": 0.58
         },
         "emotionality": {
           "value": 0.1065,
-          "percentile": 55.2
+          "percentile": 59.2
         },
         "length": {
           "total_words": 37587,
           "avg_per_speech": 626.0,
-          "percentile": 10.4
+          "percentile": 15.8
         }
       },
       "summary": "Sehr negatives sentiment (untere 8%), kontroverse debatte"
@@ -1056,17 +1056,17 @@
       "metrics": {
         "sentiment": {
           "value": -0.211,
-          "percentile": 23.9,
+          "percentile": 22.4,
           "spread": 0.508
         },
         "emotionality": {
           "value": 0.0916,
-          "percentile": 40.3
+          "percentile": 42.1
         },
         "length": {
           "total_words": 66265,
           "avg_per_speech": 762.0,
-          "percentile": 56.7
+          "percentile": 60.5
         }
       },
       "summary": "Durchschnittliche Sitzung"
@@ -1082,17 +1082,17 @@
       "metrics": {
         "sentiment": {
           "value": -0.214,
-          "percentile": 19.4,
+          "percentile": 18.4,
           "spread": 0.456
         },
         "emotionality": {
           "value": 0.0941,
-          "percentile": 44.8
+          "percentile": 47.4
         },
         "length": {
           "total_words": 71021,
           "avg_per_speech": 690.0,
-          "percentile": 59.7
+          "percentile": 63.2
         }
       },
       "summary": "Durchschnittliche Sitzung"
@@ -1108,20 +1108,20 @@
       "metrics": {
         "sentiment": {
           "value": -0.06,
-          "percentile": 86.6,
+          "percentile": 82.9,
           "spread": 0.557
         },
         "emotionality": {
           "value": 0.0795,
-          "percentile": 16.4
+          "percentile": 19.7
         },
         "length": {
           "total_words": 34447,
           "avg_per_speech": 662.0,
-          "percentile": 6.0
+          "percentile": 9.2
         }
       },
-      "summary": "Kurze sitzung (untere 6%), kontroverse debatte"
+      "summary": "Kurze sitzung (untere 9%), kontroverse debatte"
     },
     {
       "session_id": "21_24",
@@ -1134,17 +1134,17 @@
       "metrics": {
         "sentiment": {
           "value": -0.212,
-          "percentile": 22.4,
+          "percentile": 21.1,
           "spread": 0.48
         },
         "emotionality": {
           "value": 0.0867,
-          "percentile": 25.4
+          "percentile": 27.6
         },
         "length": {
           "total_words": 95107,
           "avg_per_speech": 647.0,
-          "percentile": 86.6
+          "percentile": 88.2
         }
       },
       "summary": "Durchschnittliche Sitzung"
@@ -1160,17 +1160,17 @@
       "metrics": {
         "sentiment": {
           "value": -0.112,
-          "percentile": 56.7,
+          "percentile": 55.3,
           "spread": 0.501
         },
         "emotionality": {
           "value": 0.0977,
-          "percentile": 49.3
+          "percentile": 52.6
         },
         "length": {
           "total_words": 88221,
           "avg_per_speech": 596.0,
-          "percentile": 83.6
+          "percentile": 85.5
         }
       },
       "summary": "Durchschnittliche Sitzung"
@@ -1186,17 +1186,17 @@
       "metrics": {
         "sentiment": {
           "value": -0.158,
-          "percentile": 38.8,
+          "percentile": 35.5,
           "spread": 0.474
         },
         "emotionality": {
           "value": 0.0828,
-          "percentile": 17.9
+          "percentile": 21.1
         },
         "length": {
           "total_words": 50518,
           "avg_per_speech": 594.0,
-          "percentile": 41.8
+          "percentile": 44.7
         }
       },
       "summary": "Durchschnittliche Sitzung"
@@ -1212,17 +1212,17 @@
       "metrics": {
         "sentiment": {
           "value": -0.139,
-          "percentile": 46.3,
+          "percentile": 43.4,
           "spread": 0.493
         },
         "emotionality": {
           "value": 0.0885,
-          "percentile": 34.3
+          "percentile": 35.5
         },
         "length": {
           "total_words": 85981,
           "avg_per_speech": 534.0,
-          "percentile": 77.6
+          "percentile": 78.9
         }
       },
       "summary": "Durchschnittliche Sitzung"
@@ -1238,17 +1238,17 @@
       "metrics": {
         "sentiment": {
           "value": -0.062,
-          "percentile": 82.1,
+          "percentile": 78.9,
           "spread": 0.337
         },
         "emotionality": {
           "value": 0.0651,
-          "percentile": 10.4
+          "percentile": 14.5
         },
         "length": {
           "total_words": 38937,
           "avg_per_speech": 213.0,
-          "percentile": 14.9
+          "percentile": 19.7
         }
       },
       "summary": "Durchschnittliche Sitzung"
@@ -1264,20 +1264,20 @@
       "metrics": {
         "sentiment": {
           "value": -0.31,
-          "percentile": 4.5,
+          "percentile": 3.9,
           "spread": 0.496
         },
         "emotionality": {
           "value": 0.1119,
-          "percentile": 56.7
+          "percentile": 60.5
         },
         "length": {
           "total_words": 34842,
           "avg_per_speech": 591.0,
-          "percentile": 7.5
+          "percentile": 10.5
         }
       },
-      "summary": "Sehr negatives sentiment (untere 4%), kurze sitzung (untere 8%)"
+      "summary": "Sehr negatives sentiment (untere 4%)"
     },
     {
       "session_id": "21_18",
@@ -1290,17 +1290,17 @@
       "metrics": {
         "sentiment": {
           "value": -0.111,
-          "percentile": 58.2,
+          "percentile": 56.6,
           "spread": 0.504
         },
         "emotionality": {
           "value": 0.0934,
-          "percentile": 43.3
+          "percentile": 46.1
         },
         "length": {
           "total_words": 91897,
           "avg_per_speech": 589.0,
-          "percentile": 85.1
+          "percentile": 86.8
         }
       },
       "summary": "Durchschnittliche Sitzung"
@@ -1316,20 +1316,20 @@
       "metrics": {
         "sentiment": {
           "value": -0.153,
-          "percentile": 40.3,
+          "percentile": 36.8,
           "spread": 0.451
         },
         "emotionality": {
           "value": 0.0516,
-          "percentile": 7.5
+          "percentile": 10.5
         },
         "length": {
           "total_words": 76793,
           "avg_per_speech": 495.0,
-          "percentile": 67.2
+          "percentile": 69.7
         }
       },
-      "summary": "Sehr sachlich (untere 8%)"
+      "summary": "Durchschnittliche Sitzung"
     },
     {
       "session_id": "21_16",
@@ -1342,17 +1342,17 @@
       "metrics": {
         "sentiment": {
           "value": -0.106,
-          "percentile": 62.7,
+          "percentile": 60.5,
           "spread": 0.566
         },
         "emotionality": {
           "value": 0.0955,
-          "percentile": 46.3
+          "percentile": 48.7
         },
         "length": {
           "total_words": 83312,
           "avg_per_speech": 661.0,
-          "percentile": 73.1
+          "percentile": 75.0
         }
       },
       "summary": "Kontroverse debatte"
@@ -1368,17 +1368,17 @@
       "metrics": {
         "sentiment": {
           "value": -0.215,
-          "percentile": 17.9,
+          "percentile": 17.1,
           "spread": 0.441
         },
         "emotionality": {
           "value": 0.0716,
-          "percentile": 11.9
+          "percentile": 15.8
         },
         "length": {
           "total_words": 45819,
           "avg_per_speech": 477.0,
-          "percentile": 28.4
+          "percentile": 32.9
         }
       },
       "summary": "Durchschnittliche Sitzung"
@@ -1394,17 +1394,17 @@
       "metrics": {
         "sentiment": {
           "value": -0.215,
-          "percentile": 16.4,
+          "percentile": 15.8,
           "spread": 0.478
         },
         "emotionality": {
           "value": 0.0928,
-          "percentile": 41.8
+          "percentile": 43.4
         },
         "length": {
           "total_words": 80326,
           "avg_per_speech": 543.0,
-          "percentile": 70.1
+          "percentile": 72.4
         }
       },
       "summary": "Durchschnittliche Sitzung"
@@ -1420,20 +1420,20 @@
       "metrics": {
         "sentiment": {
           "value": -0.092,
-          "percentile": 68.7,
+          "percentile": 65.8,
           "spread": 0.333
         },
         "emotionality": {
           "value": 0.0545,
-          "percentile": 9.0
+          "percentile": 13.2
         },
         "length": {
           "total_words": 38700,
           "avg_per_speech": 225.0,
-          "percentile": 11.9
+          "percentile": 17.1
         }
       },
-      "summary": "Sehr sachlich (untere 9%)"
+      "summary": "Durchschnittliche Sitzung"
     },
     {
       "session_id": "21_12",
@@ -1446,20 +1446,20 @@
       "metrics": {
         "sentiment": {
           "value": -0.081,
-          "percentile": 74.6,
+          "percentile": 71.1,
           "spread": 0.383
         },
         "emotionality": {
           "value": 0.0765,
-          "percentile": 13.4
+          "percentile": 17.1
         },
         "length": {
           "total_words": 15354,
           "avg_per_speech": 960.0,
-          "percentile": 0.0
+          "percentile": 2.6
         }
       },
-      "summary": "Kurze sitzung (untere 0%)"
+      "summary": "Kurze sitzung (untere 3%)"
     },
     {
       "session_id": "21_11",
@@ -1477,12 +1477,12 @@
         },
         "emotionality": {
           "value": 0.088,
-          "percentile": 29.9
+          "percentile": 31.6
         },
         "length": {
           "total_words": 43395,
           "avg_per_speech": 658.0,
-          "percentile": 22.4
+          "percentile": 26.3
         }
       },
       "summary": "Sehr negatives sentiment (untere 0%)"
@@ -1498,20 +1498,254 @@
       "metrics": {
         "sentiment": {
           "value": -0.225,
-          "percentile": 14.9,
+          "percentile": 14.5,
           "spread": 0.413
         },
         "emotionality": {
           "value": 0.0883,
-          "percentile": 31.3
+          "percentile": 32.9
         },
         "length": {
           "total_words": 85063,
           "avg_per_speech": 549.0,
-          "percentile": 76.1
+          "percentile": 77.6
         }
       },
       "summary": "Durchschnittliche Sitzung"
+    },
+    {
+      "session_id": "21_9",
+      "wahlperiode": 21,
+      "sitzungsnr": 9,
+      "datum": "04.06.2025",
+      "jahr": 2025,
+      "num_speeches": 153,
+      "top_topics": [],
+      "metrics": {
+        "sentiment": {
+          "value": -0.016,
+          "percentile": 90.8,
+          "spread": 0.381
+        },
+        "emotionality": {
+          "value": 0.0383,
+          "percentile": 2.6
+        },
+        "length": {
+          "total_words": 34259,
+          "avg_per_speech": 224.0,
+          "percentile": 7.9
+        }
+      },
+      "summary": "Sehr positives sentiment (top 9%), sehr sachlich (untere 3%), kurze sitzung (untere 8%)"
+    },
+    {
+      "session_id": "21_8",
+      "wahlperiode": 21,
+      "sitzungsnr": 8,
+      "datum": "23.05.2025",
+      "jahr": 2025,
+      "num_speeches": 75,
+      "top_topics": [],
+      "metrics": {
+        "sentiment": {
+          "value": -0.289,
+          "percentile": 6.6,
+          "spread": 0.38
+        },
+        "emotionality": {
+          "value": 0.0965,
+          "percentile": 50.0
+        },
+        "length": {
+          "total_words": 44133,
+          "avg_per_speech": 588.0,
+          "percentile": 31.6
+        }
+      },
+      "summary": "Sehr negatives sentiment (untere 7%)"
+    },
+    {
+      "session_id": "21_7",
+      "wahlperiode": 21,
+      "sitzungsnr": 7,
+      "datum": "22.05.2025",
+      "jahr": 2025,
+      "num_speeches": 109,
+      "top_topics": [],
+      "metrics": {
+        "sentiment": {
+          "value": -0.131,
+          "percentile": 50.0,
+          "spread": 0.445
+        },
+        "emotionality": {
+          "value": 0.0892,
+          "percentile": 36.8
+        },
+        "length": {
+          "total_words": 58629,
+          "avg_per_speech": 538.0,
+          "percentile": 55.3
+        }
+      },
+      "summary": "Durchschnittliche Sitzung"
+    },
+    {
+      "session_id": "21_6",
+      "wahlperiode": 21,
+      "sitzungsnr": 6,
+      "datum": "21.05.2025",
+      "jahr": 2025,
+      "num_speeches": 160,
+      "top_topics": [],
+      "metrics": {
+        "sentiment": {
+          "value": -0.064,
+          "percentile": 77.6,
+          "spread": 0.365
+        },
+        "emotionality": {
+          "value": 0.0517,
+          "percentile": 11.8
+        },
+        "length": {
+          "total_words": 35920,
+          "avg_per_speech": 224.0,
+          "percentile": 13.2
+        }
+      },
+      "summary": "Durchschnittliche Sitzung"
+    },
+    {
+      "session_id": "21_5",
+      "wahlperiode": 21,
+      "sitzungsnr": 5,
+      "datum": "16.05.2025",
+      "jahr": 2025,
+      "num_speeches": 60,
+      "top_topics": [],
+      "metrics": {
+        "sentiment": {
+          "value": -0.143,
+          "percentile": 42.1,
+          "spread": 0.487
+        },
+        "emotionality": {
+          "value": 0.1053,
+          "percentile": 56.6
+        },
+        "length": {
+          "total_words": 36489,
+          "avg_per_speech": 608.0,
+          "percentile": 14.5
+        }
+      },
+      "summary": "Durchschnittliche Sitzung"
+    },
+    {
+      "session_id": "21_4",
+      "wahlperiode": 21,
+      "sitzungsnr": 4,
+      "datum": "15.05.2025",
+      "jahr": 2025,
+      "num_speeches": 145,
+      "top_topics": [],
+      "metrics": {
+        "sentiment": {
+          "value": -0.13,
+          "percentile": 51.3,
+          "spread": 0.488
+        },
+        "emotionality": {
+          "value": 0.0929,
+          "percentile": 44.7
+        },
+        "length": {
+          "total_words": 86224,
+          "avg_per_speech": 595.0,
+          "percentile": 80.3
+        }
+      },
+      "summary": "Durchschnittliche Sitzung"
+    },
+    {
+      "session_id": "21_3",
+      "wahlperiode": 21,
+      "sitzungsnr": 3,
+      "datum": "14.05.2025",
+      "jahr": 2025,
+      "num_speeches": 153,
+      "top_topics": [],
+      "metrics": {
+        "sentiment": {
+          "value": -0.023,
+          "percentile": 88.2,
+          "spread": 0.339
+        },
+        "emotionality": {
+          "value": 0.0472,
+          "percentile": 6.6
+        },
+        "length": {
+          "total_words": 61186,
+          "avg_per_speech": 400.0,
+          "percentile": 57.9
+        }
+      },
+      "summary": "Sehr sachlich (untere 7%)"
+    },
+    {
+      "session_id": "21_2",
+      "wahlperiode": 21,
+      "sitzungsnr": 2,
+      "datum": "06.05.2025",
+      "jahr": 2025,
+      "num_speeches": 24,
+      "top_topics": [],
+      "metrics": {
+        "sentiment": {
+          "value": -0.042,
+          "percentile": 84.2,
+          "spread": 0.313
+        },
+        "emotionality": {
+          "value": 0.0481,
+          "percentile": 7.9
+        },
+        "length": {
+          "total_words": 1828,
+          "avg_per_speech": 76.0,
+          "percentile": 0.0
+        }
+      },
+      "summary": "Sehr sachlich (untere 8%), kurze sitzung (untere 0%)"
+    },
+    {
+      "session_id": "21_1",
+      "wahlperiode": 21,
+      "sitzungsnr": 1,
+      "datum": "25.03.2025",
+      "jahr": 2025,
+      "num_speeches": 17,
+      "top_topics": [],
+      "metrics": {
+        "sentiment": {
+          "value": 0.182,
+          "percentile": 98.7,
+          "spread": 0.507
+        },
+        "emotionality": {
+          "value": 0.1202,
+          "percentile": 61.8
+        },
+        "length": {
+          "total_words": 4366,
+          "avg_per_speech": 257.0,
+          "percentile": 1.3
+        }
+      },
+      "summary": "Sehr positives sentiment (top 1%), kurze sitzung (untere 1%)"
     },
     {
       "session_id": "20_214",
@@ -1537,20 +1771,20 @@
       "metrics": {
         "sentiment": {
           "value": -0.018,
-          "percentile": 91.0,
+          "percentile": 89.5,
           "spread": 0.47
         },
         "emotionality": {
           "value": 0.1478,
-          "percentile": 59.7
+          "percentile": 64.5
         },
         "length": {
           "total_words": 53125,
           "avg_per_speech": 640.0,
-          "percentile": 47.8
+          "percentile": 50.0
         }
       },
-      "summary": "Sehr positives sentiment (top 9%)"
+      "summary": "Durchschnittliche Sitzung"
     },
     {
       "session_id": "20_213",
@@ -1576,20 +1810,20 @@
       "metrics": {
         "sentiment": {
           "value": -0.239,
-          "percentile": 9.0,
+          "percentile": 9.2,
           "spread": 0.435
         },
         "emotionality": {
           "value": 0.2847,
-          "percentile": 94.0
+          "percentile": 94.7
         },
         "length": {
           "total_words": 29702,
           "avg_per_speech": 782.0,
-          "percentile": 4.5
+          "percentile": 6.6
         }
       },
-      "summary": "Sehr negatives sentiment (untere 9%), hohe emotionalität (top 6%), kurze sitzung (untere 4%)"
+      "summary": "Sehr negatives sentiment (untere 9%), hohe emotionalität (top 5%), kurze sitzung (untere 7%)"
     },
     {
       "session_id": "20_212",
@@ -1615,20 +1849,20 @@
       "metrics": {
         "sentiment": {
           "value": -0.368,
-          "percentile": 3.0,
+          "percentile": 2.6,
           "spread": 0.449
         },
         "emotionality": {
           "value": 0.3234,
-          "percentile": 98.5
+          "percentile": 98.7
         },
         "length": {
           "total_words": 26565,
           "avg_per_speech": 1208.0,
-          "percentile": 3.0
+          "percentile": 5.3
         }
       },
-      "summary": "Sehr negatives sentiment (untere 3%), hohe emotionalität (top 2%), kurze sitzung (untere 3%)"
+      "summary": "Sehr negatives sentiment (untere 3%), hohe emotionalität (top 1%), kurze sitzung (untere 5%)"
     },
     {
       "session_id": "20_211",
@@ -1654,17 +1888,17 @@
       "metrics": {
         "sentiment": {
           "value": -0.174,
-          "percentile": 32.8,
+          "percentile": 30.3,
           "spread": 0.492
         },
         "emotionality": {
           "value": 0.2931,
-          "percentile": 95.5
+          "percentile": 96.1
         },
         "length": {
           "total_words": 71683,
           "avg_per_speech": 535.0,
-          "percentile": 61.2
+          "percentile": 64.5
         }
       },
       "summary": "Hohe emotionalität (top 4%)"
@@ -1693,17 +1927,17 @@
       "metrics": {
         "sentiment": {
           "value": -0.137,
-          "percentile": 47.8,
+          "percentile": 44.7,
           "spread": 0.527
         },
         "emotionality": {
           "value": 0.2664,
-          "percentile": 88.1
+          "percentile": 89.5
         },
         "length": {
           "total_words": 136726,
           "avg_per_speech": 608.0,
-          "percentile": 97.0
+          "percentile": 97.4
         }
       },
       "summary": "Überdurchschnittlich lang (top 3%), kontroverse debatte"
@@ -1732,17 +1966,17 @@
       "metrics": {
         "sentiment": {
           "value": -0.122,
-          "percentile": 53.7,
+          "percentile": 52.6,
           "spread": 0.428
         },
         "emotionality": {
           "value": 0.2,
-          "percentile": 70.1
+          "percentile": 73.7
         },
         "length": {
           "total_words": 66333,
           "avg_per_speech": 344.0,
-          "percentile": 58.2
+          "percentile": 61.8
         }
       },
       "summary": "Durchschnittliche Sitzung"
@@ -1771,20 +2005,20 @@
       "metrics": {
         "sentiment": {
           "value": -0.183,
-          "percentile": 31.3,
+          "percentile": 28.9,
           "spread": 0.507
         },
         "emotionality": {
           "value": 0.28,
-          "percentile": 91.0
+          "percentile": 92.1
         },
         "length": {
           "total_words": 57631,
           "avg_per_speech": 648.0,
-          "percentile": 52.2
+          "percentile": 53.9
         }
       },
-      "summary": "Hohe emotionalität (top 9%)"
+      "summary": "Hohe emotionalität (top 8%)"
     },
     {
       "session_id": "20_207",
@@ -1810,20 +2044,20 @@
       "metrics": {
         "sentiment": {
           "value": -0.151,
-          "percentile": 41.8,
+          "percentile": 38.2,
           "spread": 0.507
         },
         "emotionality": {
           "value": 0.2819,
-          "percentile": 92.5
+          "percentile": 93.4
         },
         "length": {
           "total_words": 114588,
           "avg_per_speech": 591.0,
-          "percentile": 92.5
+          "percentile": 93.4
         }
       },
-      "summary": "Hohe emotionalität (top 8%), überdurchschnittlich lang (top 8%)"
+      "summary": "Hohe emotionalität (top 7%), überdurchschnittlich lang (top 7%)"
     },
     {
       "session_id": "20_206",
@@ -1849,17 +2083,17 @@
       "metrics": {
         "sentiment": {
           "value": -0.101,
-          "percentile": 65.7,
+          "percentile": 63.2,
           "spread": 0.376
         },
         "emotionality": {
           "value": 0.2399,
-          "percentile": 80.6
+          "percentile": 82.9
         },
         "length": {
           "total_words": 48526,
           "avg_per_speech": 265.0,
-          "percentile": 35.8
+          "percentile": 39.5
         }
       },
       "summary": "Durchschnittliche Sitzung"
@@ -1888,20 +2122,20 @@
       "metrics": {
         "sentiment": {
           "value": -0.382,
-          "percentile": 1.5,
+          "percentile": 1.3,
           "spread": 0.437
         },
         "emotionality": {
           "value": 0.2946,
-          "percentile": 97.0
+          "percentile": 97.4
         },
         "length": {
           "total_words": 21579,
           "avg_per_speech": 981.0,
-          "percentile": 1.5
+          "percentile": 3.9
         }
       },
-      "summary": "Sehr negatives sentiment (untere 2%), hohe emotionalität (top 3%), kurze sitzung (untere 2%)"
+      "summary": "Sehr negatives sentiment (untere 1%), hohe emotionalität (top 3%), kurze sitzung (untere 4%)"
     },
     {
       "session_id": "19_239",
@@ -1927,17 +2161,17 @@
       "metrics": {
         "sentiment": {
           "value": -0.087,
-          "percentile": 71.6,
+          "percentile": 68.4,
           "spread": 0.488
         },
         "emotionality": {
           "value": 0.147,
-          "percentile": 58.2
+          "percentile": 63.2
         },
         "length": {
           "total_words": 51007,
           "avg_per_speech": 761.0,
-          "percentile": 43.3
+          "percentile": 46.1
         }
       },
       "summary": "Durchschnittliche Sitzung"
@@ -1966,17 +2200,17 @@
       "metrics": {
         "sentiment": {
           "value": -0.134,
-          "percentile": 52.2,
+          "percentile": 48.7,
           "spread": 0.473
         },
         "emotionality": {
           "value": 0.1901,
-          "percentile": 67.2
+          "percentile": 71.1
         },
         "length": {
           "total_words": 54042,
           "avg_per_speech": 761.0,
-          "percentile": 49.3
+          "percentile": 51.3
         }
       },
       "summary": "Durchschnittliche Sitzung"
@@ -2005,17 +2239,17 @@
       "metrics": {
         "sentiment": {
           "value": -0.061,
-          "percentile": 83.6,
+          "percentile": 80.3,
           "spread": 0.51
         },
         "emotionality": {
           "value": 0.2231,
-          "percentile": 76.1
+          "percentile": 78.9
         },
         "length": {
           "total_words": 60864,
           "avg_per_speech": 647.0,
-          "percentile": 53.7
+          "percentile": 56.6
         }
       },
       "summary": "Durchschnittliche Sitzung"
@@ -2044,20 +2278,20 @@
       "metrics": {
         "sentiment": {
           "value": -0.004,
-          "percentile": 94.0,
+          "percentile": 93.4,
           "spread": 0.468
         },
         "emotionality": {
           "value": 0.1607,
-          "percentile": 62.7
+          "percentile": 67.1
         },
         "length": {
           "total_words": 156602,
           "avg_per_speech": 569.0,
-          "percentile": 98.5
+          "percentile": 98.7
         }
       },
-      "summary": "Sehr positives sentiment (top 6%), überdurchschnittlich lang (top 2%)"
+      "summary": "Sehr positives sentiment (top 7%), überdurchschnittlich lang (top 1%)"
     },
     {
       "session_id": "19_235",
@@ -2083,17 +2317,17 @@
       "metrics": {
         "sentiment": {
           "value": -0.011,
-          "percentile": 92.5,
+          "percentile": 92.1,
           "spread": 0.365
         },
         "emotionality": {
           "value": 0.1828,
-          "percentile": 65.7
+          "percentile": 69.7
         },
         "length": {
           "total_words": 47513,
           "avg_per_speech": 417.0,
-          "percentile": 32.8
+          "percentile": 36.8
         }
       },
       "summary": "Sehr positives sentiment (top 8%)"
@@ -2122,20 +2356,20 @@
       "metrics": {
         "sentiment": {
           "value": -0.004,
-          "percentile": 95.5,
+          "percentile": 94.7,
           "spread": 0.491
         },
         "emotionality": {
           "value": 0.202,
-          "percentile": 73.1
+          "percentile": 76.3
         },
         "length": {
           "total_words": 71738,
           "avg_per_speech": 548.0,
-          "percentile": 62.7
+          "percentile": 65.8
         }
       },
-      "summary": "Sehr positives sentiment (top 4%)"
+      "summary": "Sehr positives sentiment (top 5%)"
     },
     {
       "session_id": "19_233",
@@ -2161,17 +2395,17 @@
       "metrics": {
         "sentiment": {
           "value": -0.064,
-          "percentile": 80.6,
+          "percentile": 76.3,
           "spread": 0.445
         },
         "emotionality": {
           "value": 0.1566,
-          "percentile": 61.2
+          "percentile": 65.8
         },
         "length": {
           "total_words": 130901,
           "avg_per_speech": 555.0,
-          "percentile": 95.5
+          "percentile": 96.1
         }
       },
       "summary": "Überdurchschnittlich lang (top 4%)"
@@ -2200,20 +2434,20 @@
       "metrics": {
         "sentiment": {
           "value": 0.01,
-          "percentile": 98.5,
+          "percentile": 97.4,
           "spread": 0.413
         },
         "emotionality": {
           "value": 0.1694,
-          "percentile": 64.2
+          "percentile": 68.4
         },
         "length": {
           "total_words": 52834,
           "avg_per_speech": 410.0,
-          "percentile": 46.3
+          "percentile": 48.7
         }
       },
-      "summary": "Sehr positives sentiment (top 2%)"
+      "summary": "Sehr positives sentiment (top 3%)"
     },
     {
       "session_id": "19_231",
@@ -2239,17 +2473,17 @@
       "metrics": {
         "sentiment": {
           "value": -0.033,
-          "percentile": 89.6,
+          "percentile": 86.8,
           "spread": 0.51
         },
         "emotionality": {
           "value": 0.2446,
-          "percentile": 82.1
+          "percentile": 84.2
         },
         "length": {
           "total_words": 73828,
           "avg_per_speech": 615.0,
-          "percentile": 65.7
+          "percentile": 68.4
         }
       },
       "summary": "Durchschnittliche Sitzung"
@@ -2278,20 +2512,20 @@
       "metrics": {
         "sentiment": {
           "value": -0.003,
-          "percentile": 97.0,
+          "percentile": 96.1,
           "spread": 0.506
         },
         "emotionality": {
           "value": 0.197,
-          "percentile": 68.7
+          "percentile": 72.4
         },
         "length": {
           "total_words": 130013,
           "avg_per_speech": 553.0,
-          "percentile": 94.0
+          "percentile": 94.7
         }
       },
-      "summary": "Sehr positives sentiment (top 3%), überdurchschnittlich lang (top 6%)"
+      "summary": "Sehr positives sentiment (top 4%), überdurchschnittlich lang (top 5%)"
     }
   ]
 }
