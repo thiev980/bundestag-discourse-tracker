@@ -49,6 +49,8 @@ git rm --cached <bigfile>
 git commit -m "commit without big file"
 git push
 
+## Aus Versehen commited
+git reset HEAD~1 (aus staging entfernen)
 
 ## Minimales .gitignore
     # Python / venv
