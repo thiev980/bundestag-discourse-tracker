@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-22T07:28:53.943965",
+  "generated_at": "2026-05-26T07:26:38.452130",
   "total_sessions": 100,
   "wahlperioden": [
     19,
@@ -15,7 +15,7 @@
       "min": -0.38636363636363635,
       "max": 0.1823529411764706,
       "median": -0.1356837606837607,
-      "mean": -0.14343000617324791
+      "mean": -0.14340695422519598
     },
     "avg_emotionality": {
       "min": 0.02704092503757576,
@@ -25,9 +25,9 @@
     },
     "num_speeches": {
       "min": 16,
-      "max": 275,
+      "max": 308,
       "median": 135.0,
-      "mean": 127.5
+      "mean": 129.04
     }
   },
   "sessions": [
@@ -37,25 +37,25 @@
       "sitzungsnr": 80,
       "datum": "21.05.2026",
       "jahr": 2026,
-      "num_speeches": 154,
+      "num_speeches": 308,
       "top_topics": [],
       "metrics": {
         "sentiment": {
-          "value": -0.097,
-          "percentile": 68.0,
-          "spread": 0.482
+          "value": -0.095,
+          "percentile": 69.0,
+          "spread": 0.481
         },
         "emotionality": {
           "value": 0.0891,
           "percentile": 47.0
         },
         "length": {
-          "total_words": 88080,
+          "total_words": 176160,
           "avg_per_speech": 572.0,
-          "percentile": 86.0
+          "percentile": 99.0
         }
       },
-      "summary": "Durchschnittliche Sitzung"
+      "summary": "Überdurchschnittlich lang (top 1%)"
     },
     {
       "session_id": "21_79",
@@ -442,7 +442,7 @@
         "length": {
           "total_words": 88497,
           "avg_per_speech": 536.0,
-          "percentile": 88.0
+          "percentile": 87.0
         }
       },
       "summary": "Durchschnittliche Sitzung"
@@ -598,7 +598,7 @@
         "length": {
           "total_words": 89801,
           "avg_per_speech": 535.0,
-          "percentile": 89.0
+          "percentile": 88.0
         }
       },
       "summary": "Durchschnittliche Sitzung"
@@ -702,10 +702,10 @@
         "length": {
           "total_words": 98539,
           "avg_per_speech": 608.0,
-          "percentile": 92.0
+          "percentile": 91.0
         }
       },
-      "summary": "Hohe emotionalität (top 9%), überdurchschnittlich lang (top 8%)"
+      "summary": "Hohe emotionalität (top 9%), überdurchschnittlich lang (top 9%)"
     },
     {
       "session_id": "21_55",
@@ -819,10 +819,10 @@
         "length": {
           "total_words": 98954,
           "avg_per_speech": 541.0,
-          "percentile": 93.0
+          "percentile": 92.0
         }
       },
-      "summary": "Hohe emotionalität (top 7%), überdurchschnittlich lang (top 7%)"
+      "summary": "Hohe emotionalität (top 7%), überdurchschnittlich lang (top 8%)"
     },
     {
       "session_id": "21_52",
@@ -848,7 +848,7 @@
       "metrics": {
         "sentiment": {
           "value": -0.097,
-          "percentile": 69.0,
+          "percentile": 68.0,
           "spread": 0.408
         },
         "emotionality": {
@@ -936,10 +936,10 @@
         "length": {
           "total_words": 106099,
           "avg_per_speech": 518.0,
-          "percentile": 94.0
+          "percentile": 93.0
         }
       },
-      "summary": "Überdurchschnittlich lang (top 6%)"
+      "summary": "Überdurchschnittlich lang (top 7%)"
     },
     {
       "session_id": "21_49",
@@ -1768,10 +1768,10 @@
         "length": {
           "total_words": 95107,
           "avg_per_speech": 647.0,
-          "percentile": 91.0
+          "percentile": 90.0
         }
       },
-      "summary": "Überdurchschnittlich lang (top 9%)"
+      "summary": "Überdurchschnittlich lang (top 10%)"
     },
     {
       "session_id": "21_23",
@@ -1794,7 +1794,7 @@
         "length": {
           "total_words": 88221,
           "avg_per_speech": 596.0,
-          "percentile": 87.0
+          "percentile": 86.0
         }
       },
       "summary": "Durchschnittliche Sitzung"
@@ -1924,10 +1924,10 @@
         "length": {
           "total_words": 91897,
           "avg_per_speech": 589.0,
-          "percentile": 90.0
+          "percentile": 89.0
         }
       },
-      "summary": "Überdurchschnittlich lang (top 10%)"
+      "summary": "Durchschnittliche Sitzung"
     },
     {
       "session_id": "21_17",
@@ -2561,10 +2561,10 @@
         "length": {
           "total_words": 136726,
           "avg_per_speech": 608.0,
-          "percentile": 98.0
+          "percentile": 97.0
         }
       },
-      "summary": "Hohe emotionalität (top 8%), überdurchschnittlich lang (top 2%), kontroverse debatte"
+      "summary": "Hohe emotionalität (top 8%), überdurchschnittlich lang (top 3%), kontroverse debatte"
     },
     {
       "session_id": "20_209",
@@ -2678,10 +2678,10 @@
         "length": {
           "total_words": 114588,
           "avg_per_speech": 591.0,
-          "percentile": 95.0
+          "percentile": 94.0
         }
       },
-      "summary": "Hohe emotionalität (top 5%), überdurchschnittlich lang (top 5%)"
+      "summary": "Hohe emotionalität (top 5%), überdurchschnittlich lang (top 6%)"
     },
     {
       "session_id": "20_206",
@@ -2912,10 +2912,10 @@
         "length": {
           "total_words": 156602,
           "avg_per_speech": 569.0,
-          "percentile": 99.0
+          "percentile": 98.0
         }
       },
-      "summary": "Sehr positives sentiment (top 5%), überdurchschnittlich lang (top 1%)"
+      "summary": "Sehr positives sentiment (top 5%), überdurchschnittlich lang (top 2%)"
     },
     {
       "session_id": "19_235",
@@ -3029,10 +3029,10 @@
         "length": {
           "total_words": 130901,
           "avg_per_speech": 555.0,
-          "percentile": 97.0
+          "percentile": 96.0
         }
       },
-      "summary": "Überdurchschnittlich lang (top 3%)"
+      "summary": "Überdurchschnittlich lang (top 4%)"
     },
     {
       "session_id": "19_232",
@@ -3146,10 +3146,10 @@
         "length": {
           "total_words": 130013,
           "avg_per_speech": 553.0,
-          "percentile": 96.0
+          "percentile": 95.0
         }
       },
-      "summary": "Sehr positives sentiment (top 3%), überdurchschnittlich lang (top 4%)"
+      "summary": "Sehr positives sentiment (top 3%), überdurchschnittlich lang (top 5%)"
     }
   ]
 }
