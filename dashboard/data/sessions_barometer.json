@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-26T07:26:38.452130",
+  "generated_at": "2026-05-27T07:38:02.816005",
   "total_sessions": 100,
   "wahlperioden": [
     19,
@@ -15,19 +15,19 @@
       "min": -0.38636363636363635,
       "max": 0.1823529411764706,
       "median": -0.1356837606837607,
-      "mean": -0.14340695422519598
+      "mean": -0.14337892392216567
     },
     "avg_emotionality": {
-      "min": 0.02704092503757576,
+      "min": 0.027040925037575755,
       "max": 0.32335909090909093,
       "median": 0.0894630879852564,
       "mean": 0.11983948128615428
     },
     "num_speeches": {
       "min": 16,
-      "max": 308,
+      "max": 462,
       "median": 135.0,
-      "mean": 129.04
+      "mean": 130.58
     }
   },
   "sessions": [
@@ -37,20 +37,20 @@
       "sitzungsnr": 80,
       "datum": "21.05.2026",
       "jahr": 2026,
-      "num_speeches": 308,
+      "num_speeches": 462,
       "top_topics": [],
       "metrics": {
         "sentiment": {
-          "value": -0.095,
-          "percentile": 69.0,
-          "spread": 0.481
+          "value": -0.092,
+          "percentile": 71.0,
+          "spread": 0.486
         },
         "emotionality": {
           "value": 0.0891,
           "percentile": 47.0
         },
         "length": {
-          "total_words": 176160,
+          "total_words": 264240,
           "avg_per_speech": 572.0,
           "percentile": 99.0
         }
@@ -614,7 +614,7 @@
       "metrics": {
         "sentiment": {
           "value": -0.093,
-          "percentile": 70.0,
+          "percentile": 69.0,
           "spread": 0.317
         },
         "emotionality": {
@@ -2044,7 +2044,7 @@
       "metrics": {
         "sentiment": {
           "value": -0.092,
-          "percentile": 71.0,
+          "percentile": 70.0,
           "spread": 0.333
         },
         "emotionality": {
