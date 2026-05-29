@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-28T07:32:01.557306",
+  "generated_at": "2026-05-29T07:32:09.204981",
   "total_sessions": 100,
   "wahlperioden": [
     19,
@@ -15,7 +15,7 @@
       "min": -0.38636363636363635,
       "max": 0.1823529411764706,
       "median": -0.1356837606837607,
-      "mean": -0.1433795191602609
+      "mean": -0.14336234383558558
     },
     "avg_emotionality": {
       "min": 0.02704092503757576,
@@ -25,9 +25,9 @@
     },
     "num_speeches": {
       "min": 16,
-      "max": 616,
+      "max": 770,
       "median": 135.0,
-      "mean": 132.12
+      "mean": 133.66
     }
   },
   "sessions": [
@@ -37,20 +37,20 @@
       "sitzungsnr": 80,
       "datum": "21.05.2026",
       "jahr": 2026,
-      "num_speeches": 616,
+      "num_speeches": 770,
       "top_topics": [],
       "metrics": {
         "sentiment": {
-          "value": -0.092,
+          "value": -0.091,
           "percentile": 71.0,
-          "spread": 0.487
+          "spread": 0.485
         },
         "emotionality": {
           "value": 0.0891,
           "percentile": 47.0
         },
         "length": {
-          "total_words": 352320,
+          "total_words": 440400,
           "avg_per_speech": 572.0,
           "percentile": 99.0
         }
